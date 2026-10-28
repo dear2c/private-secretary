@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0e6b4e" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="私人秘书" />
+    <title>私人秘书</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css?v=20261027-17" />
+  </head>
+  <body spellcheck="false">
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#overview" aria-label="返回概览">
+          <span class="brand-mark" aria-hidden="true">秘</span>
+          <span>
+            <strong>您的私人秘书</strong>
+            <small>河北工程情报 · A股每日研判</small>
+          </span>
+        </a>
+        <div class="topbar-actions">
+          <span class="status-dot" id="statusDot" aria-hidden="true"></span>
+          <span class="status-text" id="statusText" role="status" aria-live="polite">正在加载</span>
+          <button class="btn btn-refresh" id="refreshButton" type="button">
+            <span aria-hidden="true">↻</span>
+            <span class="refresh-label">立即更新</span>
+          </button>
+        </div>
+      </header>
+
+      <aside class="sidebar" aria-label="主导航">
+        <nav>
+          <button class="nav-item is-active" type="button" data-view="overview">
+            <span class="nav-icon" aria-hidden="true">⌂</span>
+            <span>秘书台</span>
+          </button>
+          <button class="nav-item" type="button" data-view="projects">
+            <span class="nav-icon" aria-hidden="true">▤</span>
+            <span>工程情报</span>
+            <span class="nav-count" id="projectNavCount">0</span>
+          </button>
+          <button class="nav-item" type="button" data-view="market">
+            <span class="nav-icon" aria-hidden="true">↗</span>
+            <span>A股研判</span>
+          </button>
+          <button class="nav-item" type="button" data-view="health">
+            <span class="nav-icon" aria-hidden="true">♥</span>
+            <span>健康管理</span>
+          </button>
+          <button class="nav-item" type="button" data-view="settings">
+            <span class="nav-icon" aria-hidden="true">⚙</span>
+            <span>工作规则</span>
+          </button>
+        </nav>
+        <div class="sidebar-note">
+          <span>下次自动提醒</span>
+          <strong id="nextPushTime">A股 16:30</strong>
+          <small id="engineeringPushTime">工程 每周五 18:00</small>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <button class="new-report-banner" id="newReportBanner" type="button" hidden>
+          <span>今日新日报已更新</span>
+          <strong>点击查看</strong>
+        </button>
+        <section class="view is-active" id="view-overview" data-view-panel="overview">
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">今日简报</p>
+              <h1 id="secretaryGreeting">早上好，今日情报已到</h1>
+              <p class="page-subtitle" id="overviewSubtitle">正在汇总官方公告与收盘数据…</p>
+            </div>
+            <div class="date-block">
+              <span>数据日期</span>
+              <strong id="overviewDate">--</strong>
+            </div>
+          </div>
+
+          <div class="secretary-gateway" id="secretaryGateway" aria-label="秘书模块入口"></div>
+
+          <div class="metric-grid">
+            <article class="metric-card metric-emphasis">
+              <div class="metric-label">符合全部硬条件</div>
+              <div class="metric-value" id="qualifiedMetric">--</div>
+              <p>金额 &gt; 1.5 亿元且资金落实有明确依据</p>
+            </article>
+            <article class="metric-card">
+              <div class="metric-label">待补充核验</div>
+              <div class="metric-value" id="pendingMetric">--</div>
+              <p>专业和城市匹配，但金额或资金信息缺失</p>
+            </article>
+            <article class="metric-card">
+              <div class="metric-label">市场温度</div>
+              <div class="metric-value metric-market" id="marketToneMetric">--</div>
+              <p id="marketToneDetail">等待行情数据</p>
+            </article>
+            <article class="metric-card">
+              <div class="metric-label">覆盖城市</div>
+              <div class="metric-value" id="cityMetric">8</div>
+              <p>石家庄至廊坊，按指定顺序分组</p>
+            </article>
+          </div>
+
+          <div class="two-column">
+            <section class="panel panel-projects">
+              <div class="panel-heading">
+                <div>
+                  <span class="panel-kicker">工程机会</span>
+                  <h2>符合条件与待核验项目</h2>
+                </div>
+                <button class="text-button" type="button" data-go-view="projects">查看完整列表 →</button>
+              </div>
+              <div id="overviewProjects" class="opportunity-list" aria-live="polite">
+                <div class="empty-state">正在读取项目信息…</div>
+              </div>
+            </section>
+
+            <section class="panel panel-market">
+              <div class="panel-heading">
+                <div>
+                  <span class="panel-kicker">A股收盘复盘</span>
+                  <h2>主要指数与市场广度</h2>
+                </div>
+                <button class="text-button" type="button" data-go-view="market">查看详情 →</button>
+              </div>
+              <div id="marketIndexGrid" class="index-grid"></div>
+              <div class="market-summary">
+                <div class="breadth-readout" id="breadthReadout">--</div>
+                <p id="marketSummaryText">正在计算盘面结构…</p>
+              </div>
+            </section>
+          </div>
+
+          <section class="notice-strip">
+            <strong>数据口径</strong>
+            <span>
+              工程信息仅采信官方公告正文。金额、资金落实和招标时间未披露时会单独标为“待核实”，不会自动猜测。
+            </span>
+          </section>
+        </section>
+
+        <section class="view" id="view-projects" data-view-panel="projects" hidden>
+          <div class="page-heading projects-heading">
+            <div>
+              <p class="eyebrow">工程情报</p>
+              <h1>河北工程项目</h1>
+              <p class="page-subtitle">
+                每周五 18:00 更新河北省发改委立项与公共资源交易中心设计招标，保留2026年7月1日以来半年有效信息。
+              </p>
+            </div>
+            <div class="export-controls">
+              <label class="form-field export-month-field">
+                <span>导出月份</span>
+                <select id="exportMonth">
+                  <option value="">正在读取月份…</option>
+                </select>
+              </label>
+              <button class="btn btn-secondary" id="exportButton" type="button">下载 Excel</button>
+            </div>
+          </div>
+          <div class="filter-row">
+            <div class="segmented" role="group" aria-label="项目核验状态">
+              <button type="button" class="segment is-active" data-project-filter="all">全部</button>
+              <button type="button" class="segment" data-project-filter="qualified">符合条件</button>
+              <button type="button" class="segment" data-project-filter="pending">待核实</button>
+            </div>
+            <span class="filter-note" id="projectFilterNote">--</span>
+          </div>
+          <div class="project-groups" id="projectGroups"></div>
+        </section>
+
+        <section class="view" id="view-market" data-view-panel="market" hidden>
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">市场复盘</p>
+              <h1>A股每日大盘复盘</h1>
+              <p class="page-subtitle" id="marketSubtitle">收盘后自动更新指数、涨跌家数和行业表现。</p>
+            </div>
+            <div class="date-block market-date-block">
+              <span>交易日</span>
+              <strong id="marketDate">--</strong>
+            </div>
+          </div>
+
+          <section class="trading-plan-panel" aria-label="次日交易计划">
+            <div class="trading-plan-heading">
+              <div>
+                <span class="plan-reminder-tag">工作日 16:30 · APP 内自动提醒</span>
+                <span class="panel-kicker">次日作战面板</span>
+                <h2 id="tradingPlanVerdict">正在计算市场剧本…</h2>
+                <p id="tradingPlanSummary">等待行情数据。</p>
+              </div>
+              <div class="plan-risk-badge">
+                <span>情景仓位</span>
+                <strong id="tradingPlanPosition">--</strong>
+                <small id="tradingPlanRisk">风险 --</small>
+              </div>
+            </div>
+            <p class="mainline-swipe-hint">左右滑动查看全部主线</p>
+            <div class="mainline-grid" id="tradingMainlines"></div>
+            <div class="plan-rule-grid">
+              <article>
+                <h3>开盘后确认</h3>
+                <ul id="tradingEntryConditions"></ul>
+              </article>
+              <article>
+                <h3>立即失效</h3>
+                <ul id="tradingInvalidConditions"></ul>
+              </article>
+              <article>
+                <h3>回避方向</h3>
+                <ul id="tradingAvoidSectors"></ul>
+              </article>
+            </div>
+            <details class="framework-details">
+              <summary>查看自动复盘框架</summary>
+              <ol id="tradingFramework"></ol>
+            </details>
+            <p class="plan-disclaimer" id="tradingPlanDisclaimer">
+              仅按公开行情生成条件式复盘，不构成投资建议。
+            </p>
+          </section>
+
+          <div class="market-index-cards" id="marketDetailIndices"></div>
+
+          <section class="market-depth" aria-label="A股复盘结构">
+            <article class="depth-card">
+              <span class="depth-label">涨跌停生态</span>
+              <strong id="limitSummary">--</strong>
+              <p id="limitDetail">等待涨跌停数据</p>
+            </article>
+            <article class="depth-card">
+              <span class="depth-label">市场风格</span>
+              <strong id="styleSummary">--</strong>
+              <p id="styleDetail">大盘与小盘风格对比</p>
+            </article>
+            <article class="depth-card">
+              <span class="depth-label">技术位置</span>
+              <strong id="technicalSummary">--</strong>
+              <p id="technicalDetail">均线与20日区间</p>
+            </article>
+            <article class="depth-card">
+              <span class="depth-label">资金与量能</span>
+              <strong id="flowSummary">--</strong>
+              <p id="flowDetail">成交额与主力资金</p>
+            </article>
+          </section>
+
+          <div class="data-quality-note" id="marketQualityNote" role="status"></div>
+
+          <div class="market-layout">
+            <section class="panel chart-panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="panel-kicker">上证指数 · 近30个交易日</span>
+                  <h2>收盘走势</h2>
+                </div>
+                <span class="chart-unit">点位</span>
+              </div>
+              <div class="chart-wrap" id="historyChart"></div>
+            </section>
+
+            <section class="panel breadth-panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="panel-kicker">市场广度</span>
+                  <h2>上涨 / 下跌</h2>
+                </div>
+              </div>
+              <div class="breadth-bar" id="breadthBar" aria-label="市场上涨下跌家数"></div>
+              <div class="breadth-legend" id="breadthLegend"></div>
+              <hr />
+              <div class="turnover-block">
+                <span>沪深两市成交额</span>
+                <strong id="marketTurnover">--</strong>
+              </div>
+            </section>
+          </div>
+
+          <div class="two-column market-bottom">
+            <section class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="panel-kicker">盘面结论</span>
+                  <h2>收盘摘要</h2>
+                </div>
+              </div>
+              <p class="recap-copy" id="recapCopy">等待行情数据…</p>
+              <div class="watch-title">下一交易日观察</div>
+              <ul class="watch-list" id="watchPoints"></ul>
+              <p class="disclaimer">行情数据来自东方财富公开接口，仅作信息复盘，不构成投资建议。</p>
+            </section>
+            <section class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="panel-kicker">行业表现</span>
+                  <h2>领涨与靠后</h2>
+                </div>
+              </div>
+              <div class="sector-columns">
+                <div>
+                  <h3>领涨</h3>
+                  <ol class="sector-list" id="leadingSectors"></ol>
+                </div>
+                <div>
+                  <h3>靠后</h3>
+                  <ol class="sector-list negative" id="laggingSectors"></ol>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="panel market-news-panel">
+            <div class="panel-heading">
+              <div>
+                <span class="panel-kicker">消息面线索</span>
+                <h2>收盘前后市场相关信息</h2>
+              </div>
+              <span class="chart-unit">仅呈现事实，不自动归因涨跌</span>
+            </div>
+            <div class="news-list" id="marketNewsList"></div>
+          </section>
+        </section>
+
+        <section class="view" id="view-health" data-view-panel="health" hidden>
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">健康管理</p>
+              <h1>我的健康日程</h1>
+              <p class="page-subtitle">
+                面向无慢性病成人的日常饮食、睡眠、运动与体检记录。所有健康数据仅保存在本机。
+              </p>
+            </div>
+            <div class="date-block health-date-block">
+              <span>今天</span>
+              <strong id="healthDate">--</strong>
+            </div>
+          </div>
+
+          <div class="health-reminder-banner">
+            <span class="health-reminder-icon" aria-hidden="true">♥</span>
+            <div>
+              <strong id="healthNextReminder">正在计算下一次健康提醒</strong>
+              <small id="healthWeeklyNext">正在计算下一次健康周报</small>
+            </div>
+            <label class="health-reminder-toggle">
+              <input id="healthReminderEnabled" type="checkbox" checked />
+              <span>启用</span>
+            </label>
+          </div>
+
+          <section class="personal-health-plan">
+            <div class="personal-plan-heading">
+              <div>
+                <span class="panel-kicker">专属健康计划 · 依据2025年12月体检报告</span>
+                <h2 id="personalHealthStatus">可逆的代谢风险管理期</h2>
+                <p id="personalHealthSummary">正在整理报告重点。</p>
+              </div>
+              <div class="personal-plan-goals" id="personalHealthGoals"></div>
+            </div>
+            <div class="personal-task-list" id="personalHealthTasks"></div>
+          </section>
+
+          <div class="health-summary-grid">
+            <article class="health-summary-card">
+              <span>饮食</span>
+              <strong id="healthMealsDone">0 / 4</strong>
+              <small>今日计划完成</small>
+            </article>
+            <article class="health-summary-card">
+              <span>饮水</span>
+              <strong id="healthWaterSummary">0 ml</strong>
+              <small>目标 1600 ml</small>
+            </article>
+            <article class="health-summary-card">
+              <span>睡眠</span>
+              <strong id="healthSleepSummary">待记录</strong>
+              <small>建议每晚 7—9 小时</small>
+            </article>
+            <article class="health-summary-card">
+              <span>运动</span>
+              <strong id="healthExerciseSummary">0 分钟</strong>
+              <small>本周目标 150 分钟</small>
+            </article>
+          </div>
+
+          <section class="panel health-weekly-panel">
+            <div class="panel-heading">
+              <div>
+                <span class="panel-kicker">每周健康复盘</span>
+                <h2>本周执行情况与下周重点</h2>
+              </div>
+              <span class="health-panel-note">默认每周日 20:00 提醒</span>
+            </div>
+            <p class="health-weekly-summary" id="healthWeeklySummary">正在汇总本周健康记录…</p>
+            <ul class="health-weekly-focus" id="healthWeeklyFocus"></ul>
+          </section>
+
+          <div class="health-layout">
+            <section class="panel health-diet-panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="panel-kicker">饮食管理</span>
+                  <h2>今日怎么吃</h2>
+                </div>
+                <span class="health-panel-note">餐盘法，不计算复杂热量</span>
+              </div>
+              <div class="health-meal-list" id="healthMealList"></div>
+              <div class="health-target-tags">
+                <span>蔬菜 300—500g</span>
+                <span>水果 200—350g</span>
+                <span>奶类 300—500g</span>
+                <span>盐少于 5g</span>
+                <span>油 25—30g</span>
+              </div>
+              <label class="form-field health-note-field">
+                <span>过敏、忌口或不喜欢吃的食物</span>
+                <textarea id="healthFoodNotes" rows="2" placeholder="例如：不吃香菜、乳糖不耐受"></textarea>
+              </label>
+            </section>
+
+            <section class="panel health-sleep-panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="panel-kicker">睡眠管理</span>
+                  <h2>固定节律</h2>
+                </div>
+                <strong class="health-duration" id="healthSleepDuration">7.5 小时</strong>
+              </div>
+              <div class="health-field-grid">
+                <label class="form-field">
+                  <span>入睡时间</span>
+                  <input id="healthSleepTime" type="time" value="22:30" />
+                </label>
+                <label class="form-field">
+                  <span>起床时间</span>
+                  <input id="healthWakeTime" type="time" value="07:00" />
+                </label>
+                <label class="form-field">
+                  <span>昨晚睡眠时长</span>
+                  <input id="healthSleepHours" type="number" min="0" max="14" step="0.5" placeholder="小时" />
+                </label>
+                <label class="form-field">
+                  <span>睡眠质量</span>
+                  <select id="healthSleepQuality">
+                    <option value="">待记录</option>
+                    <option value="5">很好</option>
+                    <option value="4">较好</option>
+                    <option value="3">一般</option>
+                    <option value="2">较差</option>
+                    <option value="1">很差</option>
+                  </select>
+                </label>
+              </div>
+              <ul class="health-guidance-list">
+                <li>优先固定起床时间，周末不要相差超过 1 小时。</li>
+                <li>睡前 30 分钟降低屏幕亮度，避免咖啡因和大量进食。</li>
+                <li>连续失眠、打鼾伴憋醒或白天严重嗜睡时应咨询医生。</li>
+              </ul>
+            </section>
+
+            <section class="panel health-activity-panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="panel-kicker">运动管理</span>
+                  <h2>每周活动量</h2>
+                </div>
+                <strong class="health-week-total" id="healthExerciseWeek">0 / 150 分钟</strong>
+              </div>
+              <div class="health-field-grid">
+                <label class="form-field">
+                  <span>今天运动分钟</span>
+                  <input id="healthExerciseMinutes" type="number" min="0" max="300" step="5" />
+                </label>
+                <label class="health-check-line">
+                  <input id="healthStrength" type="checkbox" />
+                  <span>今天完成抗阻训练</span>
+                </label>
+              </div>
+              <div class="health-progress-track" aria-hidden="true">
+                <span id="healthExerciseProgress"></span>
+              </div>
+              <ul class="health-guidance-list">
+                <li>健康成人每周累计 150—300 分钟中等强度活动。</li>
+                <li>每周安排 2 次抗阻训练，久坐时每小时起身活动。</li>
+                <li>从快走、骑车等低门槛运动开始，不突然增加强度。</li>
+              </ul>
+            </section>
+
+            <section class="panel health-daily-panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="panel-kicker">身体与状态</span>
+                  <h2>每日打卡</h2>
+                </div>
+                <span class="health-panel-note">体重建议每周固定时间记录</span>
+              </div>
+              <div class="health-water-row">
+                <div>
+                  <span>今日饮水</span>
+                  <strong id="healthWaterValue">0 ml</strong>
+                </div>
+                <div class="health-stepper">
+                  <button type="button" id="healthWaterMinus" aria-label="减少饮水">−</button>
+                  <button type="button" id="healthWaterPlus" aria-label="增加饮水">＋ 250</button>
+                </div>
+              </div>
+              <div class="health-field-grid">
+                <label class="form-field">
+                  <span>体重 kg</span>
+                  <input id="healthWeight" type="number" min="20" max="300" step="0.1" />
+                </label>
+                <label class="form-field">
+                  <span>腰围 cm</span>
+                  <input id="healthWaist" type="number" min="30" max="200" step="0.5" />
+                </label>
+                <label class="form-field">
+                  <span>精力 1—5</span>
+                  <input id="healthEnergy" type="range" min="1" max="5" step="1" value="3" />
+                </label>
+                <label class="form-field">
+                  <span>压力 1—5</span>
+                  <input id="healthStress" type="range" min="1" max="5" step="1" value="3" />
+                </label>
+              </div>
+              <label class="form-field health-note-field">
+                <span>今日备注</span>
+                <textarea id="healthDailyNote" rows="2" placeholder="睡眠、饮食、身体感受…"></textarea>
+              </label>
+              <button class="btn btn-primary health-save-button" type="button" id="healthSaveDaily">保存今日记录</button>
+            </section>
+          </div>
+
+          <section class="panel health-reminder-settings">
+            <div class="panel-heading">
+              <div>
+                <span class="panel-kicker">健康提醒</span>
+                <h2>饮食与睡眠时间</h2>
+              </div>
+              <span class="health-panel-note">到点且 APP 打开时提醒</span>
+            </div>
+            <div class="health-field-grid health-time-grid">
+              <label class="form-field"><span>早餐</span><input id="healthBreakfastTime" type="time" value="08:00" /></label>
+              <label class="form-field"><span>午餐</span><input id="healthLunchTime" type="time" value="12:00" /></label>
+              <label class="form-field"><span>晚餐</span><input id="healthDinnerTime" type="time" value="18:30" /></label>
+              <label class="form-field"><span>睡前准备</span><input id="healthWindDownTime" type="time" value="22:00" /></label>
+            </div>
+            <div class="health-field-grid weekly-reminder-fields">
+              <label class="form-field">
+                <span>健康周报日期</span>
+                <select id="healthWeeklyDay">
+                  <option value="1">星期一</option>
+                  <option value="2">星期二</option>
+                  <option value="3">星期三</option>
+                  <option value="4">星期四</option>
+                  <option value="5">星期五</option>
+                  <option value="6">星期六</option>
+                  <option value="0" selected>星期日</option>
+                </select>
+              </label>
+              <label class="form-field"><span>健康周报时间</span><input id="healthWeeklyTime" type="time" value="20:00" /></label>
+            </div>
+            <label class="health-check-line weekly-enable-line">
+              <input id="healthWeeklyEnabled" type="checkbox" checked />
+              <span>启用饮食、睡眠和其他注意事项周报</span>
+            </label>
+            <button class="btn btn-secondary" type="button" id="healthSaveReminder">保存健康提醒</button>
+          </section>
+
+          <section class="panel health-checkup-panel">
+            <div class="panel-heading">
+              <div>
+                <span class="panel-kicker">体检档案</span>
+                <h2>为后续体检报告预留</h2>
+              </div>
+            </div>
+            <p class="health-panel-copy">
+              以后可以在这里记录体检结论和复查计划。完整报告可另行发给私人秘书整理，原始文件不会自动上传。
+            </p>
+            <div class="health-field-grid">
+              <label class="form-field"><span>体检日期</span><input id="healthCheckupDate" type="date" /></label>
+              <label class="form-field"><span>下次复查提醒</span><input id="healthCheckupFollowup" type="date" /></label>
+            </div>
+            <label class="form-field health-note-field">
+              <span>需要关注的指标与医生建议</span>
+              <textarea id="healthCheckupSummary" rows="3" placeholder="例如：低密度脂蛋白、尿酸、维生素D…"></textarea>
+            </label>
+            <button class="btn btn-secondary" type="button" id="healthSaveCheckup">保存体检记录</button>
+          </section>
+
+          <section class="panel health-method-panel">
+            <span class="panel-kicker">管理依据</span>
+            <h2>采用的健康管理方法</h2>
+            <div class="health-method-grid">
+              <article><strong>饮食</strong><p>餐盘法与中国居民膳食指南：蔬菜水果占主要部分，全谷物、优质蛋白和奶类搭配，控制盐油糖。</p></article>
+              <article><strong>睡眠</strong><p>固定起床时间、7—9 小时睡眠、睡前降刺激，关注持续失眠和白天功能。</p></article>
+              <article><strong>运动</strong><p>WHO 健康成人建议：每周 150—300 分钟中等强度活动，并安排肌肉力量训练。</p></article>
+              <article><strong>复盘</strong><p>记录饮食、睡眠、运动、体重和精力，按周调整，而不是因单日波动焦虑。</p></article>
+            </div>
+            <div class="source-links health-source-links">
+              <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank" rel="noreferrer">WHO · 健康饮食 <span>查看 ↗</span></a>
+              <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noreferrer">WHO · 身体活动 <span>查看 ↗</span></a>
+              <a href="https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html" target="_blank" rel="noreferrer">CDC · 睡眠时长 <span>查看 ↗</span></a>
+              <a href="https://www.cnsoc.org/" target="_blank" rel="noreferrer">中国营养学会 <span>查看 ↗</span></a>
+              <a href="https://www.nhc.gov.cn/" target="_blank" rel="noreferrer">国家卫生健康委员会 <span>查看 ↗</span></a>
+            </div>
+            <p class="health-medical-note">
+              本模块仅用于健康生活方式管理，不用于疾病诊断或治疗。出现持续不适、异常检查结果或明显体重变化时，请及时就医。
+            </p>
+            <div class="health-data-actions">
+              <button class="btn btn-secondary" type="button" id="healthExportData">导出我的健康数据</button>
+              <button class="text-button danger-text" type="button" id="healthClearData">清空本机健康数据</button>
+            </div>
+          </section>
+        </section>
+
+        <section class="view" id="view-settings" data-view-panel="settings" hidden>
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">设置与来源</p>
+              <h1>筛选规则</h1>
+              <p class="page-subtitle">日报按以下固定口径筛选，后续手机版将继续复用。</p>
+            </div>
+          </div>
+          <div class="settings-grid">
+            <section class="panel">
+              <span class="panel-kicker">地域与专业</span>
+              <h2>工程筛选范围</h2>
+              <div class="tag-list" id="cityTags"></div>
+              <div class="tag-list secondary-tags" id="industryTags"></div>
+            </section>
+            <section class="panel">
+              <span class="panel-kicker">硬条件</span>
+              <h2>金额与资金</h2>
+              <dl class="rule-list">
+                <div><dt>最低投资金额</dt><dd>严格大于 1.5 亿元</dd></div>
+                <div><dt>资金落实</dt><dd>只采信官方原文的明确表述</dd></div>
+                <div><dt>近期进展</dt><dd>取官方最新节点并标注发布日期</dd></div>
+                <div><dt>计划招标时间</dt><dd>缺失时明确标记未披露</dd></div>
+              </dl>
+            </section>
+            <section class="panel">
+              <span class="panel-kicker">自动提醒</span>
+              <h2>自动日报</h2>
+              <dl class="rule-list">
+                <div><dt>提醒时间</dt><dd id="settingPushTime">每个工作日 16:30</dd></div>
+                <div><dt>提醒方式</dt><dd>应用内自动弹出</dd></div>
+                <div><dt>历史留存</dt><dd>本地按日期保存每日数据</dd></div>
+                <div><dt>工程推送</dt><dd>每周五 18:00 更新立项与设计招标</dd></div>
+                <div><dt>数据导出</dt><dd>工程表格可按月下载 Excel</dd></div>
+              </dl>
+            </section>
+            <section class="panel install-panel">
+              <span class="panel-kicker">iPhone / iPad</span>
+              <h2>安装到主屏幕</h2>
+              <ol class="install-steps">
+                <li>使用 Safari 打开本应用。</li>
+                <li>点击底部“分享”按钮。</li>
+                <li>选择“添加到主屏幕”，确认添加。</li>
+              </ol>
+              <a class="btn install-profile-button" href="install-private-secretary.mobileconfig">一键安装主屏幕图标</a>
+              <p>安装后从桌面图标进入，每天自动读取最新日报。</p>
+            </section>
+            <section class="panel reminder-settings">
+              <span class="panel-kicker">应用内提醒</span>
+              <h2>提醒设置</h2>
+              <div class="weekly-reminder-note">
+                <strong>工程情报周报</strong>
+                <span>每周五 18:00 更新半年有效期项目</span>
+              </div>
+              <p class="reminder-section-label">A股复盘提醒</p>
+              <div class="reminder-form">
+                <label class="form-field">
+                  <span>提醒时间</span>
+                  <input id="reminderTime" type="time" value="16:30" />
+                </label>
+                <label class="form-field">
+                  <span>提醒频率</span>
+                  <select id="reminderFrequency">
+                    <option value="daily">每天</option>
+                    <option value="weekdays" selected>工作日</option>
+                  </select>
+                </label>
+              </div>
+              <label class="push-enable">
+                <input id="reminderEnabled" type="checkbox" checked />
+                <span>启用自动提醒</span>
+              </label>
+              <div class="reminder-actions">
+                <button class="btn" type="button" id="saveReminderButton">保存提醒设置</button>
+                <span id="reminderSettingsStatus"></span>
+              </div>
+            </section>
+            <section class="panel">
+              <span class="panel-kicker">数据来源</span>
+              <h2>官方与公开接口</h2>
+              <div class="source-links">
+                <a href="https://szj.hebei.gov.cn/hbjyzx/jydt/001002/001002002/001002002001/jyxxList.html" target="_blank" rel="noreferrer">
+                  河北省公共资源交易中心 <span>查看 ↗</span>
+                </a>
+                <a href="https://hbdrc.hebei.gov.cn/ztzl/xzzfgs/shgk/xzxk_1222/" target="_blank" rel="noreferrer">
+                  河北省发展和改革委员会 · 项目核准 <span>查看 ↗</span>
+                </a>
+                <a href="https://quote.eastmoney.com/" target="_blank" rel="noreferrer">
+                  东方财富行情 <span>查看 ↗</span>
+                </a>
+                <a href="https://gu.qq.com/" target="_blank" rel="noreferrer">
+                  腾讯证券行情 <span>查看 ↗</span>
+                </a>
+              </div>
+            </section>
+          </div>
+
+          <section class="panel source-health">
+            <div class="panel-heading">
+              <div>
+                <span class="panel-kicker">最近一次抓取</span>
+                <h2>运行状态</h2>
+              </div>
+              <span id="lastRefreshTime">--</span>
+            </div>
+            <div id="sourceErrors" class="source-errors">暂无错误。</div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <div class="reminder-overlay" id="reminderOverlay" hidden>
+      <section class="reminder-card" role="dialog" aria-modal="true" aria-labelledby="reminderTitle">
+        <div class="reminder-icon" aria-hidden="true">秘</div>
+        <span class="panel-kicker">私人秘书提醒</span>
+        <h2 id="reminderTitle">今日日报已经准备好</h2>
+        <p id="reminderSummary">工程情报与 A 股复盘已更新。</p>
+        <div class="reminder-actions">
+          <button class="btn" type="button" data-reminder-view="projects">查看工程</button>
+          <button class="btn btn-primary" type="button" data-reminder-view="market">查看A股</button>
+          <button class="btn btn-secondary" type="button" data-reminder-view="health">查看健康</button>
+        </div>
+        <div class="reminder-secondary">
+          <button type="button" id="snoozeReminder">15分钟后提醒</button>
+          <button type="button" id="dismissReminder">知道了</button>
+        </div>
+      </section>
+    </div>
+    <div class="toast" id="toast" role="alert" aria-live="assertive" hidden></div>
+    <script src="fallback-data.js?v=20261027-17"></script>
+    <script src="app.js?v=20261027-17"></script>
+  </body>
+</html>
