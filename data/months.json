@@ -1,0 +1,26 @@
+[
+  {
+    "month": "2026-10",
+    "label": "2026年10月",
+    "file": "data/monthly/2026-10.xlsx",
+    "count": 13
+  },
+  {
+    "month": "2026-09",
+    "label": "2026年9月",
+    "file": "data/monthly/2026-09.xlsx",
+    "count": 38
+  },
+  {
+    "month": "2026-08",
+    "label": "2026年8月",
+    "file": "data/monthly/2026-08.xlsx",
+    "count": 46
+  },
+  {
+    "month": "2026-07",
+    "label": "2026年7月",
+    "file": "data/monthly/2026-07.xlsx",
+    "count": 51
+  }
+]
