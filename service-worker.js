@@ -1,9 +1,9 @@
-const CACHE_NAME = "private-assistant-v20";
+const CACHE_NAME = "private-assistant-v21";
 const SHELL_FILES = [
   "./",
   "./index.html",
-  "./styles.css?v=20261101-20",
-  "./app.js?v=20261101-20",
+  "./styles.css?v=20261101-21",
+  "./app.js?v=20261101-21",
   "./manifest.webmanifest",
   "./fallback-data.js",
   "./icons/icon-192.png",

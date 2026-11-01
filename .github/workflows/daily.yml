@@ -38,6 +38,7 @@ jobs:
         run: pip install --disable-pip-version-check -r requirements.txt
 
       - name: Refresh daily report
+        if: github.event_name != 'push'
         shell: bash
         run: |
           if [ "${{ github.event.schedule }}" = "0 10 * * 5" ]; then
