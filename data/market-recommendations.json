@@ -1,0 +1,31 @@
+{
+  "updatedAt": "2026-11-01T10:54:20.517Z",
+  "retentionDays": 260,
+  "learningSummary": {
+    "samples": 1,
+    "planAccuracy": 0,
+    "mainlineHitRate": null,
+    "mainlineSamples": 0,
+    "sectorAdjustments": {},
+    "adjustmentLabel": "样本积累中"
+  },
+  "history": [
+    {
+      "recommendationDate": "2026-10-28",
+      "validationDate": "2026-10-30",
+      "recommendedRegime": "震荡确认",
+      "positionGuide": "20%—50%",
+      "planCorrect": false,
+      "actualIndexAverage": -3.096666666666667,
+      "actualUpRatio": null,
+      "mainlineHitRate": null,
+      "mainlineResults": [],
+      "avoidedResults": [],
+      "score": 25,
+      "lessons": [
+        "市场方向与“震荡确认”不一致，次日先降低仓位，不以盘前判断替代开盘确认。",
+        "次日板块匹配数据不足，本条建议仅验证市场方向，不据此大幅修改模型。"
+      ]
+    }
+  ]
+}

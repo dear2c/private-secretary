@@ -1,8 +1,8 @@
 {
-  "appName": "私人秘书",
+  "appName": "私人助理",
   "port": 43821,
   "timezone": "Asia/Shanghai",
-  "notificationTime": "16:30",
+  "notificationTime": "21:30",
   "engineeringReminderWeekday": 5,
   "engineeringReminderTime": "18:00",
   "modules": [

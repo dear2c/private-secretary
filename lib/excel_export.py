@@ -69,11 +69,20 @@ def design_stage(title: str) -> bool:
 
 
 records = {}
+summaries = []
+latest_path = root / "data" / "latest.json"
+if latest_path.exists():
+    try:
+        summaries.append(json.loads(latest_path.read_text(encoding="utf-8")))
+    except Exception:
+        pass
 for path in history_dir.glob("*.json"):
     try:
-        summary = json.loads(path.read_text(encoding="utf-8"))
+        summaries.append(json.loads(path.read_text(encoding="utf-8")))
     except Exception:
         continue
+
+for summary in summaries:
     for group in summary.get("tenders", {}).get("cityGroups", []):
         city = group.get("city", "")
         for record in [*group.get("qualified", []), *group.get("pending", [])]:
@@ -112,8 +121,20 @@ header = [
 ]
 widths = [12, 52, 14, 30, 62, 28, 16, 30, 58, 12]
 monthly_index = []
+city_slugs = {
+    "石家庄": "shijiazhuang",
+    "保定": "baoding",
+    "邯郸": "handan",
+    "沧州": "cangzhou",
+    "廊坊": "langfang",
+    "衡水": "hengshui",
+    "唐山": "tangshan",
+    "雄安": "xiongan",
+}
+allowed_outputs = set()
 
-for month, rows in sorted(by_month.items(), reverse=True):
+
+def sort_records(rows):
     def compare(left, right):
         left_city = city_order.get(left.get("city", ""), 99)
         right_city = city_order.get(right.get("city", ""), 99)
@@ -131,6 +152,8 @@ for month, rows in sorted(by_month.items(), reverse=True):
 
     rows.sort(key=cmp_to_key(compare))
 
+
+def write_workbook(rows, month, city_scope, output):
     workbook = Workbook()
     sheet = workbook.active
     sheet.title = month
@@ -178,9 +201,10 @@ for month, rows in sorted(by_month.items(), reverse=True):
     sheet.row_dimensions[1].height = 28
 
     info = workbook.create_sheet("说明")
-    info.append(["私人秘书 · 河北工程项目月报"])
+    info.append(["私人助理 · 河北工程项目月报"])
     info.append(["统计月份", month])
     info.append(["项目数量", len(rows)])
+    info.append(["城市范围", city_scope])
     info.append(
         [
             "公告阶段",
@@ -188,7 +212,7 @@ for month, rows in sorted(by_month.items(), reverse=True):
             "排除施工、土建、EPC、监理、设备/材料/物资/货物采购、结果及终止公告。",
         ]
     )
-    info.append(["筛选范围", "石家庄、保定、邯郸、沧州、廊坊、衡水、唐山、雄安"])
+    info.append(["筛选范围", city_scope])
     info.append(["专业范围", "公路、铁路、市政、房建、水利、电力、矿山"])
     info.append(["金额规则", "严格大于1.5亿元；未披露金额标记待核实"])
     info.append(["资金规则", "只采信官方原文明确的资金落实描述"])
@@ -213,14 +237,34 @@ for month, rows in sorted(by_month.items(), reverse=True):
         for cell in row:
             cell.alignment = Alignment(vertical="top", wrap_text=True)
 
-    output = monthly_dir / f"{month}.xlsx"
     workbook.save(output)
+    allowed_outputs.add(output.name)
+
+
+for month, rows in sorted(by_month.items(), reverse=True):
+    sort_records(rows)
+    output = monthly_dir / f"{month}.xlsx"
+    write_workbook(rows, month, "全部地级市", output)
+
+    city_files = {}
+    for city in cities:
+        city_rows = [record for record in rows if record.get("city") == city]
+        slug = city_slugs[city]
+        city_output = monthly_dir / f"{month}-{slug}.xlsx"
+        write_workbook(city_rows, month, city, city_output)
+        city_files[slug] = {
+            "label": city,
+            "file": city_output.relative_to(root).as_posix(),
+            "count": len(city_rows),
+        }
+
     monthly_index.append(
         {
             "month": month,
             "label": f"{month[:4]}年{int(month[5:])}月",
             "file": f"data/monthly/{month}.xlsx",
             "count": len(rows),
+            "cityFiles": city_files,
         }
     )
 
@@ -229,6 +273,6 @@ for month, rows in sorted(by_month.items(), reverse=True):
     encoding="utf-8",
 )
 for stale_file in monthly_dir.glob("*.xlsx"):
-    if stale_file.stem not in by_month:
+    if stale_file.name not in allowed_outputs:
         stale_file.unlink()
 print(json.dumps(monthly_index, ensure_ascii=False))

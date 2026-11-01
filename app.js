@@ -3,6 +3,8 @@ const state = {
   activeView: "overview",
   projectFilter: "all",
   refreshing: false,
+  apiAvailable: false,
+  exportMonths: [],
   reconnectAttempts: 0,
   reconnectTimer: null,
 };
@@ -78,6 +80,16 @@ const PERSONAL_HEALTH_TASKS = [
 ];
 
 const cityOrder = ["石家庄", "保定", "邯郸", "沧州", "廊坊", "衡水", "唐山", "雄安"];
+const citySlugs = {
+  石家庄: "shijiazhuang",
+  保定: "baoding",
+  邯郸: "handan",
+  沧州: "cangzhou",
+  廊坊: "langfang",
+  衡水: "hengshui",
+  唐山: "tangshan",
+  雄安: "xiongan",
+};
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
@@ -439,7 +451,9 @@ function renderOverview() {
   $("#cityMetric").textContent = data.cities.length;
   $("#projectNavCount").textContent =
     data.tenders.qualifiedCount + data.tenders.pendingCount;
-  $("#nextPushTime").textContent = `A股 ${data.notificationTime}`;
+  const marketReminderTime =
+    data.notificationTime === "16:30" ? "21:30" : data.notificationTime || "21:30";
+  $("#nextPushTime").textContent = `A股 ${marketReminderTime}`;
   $("#engineeringPushTime").textContent =
     `工程 每周五 ${data.engineeringReminderTime || "18:00"}`;
   $("#marketToneMetric").textContent = marketTone();
@@ -565,10 +579,47 @@ function projectTable(rows) {
   </div>`;
 }
 
+function projectDateRange() {
+  const startMonth = $("#exportStartMonth")?.value || "";
+  const endMonth = $("#exportEndMonth")?.value || "";
+  return {
+    startMonth: /^\d{4}-\d{2}$/.test(startMonth) ? startMonth : "",
+    endMonth: /^\d{4}-\d{2}$/.test(endMonth) ? endMonth : "",
+  };
+}
+
+function recordInProjectDateRange(record, range) {
+  const recordMonth = String(record?.publicationDate || "").slice(0, 7);
+  if (!recordMonth) return false;
+  if (range.startMonth && recordMonth < range.startMonth) return false;
+  if (range.endMonth && recordMonth > range.endMonth) return false;
+  return true;
+}
+
 function renderProjects() {
   const data = state.data;
   const filter = state.projectFilter;
-  const groups = data.tenders.cityGroups;
+  const range = projectDateRange();
+  const selectedCity = $("#exportCity")?.value || "all";
+  const groups = data.tenders.cityGroups
+    .filter(
+      (group) =>
+        selectedCity === "all" || citySlugs[group.city] === selectedCity,
+    )
+    .map((group) => {
+      const qualified = group.qualified.filter((record) =>
+        recordInProjectDateRange(record, range),
+      );
+      const pending = group.pending.filter((record) =>
+        recordInProjectDateRange(record, range),
+      );
+      return {
+        ...group,
+        qualified,
+        pending,
+        total: qualified.length + pending.length,
+      };
+    });
   const visibleCount = groups.reduce((sum, group) => {
     if (filter === "qualified") return sum + group.qualified.length;
     if (filter === "pending") return sum + group.pending.length;
@@ -577,10 +628,19 @@ function renderProjects() {
   const approvalCount = groups
     .flatMap((group) => [...group.qualified, ...group.pending])
     .filter((record) => record.recordType === "approval").length;
+  const selectedCityLabel =
+    selectedCity === "all"
+      ? "全部地级市"
+      : $("#exportCity")?.selectedOptions[0]?.textContent || "所选地级市";
   $("#projectFilterNote").textContent =
     `当前显示 ${visibleCount} 个项目` +
     `${approvalCount ? `（其中 ${approvalCount} 个立项）` : ""}` +
-    ` · 2026年7月1日起 · 有效期半年`;
+    ` · ${selectedCityLabel}` +
+    `${
+      range.startMonth && range.endMonth
+        ? ` · ${range.startMonth.replace("-", "年")}月至${range.endMonth.replace("-", "年")}月`
+        : " · 全部可展示月份"
+    } · 有效期半年`;
   $("#projectGroups").innerHTML = groups
     .map((group, index) => {
       const rows =
@@ -769,6 +829,84 @@ function renderTradingPlan() {
   $("#tradingPlanDisclaimer").textContent = plan.disclaimer;
 }
 
+function renderRecommendationHistory() {
+  const history = state.data.market.recommendationHistory || [];
+  const learning = state.data.market.learningSummary || {};
+  const list = $("#recommendationReviewList");
+  const summary = $("#recommendationLearningSummary");
+  const windowLabel = $("#recommendationHistoryWindow");
+
+  if (!history.length) {
+    summary.innerHTML =
+      '<p>暂无可验证的历史建议。系统会在下一个交易日收盘后，自动核对今天的主线、方向和失效条件。</p>';
+    list.innerHTML = '<div class="empty-state">每日建议将在这里累计保存。</div>';
+    windowLabel.textContent = "至少保留半年";
+    return;
+  }
+
+  const mainlineRate = Number.isFinite(learning.mainlineHitRate)
+    ? `${Math.round(learning.mainlineHitRate * 100)}%`
+    : "--";
+  const planRate = Number.isFinite(learning.planAccuracy)
+    ? `${Math.round(learning.planAccuracy * 100)}%`
+    : "--";
+  summary.innerHTML = `
+    <article>
+      <span>已验证交易日</span>
+      <strong>${history.length}</strong>
+    </article>
+    <article>
+      <span>主线判断命中率</span>
+      <strong>${mainlineRate}</strong>
+    </article>
+    <article>
+      <span>市场方向命中率</span>
+      <strong>${planRate}</strong>
+    </article>
+    <article>
+      <span>当前修正</span>
+      <strong>${escapeHtml(learning.adjustmentLabel || "持续观察")}</strong>
+    </article>`;
+
+  windowLabel.textContent = `已保存 ${history.length} 个交易日 · 至少 210 天`;
+  list.innerHTML = history
+    .slice(0, 30)
+    .map((item) => {
+      const mainlines = (item.mainlineResults || [])
+        .slice(0, 3)
+        .map(
+          (line) =>
+            `<span class="review-chip ${line.hit ? "is-hit" : "is-miss"}">${escapeHtml(line.name)} ${pctText(line.actualChangePct)}</span>`,
+        )
+        .join("");
+      const lessons = (item.lessons || [])
+        .slice(0, 2)
+        .map((lesson) => `<li>${escapeHtml(lesson)}</li>`)
+        .join("");
+      return `
+        <article class="recommendation-review-card">
+          <header>
+            <div>
+              <strong>${escapeHtml(formatDate(item.recommendationDate))}</strong>
+              <span>次日 ${escapeHtml(formatDate(item.validationDate))} 验证</span>
+            </div>
+            <span class="review-result ${item.planCorrect ? "is-hit" : "is-miss"}">
+              ${item.planCorrect ? "方向判断成立" : "方向判断未成立"}
+            </span>
+          </header>
+          <p>
+            原建议：${escapeHtml(item.recommendedRegime || "待确认")}，情景仓位
+            ${escapeHtml(item.positionGuide || "--")}；次日指数平均
+            ${pctText(item.actualIndexAverage)}，上涨家数占比
+            ${Number.isFinite(item.actualUpRatio) ? `${Math.round(item.actualUpRatio * 100)}%` : "--"}。
+          </p>
+          ${mainlines ? `<div class="review-chips">${mainlines}</div>` : ""}
+          ${lessons ? `<ul class="review-lessons">${lessons}</ul>` : ""}
+        </article>`;
+    })
+    .join("");
+}
+
 function renderMarketDepth() {
   const market = state.data.market;
   const sentiment = market.sentiment;
@@ -839,12 +977,13 @@ function renderMarket() {
   const market = state.data.market;
   $("#marketDate").textContent = formatDate(market.asOfDate);
   $("#marketSubtitle").textContent = market.unavailable
-    ? "行情接口暂不可用，稍后点击“立即更新”重试。"
-    : "收盘后自动更新指数、涨跌家数和行业表现。";
+    ? "行情接口暂不可用，请点击“刷新数据”重试。"
+    : "每个交易日 21:30 自动复盘，并在次日校验前一天的建议。";
   $("#marketDetailIndices").innerHTML = market.indices
     .map((item) => indexCard(item, true))
     .join("");
   renderTradingPlan();
+  renderRecommendationHistory();
   renderMarketDepth();
   $("#historyChart").innerHTML = historyChart(market.history);
   const breadth = market.breadth;
@@ -1262,7 +1401,11 @@ function renderSettings() {
     .map((industry) => `<span>${escapeHtml(industry)}</span>`)
     .join("");
   $("#settingPushTime").textContent =
-    `A股：每个工作日 ${state.data.notificationTime}；` +
+    `A股：每个交易日 ${
+      state.data.notificationTime === "16:30"
+        ? "21:30"
+        : state.data.notificationTime || "21:30"
+    }；` +
     `工程：每周五 ${state.data.engineeringReminderTime || "18:00"}`;
   const errors = [...(state.data.tenders.errors || [])];
   if (state.data.market.error) errors.push(`A股行情：${state.data.market.error}`);
@@ -1301,36 +1444,188 @@ async function loadExportMonths() {
     });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const months = await response.json();
-    const select = $("#exportMonth");
-    if (!months.length) {
-      select.innerHTML = '<option value="">暂无月度文件</option>';
-      return;
-    }
-    select.innerHTML = months
-      .map(
-        (item) =>
-          `<option value="${escapeHtml(item.file)}" data-count="${item.count}">${escapeHtml(item.label)}（${item.count} 项）</option>`,
-      )
-      .join("");
+    state.exportMonths = months;
+    renderExportRange(months);
+    renderExportCities();
   } catch {
-    const month = state.data?.dateLabel?.slice(0, 7);
-    $("#exportMonth").innerHTML = month
-      ? `<option value="data/monthly/${month}.xlsx">${month.replace("-", "年")}月</option>`
-      : '<option value="">暂无月度文件</option>';
+    state.exportMonths = [];
+    renderExportRange([]);
+    renderExportCities();
   }
 }
 
-function downloadSelectedExcel() {
-  const file = $("#exportMonth").value;
-  if (!file) {
-    showToast("当前没有可下载的月度 Excel。");
+function renderExportRange(months) {
+  const startInput = $("#exportStartMonth");
+  const endInput = $("#exportEndMonth");
+  if (!startInput || !endInput) return;
+  const records = (state.data?.tenders?.cityGroups || []).flatMap((group) => [
+    ...group.qualified,
+    ...group.pending,
+  ]);
+  const recordMonths = records
+    .map((record) => String(record.publicationDate || "").slice(0, 7))
+    .filter((month) => /^\d{4}-\d{2}$/.test(month));
+  const monthKeys = [
+    ...months.map((item) => item.month).filter((month) => /^\d{4}-\d{2}$/.test(month)),
+    ...recordMonths,
+    state.data?.projectStartDate?.slice(0, 7),
+    state.data?.dateLabel?.slice(0, 7),
+  ]
+    .filter((month) => /^\d{4}-\d{2}$/.test(month || ""))
+    .sort();
+  if (!monthKeys.length) return;
+  const minimum = monthKeys[0];
+  const maximum = monthKeys.at(-1);
+  const previousStart = startInput.value;
+  const previousEnd = endInput.value;
+  const options = ['<option value="">不限</option>'];
+  const cursor = new Date(`${minimum}-01T00:00:00Z`);
+  const last = new Date(`${maximum}-01T00:00:00Z`);
+  while (cursor <= last) {
+    const value = `${cursor.getUTCFullYear()}-${String(
+      cursor.getUTCMonth() + 1,
+    ).padStart(2, "0")}`;
+    options.push(
+      `<option value="${value}">${cursor.getUTCFullYear()}年${cursor.getUTCMonth() + 1}月</option>`,
+    );
+    cursor.setUTCMonth(cursor.getUTCMonth() + 1);
+  }
+  const optionsHtml = options.join("");
+  startInput.innerHTML = optionsHtml;
+  endInput.innerHTML = optionsHtml;
+  startInput.value = options.some((item) => item.includes(`value="${previousStart}"`))
+    ? previousStart
+    : "";
+  endInput.value = options.some((item) => item.includes(`value="${previousEnd}"`))
+    ? previousEnd
+    : "";
+  if (state.data) renderProjects();
+}
+
+function renderExportCities() {
+  const select = $("#exportCity");
+  if (!select) return;
+  const previous = select.value || "all";
+  const cities = state.data?.cities?.length ? state.data.cities : cityOrder;
+  select.innerHTML = [
+    '<option value="all">全部地级市</option>',
+    ...cities.map(
+      (city) =>
+        `<option value="${escapeHtml(citySlugs[city] || city)}">${escapeHtml(city)}</option>`,
+    ),
+  ].join("");
+  select.value = [...select.options].some((option) => option.value === previous)
+    ? previous
+    : "all";
+  if (state.data) renderProjects();
+}
+
+function buildProjectSpreadsheet(rows, periodLabel, cityLabel) {
+  const headers = [
+    "所在城市",
+    "项目名称",
+    "业主单位",
+    "项目概况",
+    "近期进展情况",
+    "投资金额",
+    "计划招标时间",
+    "信息来源链接",
+    "核验状态",
+  ];
+  const cell = (value) =>
+    `<Cell><Data ss:Type="String">${escapeHtml(value ?? "")}</Data></Cell>`;
+  const tableRows = rows
+    .map(
+      (record) =>
+        `<Row>${[
+          record.city,
+          displayProjectTitle(record.title),
+          record.owner,
+          record.overview,
+          record.recentProgress,
+          record.investmentAmount || formatAmount(record.investmentAmountYuan),
+          record.plannedTenderTime,
+          record.sourceUrl,
+          record.qualified
+            ? "符合条件"
+            : record.recordType === "approval"
+              ? "新立项·待核实"
+              : "待核实",
+        ]
+          .map(cell)
+          .join("")}</Row>`,
+    )
+    .join("");
+  const sheetName = `${periodLabel} ${cityLabel}`
+    .replace(/[\\/*?:[\]]/g, " ")
+    .slice(0, 31);
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+ <Worksheet ss:Name="${escapeHtml(sheetName)}">
+  <Table>
+   <Row>${headers.map(cell).join("")}</Row>
+   ${tableRows}
+  </Table>
+ </Worksheet>
+</Workbook>`;
+}
+
+function downloadProjectRange(startMonth, endMonth, cityLabel, cityValue) {
+  const groups = state.data?.tenders?.cityGroups || [];
+  const rows = groups
+    .filter((group) => cityValue === "all" || group.city === cityValue)
+    .flatMap((group) =>
+      [...group.qualified, ...group.pending].map((record) => ({
+        ...record,
+        city: group.city,
+      })),
+    )
+    .filter((record) => {
+      const recordMonth = String(record.publicationDate || "").slice(0, 7);
+      if (startMonth && recordMonth < startMonth) return false;
+      if (endMonth && recordMonth > endMonth) return false;
+      return true;
+    });
+  if (!rows.length) {
+    showToast("所选月份和地级市范围内没有工程项目。");
     return;
   }
+  const periodLabel =
+    !startMonth && !endMonth
+      ? "全部时间"
+      : startMonth && endMonth
+        ? startMonth === endMonth
+          ? startMonth
+          : `${startMonth} 至 ${endMonth}`
+        : startMonth
+          ? `${startMonth} 起`
+          : `截至 ${endMonth}`;
+  const workbook = buildProjectSpreadsheet(rows, periodLabel, cityLabel);
+  const blob = new Blob(["\ufeff", workbook], {
+    type: "application/vnd.ms-excel;charset=utf-8",
+  });
+  const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
-  link.href = file;
-  link.download = "";
+  link.href = url;
+  link.download = `私人助理-${periodLabel.replaceAll(" ", "")}-${cityValue === "all" ? "全部地级市" : cityLabel}.xls`;
   link.click();
-  showToast("正在下载月度 Excel 表格。");
+  setTimeout(() => URL.revokeObjectURL(url), 1_000);
+  showToast(`已生成${cityLabel}、${periodLabel}共 ${rows.length} 个项目的 Excel 表格。`);
+}
+
+function downloadSelectedExcel() {
+  const startMonth = $("#exportStartMonth").value;
+  const endMonth = $("#exportEndMonth").value;
+  const city = $("#exportCity")?.value || "all";
+  const cityLabel = $("#exportCity").selectedOptions[0]?.textContent || "全部地级市";
+  if (startMonth && endMonth && startMonth > endMonth) {
+    showToast("起始月份不能晚于结束月份。");
+    return;
+  }
+  downloadProjectRange(startMonth, endMonth, cityLabel, city);
 }
 
 function updateReportBanner(data, firstLoad = false) {
@@ -1355,14 +1650,15 @@ const ENGINEERING_REMINDER_LAST_KEY =
 
 function loadReminderSettings() {
   try {
+    const saved = JSON.parse(localStorage.getItem(REMINDER_KEY) || "{}");
     return {
       enabled: true,
-      time: "16:30",
       frequency: "weekdays",
-      ...JSON.parse(localStorage.getItem(REMINDER_KEY) || "{}"),
+      ...saved,
+      time: saved.time && saved.time !== "16:30" ? saved.time : "21:30",
     };
   } catch {
-    return { enabled: true, time: "16:30", frequency: "weekdays" };
+    return { enabled: true, time: "21:30", frequency: "weekdays" };
   }
 }
 
@@ -1393,6 +1689,28 @@ function localDateAndMinutes(date = new Date()) {
   };
 }
 
+async function sendSystemNotification(title, body) {
+  if (!("Notification" in window) || Notification.permission !== "granted") {
+    return false;
+  }
+  try {
+    const registration = await navigator.serviceWorker?.getRegistration();
+    if (registration) {
+      await registration.showNotification(title, {
+        body,
+        icon: "icons/icon-192.png",
+        badge: "icons/icon-192.png",
+        tag: "daily-market-review",
+      });
+    } else {
+      new Notification(title, { body, icon: "icons/icon-192.png" });
+    }
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function maybeShowDailyReminder() {
   if (!state.data || state.reminderVisible) return false;
   const settings = loadReminderSettings();
@@ -1402,6 +1720,9 @@ function maybeShowDailyReminder() {
   const dueMinutes = hour * 60 + minute;
   if (now.minutes < dueMinutes) return false;
   if (settings.frequency === "weekdays" && (now.weekday === 0 || now.weekday === 6)) {
+    return false;
+  }
+  if (settings.frequency === "weekdays" && state.data.market.asOfDate !== now.dateKey) {
     return false;
   }
   if (localStorage.getItem(REMINDER_LAST_KEY) === now.dateKey) return false;
@@ -1417,6 +1738,7 @@ function maybeShowDailyReminder() {
     `${focus ? `；关注${focus}` : ""}。工程情报每周五 18:00 单独更新。`;
   $("#reminderOverlay").hidden = false;
   state.reminderVisible = true;
+  sendSystemNotification("今日A股复盘已更新", $("#reminderSummary").textContent);
   return true;
 }
 
@@ -1564,7 +1886,9 @@ async function loadData({ silent = false } = {}) {
     let nextData;
     try {
       nextData = await requestJson("/api/data", { timeoutMs: 3_500 });
+      state.apiAvailable = true;
     } catch {
+      state.apiAvailable = false;
       nextData = await fetchStaticSummary();
     }
     const hadData = Boolean(state.data);
@@ -1601,16 +1925,22 @@ async function refreshData() {
   state.refreshing = true;
   const button = $("#refreshButton");
   button.disabled = true;
-  button.textContent = "正在更新…";
-  setStatus("正在抓取官方数据", "loading");
+  button.innerHTML =
+    '<span class="refresh-spinner" aria-hidden="true">↻</span><span class="refresh-label">刷新中…</span>';
+  setStatus("正在检查最新日报", "loading");
   try {
     let nextData;
-    try {
-      nextData = await requestJson("/api/refresh", {
-        method: "POST",
-        timeoutMs: 90_000,
-      });
-    } catch {
+    const previousGeneratedAt = state.data?.generatedAt;
+    if (state.apiAvailable) {
+      try {
+        nextData = await requestJson("/api/refresh", {
+          method: "POST",
+          timeoutMs: 90_000,
+        });
+      } catch {
+        nextData = await fetchStaticSummary();
+      }
+    } else {
       nextData = await fetchStaticSummary();
     }
     state.data = enforceTenderRules(nextData);
@@ -1620,9 +1950,9 @@ async function refreshData() {
     updateReportBanner(state.data, false);
     setStatus(`更新于 ${state.data.generatedAtLocal}`, "ready");
     showToast(
-      nextData
-        ? "已同步最新日报。"
-        : "工程公告与 A 股行情已更新。",
+      previousGeneratedAt && previousGeneratedAt === state.data.generatedAt
+        ? "已刷新并检查更新，当前已经是最新日报。"
+        : "已同步最新日报。",
     );
   } catch (error) {
     console.error(error);
@@ -1638,7 +1968,7 @@ async function refreshData() {
     state.refreshing = false;
     button.disabled = false;
     button.innerHTML =
-      '<span aria-hidden="true">↻</span><span class="refresh-label">立即更新</span>';
+      '<span aria-hidden="true">↻</span><span class="refresh-label">刷新数据</span>';
   }
 }
 
@@ -1658,6 +1988,28 @@ $$("[data-project-filter]").forEach((button) => {
     );
     if (state.data) renderProjects();
   });
+});
+
+$("#exportStartMonth").addEventListener("change", () => {
+  const start = $("#exportStartMonth").value;
+  const end = $("#exportEndMonth").value;
+  if (start && end && start > end) {
+    $("#exportEndMonth").value = start;
+  }
+  if (state.data) renderProjects();
+});
+
+$("#exportEndMonth").addEventListener("change", () => {
+  const start = $("#exportStartMonth").value;
+  const end = $("#exportEndMonth").value;
+  if (start && end && end < start) {
+    $("#exportStartMonth").value = end;
+  }
+  if (state.data) renderProjects();
+});
+
+$("#exportCity").addEventListener("change", () => {
+  if (state.data) renderProjects();
 });
 
 $("#refreshButton").addEventListener("click", refreshData);
@@ -1799,7 +2151,7 @@ $("#healthExportData").addEventListener("click", () => {
   });
   const link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
-  link.download = `私人秘书健康数据-${localDateAndMinutes().dateKey}.json`;
+  link.download = `私人助理健康数据-${localDateAndMinutes().dateKey}.json`;
   link.click();
   setTimeout(() => URL.revokeObjectURL(link.href), 1_000);
   showToast("健康数据已导出。");
@@ -1817,7 +2169,7 @@ $("#healthClearData").addEventListener("click", () => {
 $("#saveReminderButton").addEventListener("click", () => {
   const settings = {
     enabled: $("#reminderEnabled").checked,
-    time: $("#reminderTime").value || "16:30",
+    time: $("#reminderTime").value || "21:30",
     frequency: $("#reminderFrequency").value,
   };
   localStorage.setItem(REMINDER_KEY, JSON.stringify(settings));
@@ -1825,6 +2177,20 @@ $("#saveReminderButton").addEventListener("click", () => {
   state.reminderVisible = false;
   state.reminderSnoozeUntil = 0;
   checkReminders();
+});
+
+$("#enableNotificationsButton").addEventListener("click", async () => {
+  if (!("Notification" in window)) {
+    $("#reminderSettingsStatus").textContent = "当前浏览器不支持系统通知";
+    return;
+  }
+  const permission = await Notification.requestPermission();
+  $("#reminderSettingsStatus").textContent =
+    permission === "granted"
+      ? "系统通知已开启；应用在后台仍受手机系统限制"
+      : permission === "denied"
+        ? "系统通知已被浏览器拒绝，请在设置中手动允许"
+        : "尚未开启系统通知";
 });
 
 $$("[data-reminder-view]").forEach((button) => {

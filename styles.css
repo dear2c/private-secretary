@@ -195,6 +195,17 @@ a {
   opacity: 0.65;
 }
 
+.refresh-spinner {
+  display: inline-block;
+  animation: refresh-spin 0.85s linear infinite;
+}
+
+@keyframes refresh-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .btn-secondary {
   min-width: 130px;
 }
@@ -743,14 +754,17 @@ h3 {
 .export-controls {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
   gap: 9px;
 }
 
-.export-month-field {
+.export-month-field,
+.export-city-field {
   min-width: 145px;
 }
 
-.export-month-field select {
+.export-month-field select,
+.export-city-field select {
   min-width: 145px;
 }
 
@@ -1028,24 +1042,51 @@ h3 {
 
 .plan-risk-badge {
   display: grid;
-  min-width: 142px;
-  gap: 3px;
-  padding: 14px 18px;
+  width: 190px;
+  min-width: 190px;
+  gap: 7px;
+  padding: 13px 14px;
   border-radius: 16px;
-  background: var(--green);
-  color: #fff;
-  text-align: center;
+  border: 1px solid color-mix(in srgb, var(--green) 35%, var(--line));
+  background: color-mix(in srgb, var(--green-faint) 76%, var(--surface));
+  color: var(--text);
 }
 
-.plan-risk-badge span,
-.plan-risk-badge small {
-  font-size: 11px;
-  opacity: 0.8;
+.plan-risk-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.plan-risk-heading span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.plan-risk-heading small {
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: var(--amber-soft);
+  color: var(--amber);
+  font-size: 10px;
+  font-weight: 700;
 }
 
 .plan-risk-badge strong {
-  font-size: 24px;
+  color: var(--green);
+  font-size: 21px;
+  line-height: 1.1;
   font-variant-numeric: tabular-nums;
+}
+
+.plan-risk-badge p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.45;
 }
 
 .mainline-grid {
@@ -1217,6 +1258,142 @@ h3 {
   margin: 10px 0 0;
   padding-left: 19px;
   line-height: 1.6;
+}
+
+.recommendation-history-panel {
+  margin-bottom: 18px;
+  padding: 20px;
+}
+
+.recommendation-history-panel .section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.recommendation-history-panel h2 {
+  margin: 4px 0 0;
+}
+
+.history-window {
+  flex: none;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: var(--green-faint);
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.recommendation-learning {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.recommendation-learning > p {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.recommendation-learning article {
+  display: grid;
+  gap: 5px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-soft);
+}
+
+.recommendation-learning span {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.recommendation-learning strong {
+  color: var(--green);
+  font-size: 16px;
+}
+
+.recommendation-review-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.recommendation-review-card {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--surface-soft) 70%, transparent);
+}
+
+.recommendation-review-card header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.recommendation-review-card header > div {
+  display: grid;
+  gap: 3px;
+}
+
+.recommendation-review-card header span {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.recommendation-review-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.review-result,
+.review-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.review-result.is-hit,
+.review-chip.is-hit {
+  background: var(--green-faint);
+  color: var(--green);
+}
+
+.review-result.is-miss,
+.review-chip.is-miss {
+  background: var(--amber-soft);
+  color: var(--amber);
+}
+
+.review-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.review-lessons {
+  display: grid;
+  gap: 5px;
+  margin: 10px 0 0;
+  padding-left: 17px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
 }
 
 .market-depth {
@@ -2347,16 +2524,22 @@ hr {
   }
 
   .topbar-actions .status-dot,
-  .topbar-actions .status-text,
-  .refresh-label {
+  .topbar-actions .status-text {
     display: none;
   }
 
   .btn-refresh {
-    width: 36px;
-    min-height: 36px;
-    padding: 6px;
-    font-size: 11px;
+    width: auto;
+    min-width: 94px;
+    min-height: 38px;
+    padding: 7px 11px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .refresh-label {
+    display: inline;
+    white-space: nowrap;
   }
 
   .brand small,
@@ -2422,12 +2605,29 @@ hr {
   }
 
   .export-controls .form-field {
-    flex: 1;
+    flex: 1 1 145px;
   }
 
   .export-controls .btn {
-    flex: 0 0 auto;
+    flex: 1 0 100%;
     min-height: 39px;
+  }
+
+  .recommendation-history-panel {
+    padding: 16px;
+  }
+
+  .recommendation-history-panel .section-heading {
+    align-items: flex-start;
+  }
+
+  .recommendation-learning,
+  .recommendation-review-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recommendation-review-card {
+    grid-column: 1 / -1;
   }
 
   .date-block {
@@ -2504,8 +2704,19 @@ hr {
 
   .plan-risk-badge {
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    min-width: 0;
+    grid-template-columns: auto 1fr;
     align-items: center;
+  }
+
+  .plan-risk-heading {
+    grid-column: 1 / -1;
+  }
+
+  .plan-risk-badge p {
+    justify-self: end;
+    max-width: 210px;
+    text-align: right;
   }
 
   .mainline-grid,
