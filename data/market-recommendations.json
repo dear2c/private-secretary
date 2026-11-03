@@ -1,15 +1,86 @@
 {
-  "updatedAt": "2026-11-02T14:32:12.264Z",
+  "updatedAt": "2026-11-03T14:28:33.804Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 2,
+    "samples": 3,
     "planAccuracy": 0,
-    "mainlineHitRate": null,
-    "mainlineSamples": 0,
+    "mainlineHitRate": 1,
+    "mainlineSamples": 5,
     "sectorAdjustments": {},
     "adjustmentLabel": "样本积累中"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-02",
+      "validationDate": "2026-11-03",
+      "recommendedRegime": "震荡确认",
+      "positionGuide": "20%—50%",
+      "planCorrect": false,
+      "actualIndexAverage": -1.7466666666666668,
+      "actualUpRatio": 0.3905157755526167,
+      "mainlineHitRate": 1,
+      "mainlineResults": [
+        {
+          "name": "视频媒体",
+          "matchedSector": "视频媒体",
+          "actualChangePct": 3.89,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "教育运营及其他",
+          "matchedSector": "教育运营及其他",
+          "actualChangePct": 9.84,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "文字媒体",
+          "matchedSector": "文字媒体",
+          "actualChangePct": 2.79,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "数字媒体",
+          "matchedSector": null,
+          "actualChangePct": 3.89,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "影视动漫制作",
+          "matchedSector": null,
+          "actualChangePct": 16.28,
+          "evaluated": true,
+          "hit": true
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "纺织鞋类制造",
+          "actualChangePct": null
+        },
+        {
+          "name": "涂料",
+          "actualChangePct": 5.07
+        },
+        {
+          "name": "黄金",
+          "actualChangePct": null
+        },
+        {
+          "name": "城商行Ⅲ",
+          "actualChangePct": null
+        }
+      ],
+      "score": 50,
+      "lessons": [
+        "市场方向与“震荡确认”不一致，次日先降低仓位，不以盘前判断替代开盘确认。",
+        "视频媒体、教育运营及其他、文字媒体、数字媒体、影视动漫制作获得次日承接，保留其板块强度与成交额要求。",
+        "回避方向“涂料”次日上涨，后续不机械回避，需同时核对量价和板块扩散。"
+      ]
+    },
     {
       "recommendationDate": "2026-10-30",
       "validationDate": "2026-11-02",
