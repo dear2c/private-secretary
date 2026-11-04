@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-03T14:28:33.804Z",
+  "updatedAt": "2026-11-04T14:30:54.413Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 3,
+    "samples": 4,
     "planAccuracy": 0,
     "mainlineHitRate": 1,
     "mainlineSamples": 5,
@@ -10,6 +10,77 @@
     "adjustmentLabel": "样本积累中"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-03",
+      "validationDate": "2026-11-04",
+      "recommendedRegime": "防守优先",
+      "positionGuide": "0%—30%",
+      "planCorrect": false,
+      "actualIndexAverage": 4.946666666666666,
+      "actualUpRatio": 0.8302171860245514,
+      "mainlineHitRate": null,
+      "mainlineResults": [
+        {
+          "name": "教育运营及其他",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "涂料",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "化纤纺织",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "蓄电池及其他电池",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "视频媒体",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "半导体设备",
+          "actualChangePct": 15.22
+        },
+        {
+          "name": "通信网络设备及器件",
+          "actualChangePct": null
+        },
+        {
+          "name": "半导体材料",
+          "actualChangePct": 11.89
+        },
+        {
+          "name": "印制电路板",
+          "actualChangePct": null
+        }
+      ],
+      "score": 25,
+      "lessons": [
+        "市场方向与“防守优先”不一致，次日先降低仓位，不以盘前判断替代开盘确认。",
+        "回避方向“半导体设备”次日上涨，后续不机械回避，需同时核对量价和板块扩散。",
+        "次日板块匹配数据不足，本条建议仅验证市场方向，不据此大幅修改模型。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-02",
       "validationDate": "2026-11-03",
