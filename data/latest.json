@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-04T14:30:54.413Z",
-  "generatedAtLocal": "2026/11/04 22:30",
-  "dateLabel": "2026-11-04",
+  "generatedAt": "2026-11-05T14:31:04.338Z",
+  "generatedAtLocal": "2026/11/05 22:31",
+  "dateLabel": "2026-11-05",
   "notificationTime": "21:30",
   "engineeringReminderTime": "18:00",
   "engineeringReminderWeekday": 5,
@@ -13579,1718 +13579,257 @@
     }
   },
   "market": {
-    "asOfDate": "2026-11-04",
+    "asOfDate": "2026-11-05",
     "indices": [
       {
         "code": "000001",
         "name": "上证指数",
-        "price": 3686.17,
-        "change": 78.07,
-        "changePct": 2.16,
-        "volume": 599394361,
-        "turnover": 953265160000
+        "price": 3689.91,
+        "change": 3.74,
+        "changePct": 0.1,
+        "volume": 571291638,
+        "turnover": 979711780000
       },
       {
         "code": "399001",
         "name": "深证成指",
-        "price": 11335.69,
-        "change": 458.7,
-        "changePct": 4.22,
-        "volume": 682108330,
-        "turnover": 1084429060000
+        "price": 11471.09,
+        "change": 135.4,
+        "changePct": 1.19,
+        "volume": 672558794,
+        "turnover": 1138241320000
       },
       {
         "code": "399006",
         "name": "创业板指",
-        "price": 2544.73,
-        "change": 153.08,
-        "changePct": 6.4,
-        "volume": 223218325,
-        "turnover": 547099280000
+        "price": 2566.8,
+        "change": 22.07,
+        "changePct": 0.87,
+        "volume": 225321557,
+        "turnover": 576110030000
       },
       {
         "code": "000688",
         "name": "科创50",
-        "price": 1265.47,
-        "change": 114.19,
-        "changePct": 9.92,
-        "volume": 13440425,
-        "turnover": 104520410000
+        "price": 1286.68,
+        "change": 21.21,
+        "changePct": 1.68,
+        "volume": 14846716,
+        "turnover": 117259050000
       },
       {
         "code": "000300",
         "name": "沪深300",
-        "price": 4101.34,
-        "change": 92.47,
-        "changePct": 2.31,
-        "volume": 246371975,
-        "turnover": 597260470000
+        "price": 4113.41,
+        "change": 12.07,
+        "changePct": 0.29,
+        "volume": 241979946,
+        "turnover": 622088650000
       },
       {
         "code": "000905",
         "name": "中证500",
-        "price": 6622.03,
-        "change": 294.98,
-        "changePct": 4.66,
-        "volume": 191323159,
-        "turnover": 364880780000
+        "price": 6740.93,
+        "change": 118.9,
+        "changePct": 1.8,
+        "volume": 181552343,
+        "turnover": 388847950000
       },
       {
         "code": "000852",
         "name": "中证1000",
-        "price": 6511.81,
-        "change": 290.58,
-        "changePct": 4.67,
-        "volume": 269181259,
-        "turnover": 404395220000
+        "price": 6650.14,
+        "change": 138.33,
+        "changePct": 2.12,
+        "volume": 252444467,
+        "turnover": 419663730000
       },
       {
         "code": "000016",
         "name": "上证50",
-        "price": 2808.54,
-        "change": 40.27,
-        "changePct": 1.45,
-        "volume": 62795118,
-        "turnover": 174039480000
+        "price": 2811.16,
+        "change": 2.62,
+        "changePct": 0.09,
+        "volume": 60928771,
+        "turnover": 167242450000
       },
       {
         "code": "899050",
         "name": "北证50",
-        "price": 894.08,
-        "change": 39.02,
-        "changePct": 4.56,
-        "volume": 7942673,
-        "turnover": 14500024400
+        "price": 910.07,
+        "change": 15.99,
+        "changePct": 1.79,
+        "volume": 9463338,
+        "turnover": 17372519500
       }
     ],
     "breadth": {
-      "advancing": 4396,
-      "declining": 771,
-      "flat": 128,
+      "advancing": 4591,
+      "declining": 620,
+      "flat": 83,
       "available": true
     },
-    "turnover": 2037694220000,
+    "turnover": 2117953100000,
     "topSectors": [
       {
-        "code": "BK1326",
-        "name": "半导体设备",
-        "changePct": 15.22,
-        "turnover": 47429366982
+        "code": "BK1316",
+        "name": "光伏辅材",
+        "changePct": 9.94,
+        "turnover": 5646648458
       },
       {
-        "code": "BK1325",
-        "name": "半导体材料",
-        "changePct": 11.89,
-        "turnover": 28240153181
+        "code": "BK1317",
+        "name": "光伏加工设备",
+        "changePct": 9.58,
+        "turnover": 10654565134
       },
       {
-        "code": "BK1036",
-        "name": "半导体",
-        "changePct": 10.64,
-        "turnover": 264766994863
+        "code": "BK1296",
+        "name": "视频媒体",
+        "changePct": 9.27,
+        "turnover": 4756420060
       },
       {
-        "code": "BK1329",
-        "name": "集成电路制造",
-        "changePct": 10.63,
-        "turnover": 17539118088
+        "code": "BK1315",
+        "name": "光伏电池组件",
+        "changePct": 8.83,
+        "turnover": 12437085822
       },
       {
-        "code": "BK1617",
-        "name": "黄金",
-        "changePct": 10.59,
-        "turnover": 15107406999
+        "code": "BK1031",
+        "name": "光伏设备",
+        "changePct": 8.45,
+        "turnover": 56111855554
       },
       {
-        "code": "BK0732",
-        "name": "贵金属",
-        "changePct": 10.45,
-        "turnover": 19472819385
-      },
-      {
-        "code": "BK1331",
-        "name": "数字芯片设计",
-        "changePct": 10.29,
-        "turnover": 120382541077
+        "code": "BK1469",
+        "name": "涂料",
+        "changePct": 8.01,
+        "turnover": 302273805
       },
       {
         "code": "BK1616",
         "name": "白银",
-        "changePct": 10,
-        "turnover": 4365412385
+        "changePct": 7.27,
+        "turnover": 6216443907
       },
       {
-        "code": "BK1328",
-        "name": "集成电路封测",
-        "changePct": 9.3,
-        "turnover": 17961262374
+        "code": "BK1412",
+        "name": "氨纶",
+        "changePct": 5.99,
+        "turnover": 568565226
       },
       {
-        "code": "BK1332",
-        "name": "电子化学品Ⅲ",
-        "changePct": 8.99,
-        "turnover": 25245746881
+        "code": "BK1337",
+        "name": "品牌消费电子",
+        "changePct": 5.93,
+        "turnover": 5462754231
       },
       {
-        "code": "BK1039",
-        "name": "电子化学品Ⅱ",
-        "changePct": 8.99,
-        "turnover": 25245746881
+        "code": "BK1319",
+        "name": "硅料硅片",
+        "changePct": 5.93,
+        "turnover": 942320960
       },
       {
-        "code": "BK1330",
-        "name": "模拟芯片设计",
-        "changePct": 8.86,
-        "turnover": 16722329242
+        "code": "BK1293",
+        "name": "营销代理",
+        "changePct": 5.93,
+        "turnover": 22290640400
+      },
+      {
+        "code": "BK1602",
+        "name": "诊断服务",
+        "changePct": 5.84,
+        "turnover": 3268687045
       }
     ],
     "laggingSectors": [
       {
+        "code": "BK1493",
+        "name": "动力煤",
+        "changePct": -2.2,
+        "turnover": 12126358382
+      },
+      {
+        "code": "BK1372",
+        "name": "冶钢辅料",
+        "changePct": -1.99,
+        "turnover": 588193054
+      },
+      {
+        "code": "BK1250",
+        "name": "煤炭开采",
+        "changePct": -1.97,
+        "turnover": 14554809952
+      },
+      {
+        "code": "BK1276",
+        "name": "油气开采Ⅱ",
+        "changePct": -1.92,
+        "turnover": 3758866358
+      },
+      {
+        "code": "BK1574",
+        "name": "油气开采Ⅲ",
+        "changePct": -1.92,
+        "turnover": 3758866358
+      },
+      {
         "code": "BK1587",
         "name": "电信运营商",
-        "changePct": -3.27,
-        "turnover": 4209461556
-      },
-      {
-        "code": "BK1509",
-        "name": "水产饲料",
-        "changePct": -3.12,
-        "turnover": 1355512657
-      },
-      {
-        "code": "BK1585",
-        "name": "乳品",
-        "changePct": -2.6,
-        "turnover": 6588015339
-      },
-      {
-        "code": "BK1282",
-        "name": "饮料乳品",
-        "changePct": -2.37,
-        "turnover": 9107724178
-      },
-      {
-        "code": "BK1277",
-        "name": "白酒Ⅱ",
         "changePct": -1.81,
-        "turnover": 22954009273
+        "turnover": 3311869974
       },
       {
-        "code": "BK1575",
-        "name": "白酒Ⅲ",
-        "changePct": -1.81,
-        "turnover": 22954009273
+        "code": "BK0437",
+        "name": "煤炭",
+        "changePct": -1.58,
+        "turnover": 15458580700
       },
       {
-        "code": "BK1586",
-        "name": "软饮料",
-        "changePct": -1.79,
-        "turnover": 2519708839
+        "code": "BK1494",
+        "name": "焦煤",
+        "changePct": -1.57,
+        "turnover": 2428451570
       },
       {
-        "code": "BK1611",
-        "name": "国有大型银行Ⅲ",
-        "changePct": -1.76,
-        "turnover": 15567891096
+        "code": "BK1515",
+        "name": "粮食种植",
+        "changePct": -1.08,
+        "turnover": 458651789
       },
       {
-        "code": "BK1347",
-        "name": "纺织鞋类制造",
-        "changePct": -1.65,
-        "turnover": 168976961
+        "code": "BK1612",
+        "name": "农商行Ⅲ",
+        "changePct": -0.89,
+        "turnover": 2717910658
       },
       {
-        "code": "BK1582",
-        "name": "烘焙食品",
-        "changePct": -1.61,
-        "turnover": 1964747756
+        "code": "BK1610",
+        "name": "股份制银行Ⅲ",
+        "changePct": -0.84,
+        "turnover": 11948715862
       },
       {
-        "code": "BK1499",
-        "name": "医美服务",
-        "changePct": -1.54,
-        "turnover": 371140228
-      },
-      {
-        "code": "BK1485",
-        "name": "铁路运输",
-        "changePct": -1.13,
-        "turnover": 3010365781
+        "code": "BK1340",
+        "name": "印制电路板",
+        "changePct": -0.79,
+        "turnover": 88916224669
       }
     ],
-    "topStocks": [
-      {
-        "code": "688517",
-        "name": "金冠电气",
-        "price": 21.46,
-        "changePct": 20.02,
-        "turnover": 348222307,
-        "turnoverRate": 12.58,
-        "marketCap": 2931718929,
-        "mainNet": 16409996,
-        "industry": "电网设备"
-      },
-      {
-        "code": "301697",
-        "name": "贝特利",
-        "price": 25.42,
-        "changePct": 20.02,
-        "turnover": 422687502.24,
-        "turnoverRate": 38.62,
-        "marketCap": 6677834000,
-        "mainNet": 158381136,
-        "industry": "光伏设备"
-      },
-      {
-        "code": "300943",
-        "name": "春晖智控",
-        "price": 25.78,
-        "changePct": 20.02,
-        "turnover": 483203573.86,
-        "turnoverRate": 15.87,
-        "marketCap": 5254479600,
-        "mainNet": 81131517,
-        "industry": "通用设备"
-      },
-      {
-        "code": "688507",
-        "name": "索辰科技",
-        "price": 171.16,
-        "changePct": 20,
-        "turnover": 1907983967,
-        "turnoverRate": 13.11,
-        "marketCap": 15251859469,
-        "mainNet": 393439648,
-        "industry": "软件开发"
-      },
-      {
-        "code": "688652",
-        "name": "京仪装备",
-        "price": 94.13,
-        "changePct": 20,
-        "turnover": 705323911,
-        "turnoverRate": 6.84,
-        "marketCap": 15813840000,
-        "mainNet": 47300790,
-        "industry": "半导体"
-      },
-      {
-        "code": "300489",
-        "name": "光智科技",
-        "price": 190.3,
-        "changePct": 20,
-        "turnover": 2318724596.5,
-        "turnoverRate": 9.84,
-        "marketCap": 26481736001,
-        "mainNet": 371846496,
-        "industry": "光学光电子"
-      },
-      {
-        "code": "688835",
-        "name": "高凯技术",
-        "price": 297.28,
-        "changePct": 20,
-        "turnover": 713723115,
-        "turnoverRate": 13.89,
-        "marketCap": 29713346474,
-        "mainNet": 23177639,
-        "industry": "专用设备"
-      },
-      {
-        "code": "688037",
-        "name": "芯源微",
-        "price": 211.37,
-        "changePct": 20,
-        "turnover": 1442959636,
-        "turnoverRate": 3.73,
-        "marketCap": 42717937452,
-        "mainNet": 108547252,
-        "industry": "半导体"
-      },
-      {
-        "code": "688809",
-        "name": "强一股份",
-        "price": 223.91,
-        "changePct": 20,
-        "turnover": 801533477,
-        "turnoverRate": 10.76,
-        "marketCap": 40613472008,
-        "mainNet": 52936267,
-        "industry": "半导体"
-      },
-      {
-        "code": "688072",
-        "name": "拓荆科技",
-        "price": 487.79,
-        "changePct": 20,
-        "turnover": 4772967297,
-        "turnoverRate": 3.79,
-        "marketCap": 142519199373,
-        "mainNet": 475299600,
-        "industry": "半导体"
-      },
-      {
-        "code": "688596",
-        "name": "正帆科技",
-        "price": 50.64,
-        "changePct": 20,
-        "turnover": 1851760439,
-        "turnoverRate": 12.75,
-        "marketCap": 16086832449,
-        "mainNet": 252051716,
-        "industry": "专用设备"
-      },
-      {
-        "code": "688409",
-        "name": "富创精密",
-        "price": 121.2,
-        "changePct": 20,
-        "turnover": 1363791275,
-        "turnoverRate": 4.05,
-        "marketCap": 37112745445,
-        "mainNet": 91959330,
-        "industry": "半导体"
-      },
-      {
-        "code": "301070",
-        "name": "开勒股份",
-        "price": 44.46,
-        "changePct": 20,
-        "turnover": 235483815.1,
-        "turnoverRate": 7.05,
-        "marketCap": 5609710979,
-        "mainNet": 28546245,
-        "industry": "通用设备"
-      },
-      {
-        "code": "300788",
-        "name": "中信出版",
-        "price": 36.06,
-        "changePct": 20,
-        "turnover": 585838092.14,
-        "turnoverRate": 9.21,
-        "marketCap": 6856863631,
-        "mainNet": 95118064,
-        "industry": "出版"
-      },
-      {
-        "code": "688200",
-        "name": "华峰测控",
-        "price": 218.53,
-        "changePct": 20,
-        "turnover": 1885301011,
-        "turnoverRate": 4.77,
-        "marketCap": 43950189137,
-        "mainNet": 145156133,
-        "industry": "半导体"
-      },
-      {
-        "code": "300666",
-        "name": "江丰电子",
-        "price": 185.53,
-        "changePct": 20,
-        "turnover": 4175536768.17,
-        "turnoverRate": 11.06,
-        "marketCap": 51200915029,
-        "mainNet": 438255616,
-        "industry": "半导体"
-      },
-      {
-        "code": "688536",
-        "name": "思瑞浦",
-        "price": 269.24,
-        "changePct": 20,
-        "turnover": 1340028185,
-        "turnoverRate": 4.05,
-        "marketCap": 37175443043,
-        "mainNet": 51285752,
-        "industry": "半导体"
-      },
-      {
-        "code": "688361",
-        "name": "中科飞测",
-        "price": 246.74,
-        "changePct": 20,
-        "turnover": 3213440241,
-        "turnoverRate": 4.08,
-        "marketCap": 86865229303,
-        "mainNet": 256159648,
-        "industry": "半导体"
-      },
-      {
-        "code": "301583",
-        "name": "托伦斯",
-        "price": 96.19,
-        "changePct": 20,
-        "turnover": 1072440247.72,
-        "turnoverRate": 37.83,
-        "marketCap": 17840714433,
-        "mainNet": 230489198,
-        "industry": "半导体"
-      },
-      {
-        "code": "300139",
-        "name": "晓程科技",
-        "price": 38.23,
-        "changePct": 19.99,
-        "turnover": 1859475091.68,
-        "turnoverRate": 22.86,
-        "marketCap": 10475020000,
-        "mainNet": 327204681,
-        "industry": "贵金属"
-      },
-      {
-        "code": "301658",
-        "name": "首航新能",
-        "price": 25.4,
-        "changePct": 19.98,
-        "turnover": 790952775.22,
-        "turnoverRate": 33.53,
-        "marketCap": 10474226829,
-        "mainNet": 131281141,
-        "industry": "光伏设备"
-      },
-      {
-        "code": "688530",
-        "name": "欧莱新材",
-        "price": 44.99,
-        "changePct": 19.94,
-        "turnover": 447097650,
-        "turnoverRate": 15.86,
-        "marketCap": 7200416632,
-        "mainNet": 37770994,
-        "industry": "半导体"
-      },
-      {
-        "code": "688082",
-        "name": "盛美上海",
-        "price": 191,
-        "changePct": 19.82,
-        "turnover": 1501153081,
-        "turnoverRate": 1.78,
-        "marketCap": 92685865974,
-        "mainNet": 112753472,
-        "industry": "半导体"
-      },
-      {
-        "code": "300953",
-        "name": "震裕科技",
-        "price": 100.88,
-        "changePct": 19.65,
-        "turnover": 1820968911.46,
-        "turnoverRate": 10.9,
-        "marketCap": 24731024754,
-        "mainNet": -44039690,
-        "industry": "电池"
-      },
-      {
-        "code": "688627",
-        "name": "精智达",
-        "price": 233.11,
-        "changePct": 19.64,
-        "turnover": 2172836131,
-        "turnoverRate": 10.95,
-        "marketCap": 23717940127,
-        "mainNet": 226350240,
-        "industry": "通用设备"
-      },
-      {
-        "code": "688630",
-        "name": "芯碁微装",
-        "price": 240.92,
-        "changePct": 19.27,
-        "turnover": 1999916003,
-        "turnoverRate": 6.88,
-        "marketCap": 35296012547,
-        "mainNet": 115853188,
-        "industry": "专用设备"
-      },
-      {
-        "code": "688025",
-        "name": "杰普特",
-        "price": 335.55,
-        "changePct": 19.21,
-        "turnover": 1594956295,
-        "turnoverRate": 5.48,
-        "marketCap": 31893833888,
-        "mainNet": -10964127,
-        "industry": "自动化设备"
-      },
-      {
-        "code": "688686",
-        "name": "奥普特",
-        "price": 172,
-        "changePct": 18.62,
-        "turnover": 1165060767,
-        "turnoverRate": 5.88,
-        "marketCap": 21024498260,
-        "mainNet": 169984,
-        "industry": "自动化设备"
-      },
-      {
-        "code": "688796",
-        "name": "百奥赛图",
-        "price": 84.51,
-        "changePct": 18.53,
-        "turnover": 424534215,
-        "turnoverRate": 14.18,
-        "marketCap": 37767385474,
-        "mainNet": 30003431,
-        "industry": "医疗服务"
-      },
-      {
-        "code": "300604",
-        "name": "长川科技",
-        "price": 185,
-        "changePct": 18.01,
-        "turnover": 6015584202.53,
-        "turnoverRate": 7.16,
-        "marketCap": 120053066390,
-        "mainNet": 533679104,
-        "industry": "半导体"
-      },
-      {
-        "code": "688120",
-        "name": "华海清科",
-        "price": 195.98,
-        "changePct": 17.97,
-        "turnover": 3632536516,
-        "turnoverRate": 4.04,
-        "marketCap": 100412694177,
-        "mainNet": 334927120,
-        "industry": "半导体"
-      },
-      {
-        "code": "300223",
-        "name": "君正股份",
-        "price": 117.21,
-        "changePct": 17.8,
-        "turnover": 6934897565.02,
-        "turnoverRate": 15.36,
-        "marketCap": 60357484889,
-        "mainNet": 539663168,
-        "industry": "半导体"
-      },
-      {
-        "code": "688545",
-        "name": "兴福电子",
-        "price": 58.99,
-        "changePct": 17.25,
-        "turnover": 742378857,
-        "turnoverRate": 7.43,
-        "marketCap": 21236400000,
-        "mainNet": -52452429,
-        "industry": "电子化学品Ⅱ"
-      },
-      {
-        "code": "688347",
-        "name": "华虹宏力",
-        "price": 154.59,
-        "changePct": 17.25,
-        "turnover": 3906897260,
-        "turnoverRate": 6.7,
-        "marketCap": 298126010204,
-        "mainNet": 248568192,
-        "industry": "半导体"
-      },
-      {
-        "code": "300672",
-        "name": "国科微",
-        "price": 131.66,
-        "changePct": 17.22,
-        "turnover": 1580759641.89,
-        "turnoverRate": 6.2,
-        "marketCap": 28583708830,
-        "mainNet": 49046024,
-        "industry": "半导体"
-      },
-      {
-        "code": "300751",
-        "name": "迈为股份",
-        "price": 142.05,
-        "changePct": 17.19,
-        "turnover": 1401963496.22,
-        "turnoverRate": 5.51,
-        "marketCap": 39617993872,
-        "mainNet": 161910763,
-        "industry": "光伏设备"
-      },
-      {
-        "code": "688797",
-        "name": "臻宝科技",
-        "price": 205,
-        "changePct": 17.08,
-        "turnover": 1080162531,
-        "turnoverRate": 19.4,
-        "marketCap": 31834510680,
-        "mainNet": 164424901,
-        "industry": "半导体"
-      },
-      {
-        "code": "688710",
-        "name": "益诺思",
-        "price": 92.5,
-        "changePct": 17.06,
-        "turnover": 439487505,
-        "turnoverRate": 5.63,
-        "marketCap": 13040614388,
-        "mainNet": -5133853,
-        "industry": "医疗服务"
-      },
-      {
-        "code": "688220",
-        "name": "翱捷科技-U",
-        "price": 109.75,
-        "changePct": 16.93,
-        "turnover": 1527145772,
-        "turnoverRate": 3.61,
-        "marketCap": 45908522568,
-        "mainNet": 78016788,
-        "industry": "半导体"
-      },
-      {
-        "code": "688392",
-        "name": "骄成超声",
-        "price": 112,
-        "changePct": 16.9,
-        "turnover": 576662087,
-        "turnoverRate": 4.81,
-        "marketCap": 12962136320,
-        "mainNet": 41651080,
-        "industry": "电池"
-      },
-      {
-        "code": "688603",
-        "name": "天承科技",
-        "price": 71.03,
-        "changePct": 16.83,
-        "turnover": 484234366,
-        "turnoverRate": 6,
-        "marketCap": 8859182940,
-        "mainNet": 19323681,
-        "industry": "电子化学品Ⅱ"
-      },
-      {
-        "code": "688147",
-        "name": "微导纳米",
-        "price": 59.57,
-        "changePct": 16.71,
-        "turnover": 1006141737,
-        "turnoverRate": 3.92,
-        "marketCap": 27668541402,
-        "mainNet": 21619030,
-        "industry": "半导体"
-      },
-      {
-        "code": "300757",
-        "name": "罗博特科",
-        "price": 305,
-        "changePct": 16.66,
-        "turnover": 3610731414.25,
-        "turnoverRate": 7.99,
-        "marketCap": 54939714355,
-        "mainNet": 360539136,
-        "industry": "自动化设备"
-      },
-      {
-        "code": "688233",
-        "name": "神工股份",
-        "price": 62.88,
-        "changePct": 16.64,
-        "turnover": 618410575,
-        "turnoverRate": 6.22,
-        "marketCap": 10708824680,
-        "mainNet": 44534393,
-        "industry": "半导体"
-      },
-      {
-        "code": "688012",
-        "name": "中微公司",
-        "price": 240.01,
-        "changePct": 16.62,
-        "turnover": 8470734120,
-        "turnoverRate": 4.03,
-        "marketCap": 229891741943,
-        "mainNet": 818505008,
-        "industry": "半导体"
-      },
-      {
-        "code": "688702",
-        "name": "盛科通信-U",
-        "price": 175.89,
-        "changePct": 16.62,
-        "turnover": 1677175534,
-        "turnoverRate": 4.99,
-        "marketCap": 72114900000,
-        "mainNet": 129222681,
-        "industry": "半导体"
-      },
-      {
-        "code": "300593",
-        "name": "新雷能",
-        "price": 22.6,
-        "changePct": 16.49,
-        "turnover": 594950718.06,
-        "turnoverRate": 6.35,
-        "marketCap": 12260465399,
-        "mainNet": 52004004,
-        "industry": "其他电源设备Ⅱ"
-      },
-      {
-        "code": "688766",
-        "name": "普冉股份",
-        "price": 282.99,
-        "changePct": 16.38,
-        "turnover": 3559045489,
-        "turnoverRate": 9.19,
-        "marketCap": 42081618463,
-        "mainNet": 281333888,
-        "industry": "半导体"
-      },
-      {
-        "code": "300765",
-        "name": "石药创新",
-        "price": 34.56,
-        "changePct": 16.25,
-        "turnover": 788743039.06,
-        "turnoverRate": 1.73,
-        "marketCap": 48542732145,
-        "mainNet": 35154735,
-        "industry": "化学制药"
-      },
-      {
-        "code": "688802",
-        "name": "沐曦股份-U",
-        "price": 482.35,
-        "changePct": 16.19,
-        "turnover": 1980353610,
-        "turnoverRate": 13.62,
-        "marketCap": 192988235000,
-        "mainNet": 58602176,
-        "industry": "半导体"
-      },
-      {
-        "code": "301080",
-        "name": "百普赛斯",
-        "price": 94.75,
-        "changePct": 16.17,
-        "turnover": 1923474107.9,
-        "turnoverRate": 17.45,
-        "marketCap": 15887590746,
-        "mainNet": 44814519,
-        "industry": "生物制品"
-      },
-      {
-        "code": "300567",
-        "name": "精测电子",
-        "price": 115.59,
-        "changePct": 16.16,
-        "turnover": 1324146316.22,
-        "turnoverRate": 5.46,
-        "marketCap": 32335970063,
-        "mainNet": 40836532,
-        "industry": "通用设备"
-      },
-      {
-        "code": "688486",
-        "name": "龙迅股份",
-        "price": 43.42,
-        "changePct": 16.1,
-        "turnover": 423391406,
-        "turnoverRate": 5.54,
-        "marketCap": 8113843817,
-        "mainNet": -1012052,
-        "industry": "半导体"
-      },
-      {
-        "code": "688729",
-        "name": "屹唐股份",
-        "price": 20.6,
-        "changePct": 15.99,
-        "turnover": 1535343370,
-        "turnoverRate": 4.56,
-        "marketCap": 60884536000,
-        "mainNet": 105173463,
-        "industry": "半导体"
-      },
-      {
-        "code": "301511",
-        "name": "德福科技",
-        "price": 56.66,
-        "changePct": 15.96,
-        "turnover": 2504417525.93,
-        "turnoverRate": 12,
-        "marketCap": 35714044520,
-        "mainNet": 211287969,
-        "industry": "电池"
-      },
-      {
-        "code": "301196",
-        "name": "唯科科技",
-        "price": 66.2,
-        "changePct": 15.94,
-        "turnover": 796750021.97,
-        "turnoverRate": 12.24,
-        "marketCap": 10870928536,
-        "mainNet": 50316938,
-        "industry": "塑料"
-      },
-      {
-        "code": "688328",
-        "name": "深科达",
-        "price": 52.78,
-        "changePct": 15.87,
-        "turnover": 427748536,
-        "turnoverRate": 9.25,
-        "marketCap": 5017071250,
-        "mainNet": 27090749,
-        "industry": "半导体"
-      },
-      {
-        "code": "300260",
-        "name": "新莱应材",
-        "price": 44.52,
-        "changePct": 15.79,
-        "turnover": 1090210253.55,
-        "turnoverRate": 9.23,
-        "marketCap": 18155556599,
-        "mainNet": 126726420,
-        "industry": "通用设备"
-      },
-      {
-        "code": "688035",
-        "name": "德邦科技",
-        "price": 55.94,
-        "changePct": 15.75,
-        "turnover": 501048548,
-        "turnoverRate": 6.63,
-        "marketCap": 7956905600,
-        "mainNet": -31247402,
-        "industry": "电子化学品Ⅱ"
-      },
-      {
-        "code": "688785",
-        "name": "恒运昌",
-        "price": 279.88,
-        "changePct": 15.65,
-        "turnover": 197997238,
-        "turnoverRate": 5.6,
-        "marketCap": 18948348437,
-        "mainNet": 10712061,
-        "industry": "其他电源设备Ⅱ"
-      },
-      {
-        "code": "688535",
-        "name": "华海诚科",
-        "price": 73.9,
-        "changePct": 15.45,
-        "turnover": 640940698,
-        "turnoverRate": 6.97,
-        "marketCap": 10587952295,
-        "mainNet": 540902,
-        "industry": "半导体"
-      },
-      {
-        "code": "301626",
-        "name": "苏州天脉",
-        "price": 220.86,
-        "changePct": 15.34,
-        "turnover": 741567824.55,
-        "turnoverRate": 6.82,
-        "marketCap": 25549084800,
-        "mainNet": -17064466,
-        "industry": "消费电子"
-      },
-      {
-        "code": "688801",
-        "name": "燧原科技-U",
-        "price": 372,
-        "changePct": 15.32,
-        "turnover": 859630990,
-        "turnoverRate": 13.67,
-        "marketCap": 160090842816,
-        "mainNet": 81503544,
-        "industry": "半导体"
-      },
-      {
-        "code": "688123",
-        "name": "聚辰股份",
-        "price": 102.88,
-        "changePct": 15.23,
-        "turnover": 991603189,
-        "turnoverRate": 6.52,
-        "marketCap": 16354884423,
-        "mainNet": 41093649,
-        "industry": "半导体"
-      },
-      {
-        "code": "688605",
-        "name": "先锋精科",
-        "price": 62.77,
-        "changePct": 15.22,
-        "turnover": 358123773,
-        "turnoverRate": 5.61,
-        "marketCap": 12703383561,
-        "mainNet": -11704055,
-        "industry": "半导体"
-      },
-      {
-        "code": "300480",
-        "name": "光力科技",
-        "price": 26,
-        "changePct": 15.2,
-        "turnover": 462133038.3,
-        "turnoverRate": 7.38,
-        "marketCap": 9625787600,
-        "mainNet": 10429808,
-        "industry": "专用设备"
-      },
-      {
-        "code": "688309",
-        "name": "恒誉科技",
-        "price": 62.37,
-        "changePct": 15.18,
-        "turnover": 144101899,
-        "turnoverRate": 3.12,
-        "marketCap": 4952257148,
-        "mainNet": 10651495,
-        "industry": "环保设备Ⅱ"
-      },
-      {
-        "code": "300720",
-        "name": "海川智能",
-        "price": 47.55,
-        "changePct": 15.13,
-        "turnover": 558385977.4,
-        "turnoverRate": 6.85,
-        "marketCap": 9266413523,
-        "mainNet": 5808937,
-        "industry": "通用设备"
-      },
-      {
-        "code": "688610",
-        "name": "埃科光电",
-        "price": 73.05,
-        "changePct": 15.11,
-        "turnover": 267780653,
-        "turnoverRate": 6.97,
-        "marketCap": 6954360000,
-        "mainNet": 11167552,
-        "industry": "通用设备"
-      },
-      {
-        "code": "300426",
-        "name": "华智数媒",
-        "price": 10.35,
-        "changePct": 15,
-        "turnover": 1118992713.87,
-        "turnoverRate": 28.15,
-        "marketCap": 4661462084,
-        "mainNet": 11024635,
-        "industry": "影视院线"
-      },
-      {
-        "code": "688260",
-        "name": "昀冢科技",
-        "price": 67.72,
-        "changePct": 14.99,
-        "turnover": 479623193,
-        "turnoverRate": 6.39,
-        "marketCap": 8126400000,
-        "mainNet": 45775860,
-        "industry": "消费电子"
-      },
-      {
-        "code": "688502",
-        "name": "茂莱光学",
-        "price": 361,
-        "changePct": 14.97,
-        "turnover": 482261173,
-        "turnoverRate": 2.72,
-        "marketCap": 19061165332,
-        "mainNet": 11209368,
-        "industry": "光学光电子"
-      },
-      {
-        "code": "300408",
-        "name": "三环集团",
-        "price": 79.1,
-        "changePct": 14.77,
-        "turnover": 5631971021.45,
-        "turnoverRate": 4.1,
-        "marketCap": 157940438966,
-        "mainNet": 106696032,
-        "industry": "元件"
-      },
-      {
-        "code": "688090",
-        "name": "瑞松科技",
-        "price": 47.71,
-        "changePct": 14.69,
-        "turnover": 475859747,
-        "turnoverRate": 6.84,
-        "marketCap": 7572648805,
-        "mainNet": -2561411,
-        "industry": "自动化设备"
-      },
-      {
-        "code": "300806",
-        "name": "斯迪克",
-        "price": 45.72,
-        "changePct": 14.67,
-        "turnover": 1641911747.95,
-        "turnoverRate": 8.54,
-        "marketCap": 28872634640,
-        "mainNet": 108553329,
-        "industry": "塑料"
-      },
-      {
-        "code": "688820",
-        "name": "盛合晶微",
-        "price": 83.34,
-        "changePct": 14.64,
-        "turnover": 1239677436,
-        "turnoverRate": 8.46,
-        "marketCap": 155243593244,
-        "mainNet": 98303901,
-        "industry": "半导体"
-      },
-      {
-        "code": "688608",
-        "name": "恒玄科技",
-        "price": 120.59,
-        "changePct": 14.62,
-        "turnover": 1525824942,
-        "turnoverRate": 5.53,
-        "marketCap": 28566088408,
-        "mainNet": 92844046,
-        "industry": "半导体"
-      },
-      {
-        "code": "688508",
-        "name": "芯朋微",
-        "price": 55.87,
-        "changePct": 14.46,
-        "turnover": 371854183,
-        "turnoverRate": 5.35,
-        "marketCap": 7398324731,
-        "mainNet": -18061040,
-        "industry": "半导体"
-      },
-      {
-        "code": "688293",
-        "name": "奥浦迈",
-        "price": 65.02,
-        "changePct": 14.45,
-        "turnover": 446120723,
-        "turnoverRate": 5.72,
-        "marketCap": 9263880483,
-        "mainNet": -3822360,
-        "industry": "生物制品"
-      },
-      {
-        "code": "688300",
-        "name": "联瑞新材",
-        "price": 83.06,
-        "changePct": 14.41,
-        "turnover": 1051535084,
-        "turnoverRate": 4.38,
-        "marketCap": 26073882894,
-        "mainNet": 51475958,
-        "industry": "非金属材料Ⅱ"
-      },
-      {
-        "code": "688401",
-        "name": "路维光电",
-        "price": 46.9,
-        "changePct": 14.33,
-        "turnover": 364048182,
-        "turnoverRate": 4.28,
-        "marketCap": 9631906654,
-        "mainNet": -5082844,
-        "industry": "半导体"
-      },
-      {
-        "code": "300820",
-        "name": "英杰电气",
-        "price": 53.24,
-        "changePct": 14.2,
-        "turnover": 651954995.65,
-        "turnoverRate": 11.59,
-        "marketCap": 11830148307,
-        "mainNet": -23287516,
-        "industry": "其他电源设备Ⅱ"
-      },
-      {
-        "code": "688279",
-        "name": "峰岹科技",
-        "price": 195.86,
-        "changePct": 14.2,
-        "turnover": 805612953,
-        "turnoverRate": 4.6,
-        "marketCap": 22546243709,
-        "mainNet": 67206976,
-        "industry": "半导体"
-      },
-      {
-        "code": "300938",
-        "name": "信测标准",
-        "price": 22.45,
-        "changePct": 14.19,
-        "turnover": 370446226.96,
-        "turnoverRate": 5.9,
-        "marketCap": 7652352641,
-        "mainNet": 13487647,
-        "industry": "专业服务"
-      },
-      {
-        "code": "688333",
-        "name": "铂力特",
-        "price": 78.62,
-        "changePct": 14.16,
-        "turnover": 988000251,
-        "turnoverRate": 4.93,
-        "marketCap": 21567209320,
-        "mainNet": -14334794,
-        "industry": "通用设备"
-      },
-      {
-        "code": "301217",
-        "name": "铜冠铜箔",
-        "price": 72.01,
-        "changePct": 14.08,
-        "turnover": 1825850041.86,
-        "turnoverRate": 3.29,
-        "marketCap": 59697409323,
-        "mainNet": 135970595,
-        "industry": "电池"
-      },
-      {
-        "code": "688837",
-        "name": "信诺维",
-        "price": 38.12,
-        "changePct": 13.96,
-        "turnover": 325533672,
-        "turnoverRate": 18.49,
-        "marketCap": 16600841252,
-        "mainNet": 12519912,
-        "industry": "化学制药"
-      },
-      {
-        "code": "688257",
-        "name": "新锐股份",
-        "price": 31.54,
-        "changePct": 13.95,
-        "turnover": 697222390,
-        "turnoverRate": 6.7,
-        "marketCap": 12022548154,
-        "mainNet": 54156272,
-        "industry": "通用设备"
-      },
-      {
-        "code": "688661",
-        "name": "和林微纳",
-        "price": 73.71,
-        "changePct": 13.94,
-        "turnover": 319044850,
-        "turnoverRate": 3.08,
-        "marketCap": 11195651654,
-        "mainNet": 2721120,
-        "industry": "半导体"
-      },
-      {
-        "code": "688362",
-        "name": "甬矽电子",
-        "price": 39.25,
-        "changePct": 13.93,
-        "turnover": 758712886,
-        "turnoverRate": 4.53,
-        "marketCap": 17822622338,
-        "mainNet": 50792082,
-        "industry": "半导体"
-      },
-      {
-        "code": "688141",
-        "name": "杰华特",
-        "price": 68.39,
-        "changePct": 13.91,
-        "turnover": 1256501080,
-        "turnoverRate": 4.32,
-        "marketCap": 31108453706,
-        "mainNet": 102732852,
-        "industry": "半导体"
-      },
-      {
-        "code": "688019",
-        "name": "安集科技",
-        "price": 207,
-        "changePct": 13.76,
-        "turnover": 2620491085,
-        "turnoverRate": 5.83,
-        "marketCap": 47269804401,
-        "mainNet": 239980987,
-        "industry": "电子化学品Ⅱ"
-      },
-      {
-        "code": "688593",
-        "name": "新相微",
-        "price": 24.41,
-        "changePct": 13.75,
-        "turnover": 319029962,
-        "turnoverRate": 3.05,
-        "marketCap": 11217112947,
-        "mainNet": 7190028,
-        "industry": "半导体"
-      },
-      {
-        "code": "301369",
-        "name": "联动科技",
-        "price": 88.45,
-        "changePct": 13.73,
-        "turnover": 371044489.34,
-        "turnoverRate": 8.29,
-        "marketCap": 9055727703,
-        "mainNet": 6330412,
-        "industry": "半导体"
-      },
-      {
-        "code": "301611",
-        "name": "珂玛科技",
-        "price": 66.4,
-        "changePct": 13.7,
-        "turnover": 672508348.66,
-        "turnoverRate": 7.4,
-        "marketCap": 28950400000,
-        "mainNet": 34271835,
-        "industry": "半导体"
-      },
-      {
-        "code": "688234",
-        "name": "天岳先进",
-        "price": 75.62,
-        "changePct": 13.68,
-        "turnover": 1064467498,
-        "turnoverRate": 3.48,
-        "marketCap": 36646854297,
-        "mainNet": -36027286,
-        "industry": "半导体"
-      },
-      {
-        "code": "688045",
-        "name": "必易微",
-        "price": 60.35,
-        "changePct": 13.65,
-        "turnover": 464442996,
-        "turnoverRate": 11.66,
-        "marketCap": 4259321286,
-        "mainNet": 46255431,
-        "industry": "半导体"
-      },
-      {
-        "code": "688135",
-        "name": "利扬芯片",
-        "price": 27.73,
-        "changePct": 13.65,
-        "turnover": 523395593,
-        "turnoverRate": 8.64,
-        "marketCap": 6463972284,
-        "mainNet": 25217382,
-        "industry": "半导体"
-      },
-      {
-        "code": "688825",
-        "name": "长鑫科技",
-        "price": 44.09,
-        "changePct": 13.63,
-        "turnover": 20996754861,
-        "turnoverRate": 11.23,
-        "marketCap": 2993009928305,
-        "mainNet": 3048721408,
-        "industry": "半导体"
-      },
-      {
-        "code": "300814",
-        "name": "中富电路",
-        "price": 99.65,
-        "changePct": 13.63,
-        "turnover": 684537526.41,
-        "turnoverRate": 3.87,
-        "marketCap": 19076012654,
-        "mainNet": 55339326,
-        "industry": "元件"
-      }
-    ],
+    "topStocks": [],
     "sectorLeaders": {
-      "BK1326": [
-        {
-          "code": "688652",
-          "name": "京仪装备",
-          "price": 94.13,
-          "changePct": 20,
-          "turnover": 705323911,
-          "turnoverRate": 6.84,
-          "marketCap": 15813840000,
-          "mainNet": 47300790,
-          "industry": "半导体"
-        },
-        {
-          "code": "688037",
-          "name": "芯源微",
-          "price": 211.37,
-          "changePct": 20,
-          "turnover": 1442959636,
-          "turnoverRate": 3.73,
-          "marketCap": 42717937452,
-          "mainNet": 108547252,
-          "industry": "半导体"
-        },
-        {
-          "code": "688072",
-          "name": "拓荆科技",
-          "price": 487.79,
-          "changePct": 20,
-          "turnover": 4772967297,
-          "turnoverRate": 3.79,
-          "marketCap": 142519199373,
-          "mainNet": 475299600,
-          "industry": "半导体"
-        },
-        {
-          "code": "688409",
-          "name": "富创精密",
-          "price": 121.2,
-          "changePct": 20,
-          "turnover": 1363791275,
-          "turnoverRate": 4.05,
-          "marketCap": 37112745445,
-          "mainNet": 91959330,
-          "industry": "半导体"
-        }
-      ],
-      "BK1325": [
-        {
-          "code": "688809",
-          "name": "强一股份",
-          "price": 223.91,
-          "changePct": 20,
-          "turnover": 801533477,
-          "turnoverRate": 10.76,
-          "marketCap": 40613472008,
-          "mainNet": 52936267,
-          "industry": "半导体"
-        },
-        {
-          "code": "300666",
-          "name": "江丰电子",
-          "price": 185.53,
-          "changePct": 20,
-          "turnover": 4175536768.17,
-          "turnoverRate": 11.06,
-          "marketCap": 51200915029,
-          "mainNet": 438255616,
-          "industry": "半导体"
-        },
-        {
-          "code": "688530",
-          "name": "欧莱新材",
-          "price": 44.99,
-          "changePct": 19.94,
-          "turnover": 447097650,
-          "turnoverRate": 15.86,
-          "marketCap": 7200416632,
-          "mainNet": 37770994,
-          "industry": "半导体"
-        },
-        {
-          "code": "688797",
-          "name": "臻宝科技",
-          "price": 205,
-          "changePct": 17.08,
-          "turnover": 1080162531,
-          "turnoverRate": 19.4,
-          "marketCap": 31834510680,
-          "mainNet": 164424901,
-          "industry": "半导体"
-        }
-      ],
-      "BK1036": [
-        {
-          "code": "688652",
-          "name": "京仪装备",
-          "price": 94.13,
-          "changePct": 20,
-          "turnover": 705323911,
-          "turnoverRate": 6.84,
-          "marketCap": 15813840000,
-          "mainNet": 47300790,
-          "industry": "半导体"
-        },
-        {
-          "code": "688037",
-          "name": "芯源微",
-          "price": 211.37,
-          "changePct": 20,
-          "turnover": 1442959636,
-          "turnoverRate": 3.73,
-          "marketCap": 42717937452,
-          "mainNet": 108547252,
-          "industry": "半导体"
-        },
-        {
-          "code": "688809",
-          "name": "强一股份",
-          "price": 223.91,
-          "changePct": 20,
-          "turnover": 801533477,
-          "turnoverRate": 10.76,
-          "marketCap": 40613472008,
-          "mainNet": 52936267,
-          "industry": "半导体"
-        },
-        {
-          "code": "688072",
-          "name": "拓荆科技",
-          "price": 487.79,
-          "changePct": 20,
-          "turnover": 4772967297,
-          "turnoverRate": 3.79,
-          "marketCap": 142519199373,
-          "mainNet": 475299600,
-          "industry": "半导体"
-        }
-      ],
-      "BK1329": [
-        {
-          "code": "688347",
-          "name": "华虹宏力",
-          "price": 154.59,
-          "changePct": 17.25,
-          "turnover": 3906897260,
-          "turnoverRate": 6.7,
-          "marketCap": 298126010204,
-          "mainNet": 248568192,
-          "industry": "半导体"
-        },
-        {
-          "code": "688820",
-          "name": "盛合晶微",
-          "price": 83.34,
-          "changePct": 14.64,
-          "turnover": 1239677436,
-          "turnoverRate": 8.46,
-          "marketCap": 155243593244,
-          "mainNet": 98303901,
-          "industry": "半导体"
-        },
-        {
-          "code": "301660",
-          "name": "粤芯半导-U",
-          "price": 29.77,
-          "changePct": 11.92,
-          "turnover": 2654626332.41,
-          "turnoverRate": 38.51,
-          "marketCap": 85685127309,
-          "mainNet": 138370688,
-          "industry": "半导体"
-        },
-        {
-          "code": "688249",
-          "name": "晶合集成",
-          "price": 27.67,
-          "changePct": 11.26,
-          "turnover": 693602578,
-          "turnoverRate": 1.31,
-          "marketCap": 61836562101,
-          "mainNet": 26555442,
-          "industry": "半导体"
-        }
-      ],
-      "BK1617": [
-        {
-          "code": "300139",
-          "name": "晓程科技",
-          "price": 38.23,
-          "changePct": 19.99,
-          "turnover": 1859475091.68,
-          "turnoverRate": 22.86,
-          "marketCap": 10475020000,
-          "mainNet": 327204681,
-          "industry": "贵金属"
-        },
-        {
-          "code": "002155",
-          "name": "湖南黄金",
-          "price": 19.32,
-          "changePct": 10.02,
-          "turnover": 1571926462.36,
-          "turnoverRate": 5.42,
-          "marketCap": 30190423425,
-          "mainNet": 157659153,
-          "industry": "贵金属"
-        },
-        {
-          "code": "000975",
-          "name": "山金国际",
-          "price": 23.08,
-          "changePct": 10.01,
-          "turnover": 1164371297.13,
-          "turnoverRate": 2.09,
-          "marketCap": 63989933223,
-          "mainNet": 169510209,
-          "industry": "贵金属"
-        },
-        {
-          "code": "000506",
-          "name": "招金黄金",
-          "price": 13.41,
-          "changePct": 10.01,
-          "turnover": 1031671075.88,
-          "turnoverRate": 8.67,
-          "marketCap": 12458128175,
-          "mainNet": 208168470,
-          "industry": "贵金属"
-        }
-      ],
-      "BK0732": [
-        {
-          "code": "300139",
-          "name": "晓程科技",
-          "price": 38.23,
-          "changePct": 19.99,
-          "turnover": 1859475091.68,
-          "turnoverRate": 22.86,
-          "marketCap": 10475020000,
-          "mainNet": 327204681,
-          "industry": "贵金属"
-        },
-        {
-          "code": "000426",
-          "name": "兴业银锡",
-          "price": 24.04,
-          "changePct": 10.02,
-          "turnover": 1848125825.8,
-          "turnoverRate": 4.57,
-          "marketCap": 42686283166,
-          "mainNet": 148032633,
-          "industry": "贵金属"
-        },
-        {
-          "code": "002155",
-          "name": "湖南黄金",
-          "price": 19.32,
-          "changePct": 10.02,
-          "turnover": 1571926462.36,
-          "turnoverRate": 5.42,
-          "marketCap": 30190423425,
-          "mainNet": 157659153,
-          "industry": "贵金属"
-        },
-        {
-          "code": "000975",
-          "name": "山金国际",
-          "price": 23.08,
-          "changePct": 10.01,
-          "turnover": 1164371297.13,
-          "turnoverRate": 2.09,
-          "marketCap": 63989933223,
-          "mainNet": 169510209,
-          "industry": "贵金属"
-        }
-      ],
-      "BK1331": [
-        {
-          "code": "300223",
-          "name": "君正股份",
-          "price": 117.21,
-          "changePct": 17.8,
-          "turnover": 6934897565.02,
-          "turnoverRate": 15.36,
-          "marketCap": 60357484889,
-          "mainNet": 539663168,
-          "industry": "半导体"
-        },
-        {
-          "code": "300672",
-          "name": "国科微",
-          "price": 131.66,
-          "changePct": 17.22,
-          "turnover": 1580759641.89,
-          "turnoverRate": 6.2,
-          "marketCap": 28583708830,
-          "mainNet": 49046024,
-          "industry": "半导体"
-        },
-        {
-          "code": "688702",
-          "name": "盛科通信-U",
-          "price": 175.89,
-          "changePct": 16.62,
-          "turnover": 1677175534,
-          "turnoverRate": 4.99,
-          "marketCap": 72114900000,
-          "mainNet": 129222681,
-          "industry": "半导体"
-        },
-        {
-          "code": "688766",
-          "name": "普冉股份",
-          "price": 282.99,
-          "changePct": 16.38,
-          "turnover": 3559045489,
-          "turnoverRate": 9.19,
-          "marketCap": 42081618463,
-          "mainNet": 281333888,
-          "industry": "半导体"
-        }
-      ],
-      "BK1616": [
-        {
-          "code": "000426",
-          "name": "兴业银锡",
-          "price": 24.04,
-          "changePct": 10.02,
-          "turnover": 1848125825.8,
-          "turnoverRate": 4.57,
-          "marketCap": 42686283166,
-          "mainNet": 148032633,
-          "industry": "贵金属"
-        },
-        {
-          "code": "000603",
-          "name": "盛达资源",
-          "price": 23.68,
-          "changePct": 9.99,
-          "turnover": 972666290.89,
-          "turnoverRate": 6.44,
-          "marketCap": 16338474113,
-          "mainNet": 134577691,
-          "industry": "贵金属"
-        },
-        {
-          "code": "002716",
-          "name": "湖南白银",
-          "price": 7.6,
-          "changePct": 9.99,
-          "turnover": 1544620269.25,
-          "turnoverRate": 9.16,
-          "marketCap": 21455473710,
-          "mainNet": 222154024,
-          "industry": "贵金属"
-        }
-      ]
+      "BK1316": [],
+      "BK1317": [],
+      "BK1296": [],
+      "BK1315": [],
+      "BK1031": [],
+      "BK1469": [],
+      "BK1616": [],
+      "BK1412": []
     },
     "history": [
-      {
-        "date": "2026-09-16",
-        "open": 3861.75,
-        "close": 3891.6,
-        "high": 3894.66,
-        "low": 3842.72,
-        "volume": 459125108,
-        "amplitude": 0.95,
-        "amount": 871141346900,
-        "changePct": 0.7069881064519112
-      },
       {
         "date": "2026-09-17",
         "open": 3877,
@@ -15607,22 +14146,22 @@
         "low": 3590.8,
         "volume": 599394361,
         "amplitude": 1.23,
-        "amount": 953265160000,
-        "changePct": 2.16
+        "amount": 953265155900,
+        "changePct": 2.163742690058479
+      },
+      {
+        "date": "2026-11-05",
+        "open": 3646.57,
+        "close": 3689.91,
+        "high": 3701.59,
+        "low": 3646.57,
+        "volume": 571291638,
+        "amplitude": 1.17,
+        "amount": 979711780000,
+        "changePct": 0.1
       }
     ],
     "history90": [
-      {
-        "date": "2026-06-24",
-        "open": 4090.1,
-        "close": 4110.81,
-        "high": 4117.28,
-        "low": 4075.49,
-        "volume": 644527518,
-        "amplitude": 1.34,
-        "amount": 1514193285000,
-        "changePct": 0.5063445881518858
-      },
       {
         "date": "2026-06-25",
         "open": 4103.48,
@@ -15632,7 +14171,7 @@
         "volume": 670459917,
         "amplitude": 1.39,
         "amount": 1618996555000,
-        "changePct": 0.23036822426723003
+        "changePct": 0.40940859953015885
       },
       {
         "date": "2026-06-26",
@@ -16599,8 +15138,19 @@
         "low": 3590.8,
         "volume": 599394361,
         "amplitude": 1.23,
-        "amount": 953265160000,
-        "changePct": 2.16
+        "amount": 953265155900,
+        "changePct": 2.163742690058479
+      },
+      {
+        "date": "2026-11-05",
+        "open": 3646.57,
+        "close": 3689.91,
+        "high": 3701.59,
+        "low": 3646.57,
+        "volume": 571291638,
+        "amplitude": 1.17,
+        "amount": 979711780000,
+        "changePct": 0.1
       }
     ],
     "sentiment": {
@@ -16618,121 +15168,105 @@
       "topBoards": []
     },
     "mainFlow": {
-      "date": "2026-11-04",
-      "mainNet": 18923085824,
-      "smallNet": 1422426112,
-      "mediumNet": -20345511936,
-      "largeNet": -344649728,
-      "superLargeNet": 19267735552
+      "date": "2026-11-05",
+      "mainNet": 3922063360,
+      "smallNet": 4870193152,
+      "mediumNet": -8792256512,
+      "largeNet": 2760732672,
+      "superLargeNet": 1161330688
     },
     "news": [
       {
-        "id": "202611043922273955",
-        "title": "泉果基金持股5%以上股东变更 王国斌35%股权转员工持股",
-        "digest": "【泉果基金持股5%以上股东变更 王国斌35%股权转员工持股】证监会最新披露《关于核准泉果基金管理有限公司变更持股5%以上股东的批复》，核准泉果基金创始人、总经理李云亮，上海泉至清企业管理中心（有限合伙），上海泉至澈企业管理中心（有限合伙）成…",
-        "time": "2026-11-04 22:04:08",
-        "url": "http://finance.eastmoney.com/a/202611043922273955.html",
+        "id": "202611053923805224",
+        "title": "何立峰在北京调研时指出 强化科技创新与产业创新深度融合 推动经济持续向新向优向好发展",
+        "digest": "【何立峰在北京调研时指出 强化科技创新与产业创新深度融合 推动经济持续向新向优向好发展】中共中央政治局委员、国务院副总理何立峰11月4日至5日到北京调研。何立峰指出，要认真学习贯彻党的二十届五中全会精神，深入贯彻落实习近平总书记对北京重要讲…",
+        "time": "2026-11-05 21:46:29",
+        "url": "http://finance.eastmoney.com/a/202611053923805224.html",
         "category": "公司动态"
       },
       {
-        "id": "202611043922230696",
-        "title": "美国财政部将拍卖420亿美元十年期债券、250亿美元30年期债券以及580亿美元三年期债券",
-        "digest": "美国财政部将拍卖420亿美元十年期债券、250亿美元30年期债券以及580亿美元三年期债券。",
-        "time": "2026-11-04 21:34:31",
-        "url": "http://finance.eastmoney.com/a/202611043922230696.html",
-        "category": "宏观政策"
+        "id": "202611053923782817",
+        "title": "菜鸟消费级机器人收入实现翻倍增长",
+        "digest": "【菜鸟消费级机器人收入实现翻倍增长】记者获悉，菜鸟国际总裁熊伟在香港智慧港举办的AI及具身智能产业合作发布会上透露，菜鸟国际业务中，消费级机器人等成熟科技品类收入占比已达10%，该板块今年收入实现翻倍增长。",
+        "time": "2026-11-05 21:32:23",
+        "url": "http://finance.eastmoney.com/a/202611053923782817.html",
+        "category": "产业主题"
       },
       {
-        "id": "202611043922214092",
-        "title": "天山股份：因涉嫌信息披露违法违规 证监会决定对公司立案",
-        "digest": "【天山股份：因涉嫌信息披露违法违规 证监会决定对公司立案】11月4日，天山股份(000877.SZ)公告称，公司收到证监会下发的《立案告知书》，因涉嫌信息披露违法违规，证监会决定对公司立案。",
-        "time": "2026-11-04 21:17:49",
-        "url": "http://finance.eastmoney.com/a/202611043922214092.html",
-        "category": "宏观政策"
+        "id": "202611053923766529",
+        "title": "晶合集成：拟5亿元至8亿元回购公司股份",
+        "digest": "【晶合集成：拟5亿元至8亿元回购公司股份】晶合集成(688249.SH)公告称，公司拟以自有资金及/或自筹资金通过集中竞价交易方式回购A股股份，回购金额不低于5亿元且不超过8亿元，回购价格不超过37元/股。本次回购股份将用于员工持股计划或股…",
+        "time": "2026-11-05 21:17:19",
+        "url": "http://finance.eastmoney.com/a/202611053923766529.html",
+        "category": "公司动态"
       },
       {
-        "id": "202611043922176865",
-        "title": "近20家A股公司掀“回购潮” 最高拟回购10亿元",
-        "digest": "【近20家A股公司掀“回购潮” 最高拟回购10亿元】今日，A股上市公司回购队伍继续扩容，三环集团、凯莱英、海光信息、兴森科技等近20家公司披露回购方案。",
-        "time": "2026-11-04 20:41:17",
-        "url": "http://finance.eastmoney.com/a/202611043922176865.html",
+        "id": "202611053923761620",
+        "title": "超聚变创业板IPO将于11月12日上会",
+        "digest": "【超聚变创业板IPO将于11月12日上会】据深交所网站披露，深交所上市审核委员会定于11月12日召开2026年第61次上市审核委员会审议会议，届时将审议超聚变数字技术股份有限公司的首发事项。",
+        "time": "2026-11-05 21:10:26",
+        "url": "http://stock.eastmoney.com/a/202611053923761620.html",
         "category": "市场资金"
       },
       {
-        "id": "202611043922164316",
-        "title": "半导体ETF罕见批量涨停 是反转还是超跌修复？",
-        "digest": "【半导体ETF罕见批量涨停 是反转还是超跌修复？】11月4日午后，A股主要指数持续拉升，半导体成为当天最强主线，科创综指收涨9.90%，创业板指收涨6.40%，上证指数涨2.16%；沪深两市成交额2.05万亿元，较前一交易日放量超3300亿…",
-        "time": "2026-11-04 20:29:15",
-        "url": "http://stock.eastmoney.com/a/202611043922164316.html",
-        "category": "市场资金"
+        "id": "202611053923692079",
+        "title": "丰田设立机器人部门",
+        "digest": "【丰田设立机器人部门】丰田宣布新一轮组织架构调整，其中最受关注的动作是设立专门的机器人部门，并将该业务定位为“未来业务的关键支柱”。这是丰田首次将机器人业务从生产制造体系中剥离，升级为与电动化、软件业务并列的核心战略事业板块。",
+        "time": "2026-11-05 19:53:33",
+        "url": "http://finance.eastmoney.com/a/202611053923692079.html",
+        "category": "产业主题"
       },
       {
-        "id": "202611043922148928",
-        "title": "三环集团：拟5亿元至10亿元回购公司股份",
-        "digest": "【三环集团：拟5亿元至10亿元回购公司股份】三环集团(300408.SZ)公告称，公司拟使用自有资金或自筹资金以集中竞价方式回购部分A股股份，回购资金总额不低于5亿元且不超过10亿元，回购价格不超过100元/股，用于维护公司价值及股东权益。",
-        "time": "2026-11-04 20:22:22",
-        "url": "http://finance.eastmoney.com/a/202611043922148928.html",
+        "id": "202611053923672113",
+        "title": "杭电股份：董事长提议回购5000万元至1亿元股份",
+        "digest": "【杭电股份：董事长提议回购5000万元至1亿元股份】杭电股份(603618.SH)公告称，公司董事长华建飞提议公司使用自有或自筹资金通过上交所交易系统以集中竞价方式回购公司A股股票，回购资金总额不低于5000万元，不超过1亿元，回购股份拟用…",
+        "time": "2026-11-05 19:34:15",
+        "url": "http://finance.eastmoney.com/a/202611053923672113.html",
         "category": "公司动态"
       },
       {
-        "id": "202611043922148895",
-        "title": "凯莱英：拟5亿元至7亿元回购公司股份",
-        "digest": "【凯莱英：拟5亿元至7亿元回购公司股份】凯莱英(002821.SZ)公告称，公司拟使用自有资金及自筹资金(含股票回购专项贷款资金等)以集中竞价方式回购公司A股股份，回购资金总额不低于5亿元且不超过7亿元，回购价格不超过246元/股。回购股份…",
-        "time": "2026-11-04 20:22:17",
-        "url": "http://finance.eastmoney.com/a/202611043922148895.html",
-        "category": "公司动态"
+        "id": "202611053923669263",
+        "title": "中国证监会与阿曼金融服务管理局签署《证券期货监管合作谅解备忘录》",
+        "digest": "【中国证监会与阿曼金融服务管理局签署《证券期货监管合作谅解备忘录》】在中阿两国元首共同见证下，2026年11月2日，中国证监会主席吴清在北京与阿曼外交大臣巴德尔签署了《中国证监会与阿曼金融服务管理局证券期货监管合作谅解备忘录》。",
+        "time": "2026-11-05 19:30:38",
+        "url": "http://finance.eastmoney.com/a/202611053923669263.html",
+        "category": "宏观政策"
       },
       {
-        "id": "202611043922114830",
-        "title": "倍轻松：实控人因操纵证券市场被罚款1184.19万元",
-        "digest": "【倍轻松：实控人因操纵证券市场被罚款1184.19万元】倍轻松(688793.SH)公告称，公司控股股东、实控人马学军收到证监会《行政处罚决定书》，因其涉嫌操纵证券市场，证监会决定没收违法所得1011.83万元，并处以罚款3035.48万元…",
-        "time": "2026-11-04 19:51:26",
-        "url": "http://finance.eastmoney.com/a/202611043922114830.html",
-        "category": "公司动态"
-      },
-      {
-        "id": "202611043922106842",
-        "title": "李强会见世界知识产权组织总干事邓鸿森",
-        "digest": "【李强会见世界知识产权组织总干事邓鸿森】11月4日下午，国务院总理李强在北京人民大会堂会见世界知识产权组织总干事邓鸿森。",
-        "time": "2026-11-04 19:36:35",
-        "url": "http://finance.eastmoney.com/a/202611043922106842.html",
-        "category": "公司动态"
-      },
-      {
-        "id": "202611043922099560",
-        "title": "广钢气体：董事长提议回购2亿至4亿元股份",
-        "digest": "【广钢气体：董事长提议回购2亿至4亿元股份】广钢气体(688548.SH)公告称，公司董事长邓韬提议公司使用自有或自筹资金，通过集中竞价交易方式回购公司A股股份，回购资金总额不低于2亿元且不超过4亿元，回购股份将用于股权激励或员工持股计划。",
-        "time": "2026-11-04 19:21:49",
-        "url": "http://finance.eastmoney.com/a/202611043922099560.html",
+        "id": "202611053923661016",
+        "title": "新开普：控股股东提议回购3000万元-6000万元公司股份",
+        "digest": "【新开普：控股股东提议回购3000万元-6000万元公司股份】新开普11月5日公告，公司控股股东、实际控制人、董事长兼总经理杨维国提议公司回购已发行的部分人民币普通股（A股）股票，用于维护公司价值和股东权益所必需，回购资金总额不低于3000…",
+        "time": "2026-11-05 19:14:57",
+        "url": "http://finance.eastmoney.com/a/202611053923661016.html",
         "category": "公司动态"
       }
     ],
     "technical": {
-      "ma5": 3636.55,
-      "ma20": 3707.6325000000006,
-      "ma60": 3848.681833333333,
-      "high20": 3864.12,
+      "ma5": 3644.246,
+      "ma20": 3701.5330000000004,
+      "ma60": 3845.5398333333333,
+      "high20": 3828.22,
       "low20": 3574.27,
-      "averageTurnover20": 762958606020,
-      "averageTurnover5": 818280279480,
+      "averageTurnover20": 771385039995,
+      "averageTurnover5": 871098495680,
       "aboveMa20": false,
       "aboveMa60": false
     },
     "style": {
-      "largeCap": 2.31,
-      "smallCap": 4.67,
-      "megaCap": 1.45,
-      "growth": 6.4,
-      "spread": -2.36,
+      "largeCap": 0.29,
+      "smallCap": 2.12,
+      "megaCap": 0.09,
+      "growth": 0.87,
+      "spread": -1.83,
       "label": "中小盘风格相对占优"
     },
-    "volumeRatio": 2.6707795205688845,
+    "volumeRatio": 2.7456496952724523,
     "watchPoints": [
-      "上证指数20日均线位于3707.63点，当前收盘在均线下方",
+      "上证指数20日均线位于3701.53点，当前收盘在均线下方",
       "近20个交易日低点3574.27点，可作为短期区间风险参考",
-      "沪深成交额为20日均值的2.67倍，明显放量",
-      "上涨家数占比85.1%，观察次日能否回到50%以上",
-      "沪深300相对中证1000强弱为-2.36个百分点"
+      "沪深成交额为20日均值的2.75倍，明显放量",
+      "上涨家数占比88.1%，观察次日能否回到50%以上",
+      "沪深300相对中证1000强弱为-1.83个百分点"
     ],
     "dataQuality": {
       "breadth": true,
@@ -16742,216 +15276,97 @@
       "mainFlow": true,
       "news": true
     },
-    "recap": "整体偏强。上证指数涨2.16%，深证成指涨4.22%，创业板指涨6.40%，科创50涨9.92%；全市场4396只上涨、771只下跌、128只平盘。涨跌停生态数据暂不可用，主力资金净流入189.2亿元。中小盘风格相对占优，沪深300与中证1000日涨幅差-2.36个百分点。领涨行业为半导体设备+15.22%、半导体材料+11.89%、半导体+10.64%，表现靠后的行业包括电信运营商、水产饲料；上证指数收于20日均线下方。",
+    "recap": "整体偏强。上证指数涨0.10%，深证成指涨1.19%，创业板指涨0.87%，科创50涨1.68%；全市场4591只上涨、620只下跌、83只平盘。涨跌停生态数据暂不可用，主力资金净流入39.2亿元。中小盘风格相对占优，沪深300与中证1000日涨幅差-1.83个百分点。领涨行业为光伏辅材+9.94%、光伏加工设备+9.58%、视频媒体+9.27%，表现靠后的行业包括动力煤、冶钢辅料；上证指数收于20日均线下方。",
     "sourceName": "腾讯证券 + 东方财富公开行情",
     "sourceUrl": "https://gu.qq.com/",
     "extensionErrors": [
+      "topStocks: HTTPError: HTTP Error 502: Bad Gateway",
+      "sectorLeaders:光伏辅材: HTTPError: HTTP Error 502: Bad Gateway",
+      "sectorLeaders:光伏加工设备: HTTPError: HTTP Error 502: Bad Gateway",
+      "sectorLeaders:视频媒体: HTTPError: HTTP Error 502: Bad Gateway",
+      "sectorLeaders:光伏电池组件: HTTPError: HTTP Error 502: Bad Gateway",
+      "sectorLeaders:光伏设备: HTTPError: HTTP Error 502: Bad Gateway",
+      "sectorLeaders:涂料: HTTPError: HTTP Error 502: Bad Gateway",
+      "sectorLeaders:白银: HTTPError: HTTP Error 502: Bad Gateway",
+      "sectorLeaders:氨纶: HTTPError: HTTP Error 502: Bad Gateway",
+      "sectorLeaders:品牌消费电子: HTTPError: HTTP Error 502: Bad Gateway",
+      "sectorLeaders:硅料硅片: HTTPError: HTTP Error 502: Bad Gateway",
+      "sectorLeaders:营销代理: HTTPError: HTTP Error 502: Bad Gateway",
+      "sectorLeaders:诊断服务: HTTPError: HTTP Error 502: Bad Gateway",
       "limitUp: AttributeError: 'NoneType' object has no attribute 'get'",
       "limitDown: AttributeError: 'NoneType' object has no attribute 'get'",
       "broken: AttributeError: 'NoneType' object has no attribute 'get'",
-      "yesterday: AttributeError: 'NoneType' object has no attribute 'get'"
+      "yesterday: AttributeError: 'NoneType' object has no attribute 'get'",
+      "板块成分 光伏辅材: HTTP 502: https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=6&po=1&np=1&fltt=2&invt=2&fid=f3&fs=b%3ABK1316%2Bf%3A%2150&fields=f12%2Cf14%2Cf2%2Cf3%2Cf6%2Cf8%2Cf10%2Cf20%2Cf62%2Cf100 <html> <head><title>502 Bad Gateway</title></head> <body> <center><h1>502 Bad Gateway</h1></center> <hr><center>nginx/1.26.2</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a pa",
+      "板块成分 光伏加工设备: HTTP 502: https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=6&po=1&np=1&fltt=2&invt=2&fid=f3&fs=b%3ABK1317%2Bf%3A%2150&fields=f12%2Cf14%2Cf2%2Cf3%2Cf6%2Cf8%2Cf10%2Cf20%2Cf62%2Cf100 <html> <head><title>502 Bad Gateway</title></head> <body> <center><h1>502 Bad Gateway</h1></center> <hr><center>nginx/1.26.2</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a pa",
+      "板块成分 视频媒体: HTTP 502: https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=6&po=1&np=1&fltt=2&invt=2&fid=f3&fs=b%3ABK1296%2Bf%3A%2150&fields=f12%2Cf14%2Cf2%2Cf3%2Cf6%2Cf8%2Cf10%2Cf20%2Cf62%2Cf100 <html> <head><title>502 Bad Gateway</title></head> <body> <center><h1>502 Bad Gateway</h1></center> <hr><center>nginx/1.26.2</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a pa",
+      "板块成分 光伏电池组件: HTTP 502: https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=6&po=1&np=1&fltt=2&invt=2&fid=f3&fs=b%3ABK1315%2Bf%3A%2150&fields=f12%2Cf14%2Cf2%2Cf3%2Cf6%2Cf8%2Cf10%2Cf20%2Cf62%2Cf100 <html> <head><title>502 Bad Gateway</title></head> <body> <center><h1>502 Bad Gateway</h1></center> <hr><center>nginx/1.26.2</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a pa",
+      "板块成分 光伏设备: HTTP 502: https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=6&po=1&np=1&fltt=2&invt=2&fid=f3&fs=b%3ABK1031%2Bf%3A%2150&fields=f12%2Cf14%2Cf2%2Cf3%2Cf6%2Cf8%2Cf10%2Cf20%2Cf62%2Cf100 <html> <head><title>502 Bad Gateway</title></head> <body> <center><h1>502 Bad Gateway</h1></center> <hr><center>nginx/1.26.2</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a pa",
+      "板块成分 涂料: HTTP 502: https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=6&po=1&np=1&fltt=2&invt=2&fid=f3&fs=b%3ABK1469%2Bf%3A%2150&fields=f12%2Cf14%2Cf2%2Cf3%2Cf6%2Cf8%2Cf10%2Cf20%2Cf62%2Cf100 <html> <head><title>502 Bad Gateway</title></head> <body> <center><h1>502 Bad Gateway</h1></center> <hr><center>nginx/1.26.2</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a pa",
+      "板块成分 氨纶: HTTP 502: https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=6&po=1&np=1&fltt=2&invt=2&fid=f3&fs=b%3ABK1412%2Bf%3A%2150&fields=f12%2Cf14%2Cf2%2Cf3%2Cf6%2Cf8%2Cf10%2Cf20%2Cf62%2Cf100 <html> <head><title>502 Bad Gateway</title></head> <body> <center><h1>502 Bad Gateway</h1></center> <hr><center>nginx/1.26.2</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a pa",
+      "板块成分 白银: HTTP 502: https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=6&po=1&np=1&fltt=2&invt=2&fid=f3&fs=b%3ABK1616%2Bf%3A%2150&fields=f12%2Cf14%2Cf2%2Cf3%2Cf6%2Cf8%2Cf10%2Cf20%2Cf62%2Cf100 <html> <head><title>502 Bad Gateway</title></head> <body> <center><h1>502 Bad Gateway</h1></center> <hr><center>nginx/1.26.2</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a pa"
     ],
     "unavailable": false,
     "tradingPlan": {
-      "asOfDate": "2026-11-04",
+      "asOfDate": "2026-11-05",
       "regime": "震荡确认",
-      "positionGuide": "20%—50%",
-      "upRatio": 0.8302171860245514,
-      "indexAverage": 4.946666666666666,
+      "positionGuide": "30%—60%",
+      "upRatio": 0.8672081601813374,
+      "indexAverage": 1.0416666666666667,
       "riskLevel": "中",
-      "summary": "多空分歧较大，等待指数与上涨家数共同确认后再增加仓位。",
+      "summary": "多空分歧较大，等待指数与上涨家数共同确认后再增加仓位。 近期主线延续性较好，保留原有确认条件并适度提高主线权重。",
       "mainlines": [
         {
-          "name": "半导体设备",
-          "changePct": 15.22,
-          "mode": "进攻",
-          "leaders": [
-            {
-              "code": "688072",
-              "name": "拓荆科技",
-              "changePct": 20,
-              "turnover": 4772967297,
-              "role": "龙头候选",
-              "entry": "不追高开超过5%；10:00后仍站稳分时均价、板块至少2只红盘，才考虑小仓试错。",
-              "invalidation": "跌破昨收 406.49 元、分时均价或板块转绿，放弃。"
-            },
-            {
-              "code": "688037",
-              "name": "芯源微",
-              "changePct": 20,
-              "turnover": 1442959636,
-              "role": "前排",
-              "entry": "先等龙头维持强势，再看前排承接；不主动猜板、不接高开秒板。",
-              "invalidation": "龙头炸板或本股跌破分时均价，取消关注。"
-            },
-            {
-              "code": "688409",
-              "name": "富创精密",
-              "changePct": 20,
-              "turnover": 1363791275,
-              "role": "跟风",
-              "entry": "只做板块扩散后的低位补涨，不追连续加速，优先观察成交是否持续放大。",
-              "invalidation": "龙头转弱、板块红盘少于2只或本股跌破昨收，取消。"
-            }
-          ],
-          "score": 16.47
-        },
-        {
-          "name": "半导体材料",
-          "changePct": 11.89,
-          "mode": "进攻",
-          "leaders": [
-            {
-              "code": "300666",
-              "name": "江丰电子",
-              "changePct": 20,
-              "turnover": 4175536768.17,
-              "role": "龙头候选",
-              "entry": "不追高开超过5%；10:00后仍站稳分时均价、板块至少2只红盘，才考虑小仓试错。",
-              "invalidation": "跌破昨收 154.61 元、分时均价或板块转绿，放弃。"
-            },
-            {
-              "code": "688809",
-              "name": "强一股份",
-              "changePct": 20,
-              "turnover": 801533477,
-              "role": "前排",
-              "entry": "先等龙头维持强势，再看前排承接；不主动猜板、不接高开秒板。",
-              "invalidation": "龙头炸板或本股跌破分时均价，取消关注。"
-            },
-            {
-              "code": "688530",
-              "name": "欧莱新材",
-              "changePct": 19.94,
-              "turnover": 447097650,
-              "role": "跟风",
-              "entry": "只做板块扩散后的低位补涨，不追连续加速，优先观察成交是否持续放大。",
-              "invalidation": "龙头转弱、板块红盘少于2只或本股跌破昨收，取消。"
-            }
-          ],
-          "score": 13.14
-        },
-        {
-          "name": "半导体",
-          "changePct": 10.64,
-          "mode": "进攻",
-          "leaders": [
-            {
-              "code": "688072",
-              "name": "拓荆科技",
-              "changePct": 20,
-              "turnover": 4772967297,
-              "role": "龙头候选",
-              "entry": "不追高开超过5%；10:00后仍站稳分时均价、板块至少2只红盘，才考虑小仓试错。",
-              "invalidation": "跌破昨收 406.49 元、分时均价或板块转绿，放弃。"
-            },
-            {
-              "code": "688037",
-              "name": "芯源微",
-              "changePct": 20,
-              "turnover": 1442959636,
-              "role": "前排",
-              "entry": "先等龙头维持强势，再看前排承接；不主动猜板、不接高开秒板。",
-              "invalidation": "龙头炸板或本股跌破分时均价，取消关注。"
-            },
-            {
-              "code": "688809",
-              "name": "强一股份",
-              "changePct": 20,
-              "turnover": 801533477,
-              "role": "跟风",
-              "entry": "只做板块扩散后的低位补涨，不追连续加速，优先观察成交是否持续放大。",
-              "invalidation": "龙头转弱、板块红盘少于2只或本股跌破昨收，取消。"
-            }
-          ],
-          "score": 11.89
-        },
-        {
-          "name": "集成电路制造",
-          "changePct": 10.63,
+          "name": "光伏辅材",
+          "changePct": 9.94,
           "mode": "观察",
-          "leaders": [
-            {
-              "code": "688347",
-              "name": "华虹宏力",
-              "changePct": 17.25,
-              "turnover": 3906897260,
-              "role": "龙头候选",
-              "entry": "不追高开超过5%；10:00后仍站稳分时均价、板块至少2只红盘，才考虑小仓试错。",
-              "invalidation": "跌破昨收 131.85 元、分时均价或板块转绿，放弃。"
-            },
-            {
-              "code": "688820",
-              "name": "盛合晶微",
-              "changePct": 14.64,
-              "turnover": 1239677436,
-              "role": "前排",
-              "entry": "先等龙头维持强势，再看前排承接；不主动猜板、不接高开秒板。",
-              "invalidation": "龙头炸板或本股跌破分时均价，取消关注。"
-            },
-            {
-              "code": "301660",
-              "name": "粤芯半导-U",
-              "changePct": 11.92,
-              "turnover": 2654626332.41,
-              "role": "跟风",
-              "entry": "只做板块扩散后的低位补涨，不追连续加速，优先观察成交是否持续放大。",
-              "invalidation": "龙头转弱、板块红盘少于2只或本股跌破昨收，取消。"
-            }
-          ],
-          "score": 11.38
+          "leaders": [],
+          "score": 9.94
         },
         {
-          "name": "黄金",
-          "changePct": 10.59,
+          "name": "光伏加工设备",
+          "changePct": 9.58,
           "mode": "观察",
-          "leaders": [
-            {
-              "code": "300139",
-              "name": "晓程科技",
-              "changePct": 19.99,
-              "turnover": 1859475091.68,
-              "role": "龙头候选",
-              "entry": "不追高开超过5%；10:00后仍站稳分时均价、板块至少2只红盘，才考虑小仓试错。",
-              "invalidation": "跌破昨收 31.86 元、分时均价或板块转绿，放弃。"
-            },
-            {
-              "code": "002155",
-              "name": "湖南黄金",
-              "changePct": 10.02,
-              "turnover": 1571926462.36,
-              "role": "前排",
-              "entry": "先等龙头维持强势，再看前排承接；不主动猜板、不接高开秒板。",
-              "invalidation": "龙头炸板或本股跌破分时均价，取消关注。"
-            },
-            {
-              "code": "000975",
-              "name": "山金国际",
-              "changePct": 10.01,
-              "turnover": 1164371297.13,
-              "role": "跟风",
-              "entry": "只做板块扩散后的低位补涨，不追连续加速，优先观察成交是否持续放大。",
-              "invalidation": "龙头转弱、板块红盘少于2只或本股跌破昨收，取消。"
-            }
-          ],
-          "score": 11.34
+          "leaders": [],
+          "score": 9.58
+        },
+        {
+          "name": "视频媒体",
+          "changePct": 9.27,
+          "mode": "观察",
+          "leaders": [],
+          "score": 9.27
+        },
+        {
+          "name": "光伏电池组件",
+          "changePct": 8.83,
+          "mode": "观察",
+          "leaders": [],
+          "score": 8.83
+        },
+        {
+          "name": "光伏设备",
+          "changePct": 8.45,
+          "mode": "观察",
+          "leaders": [],
+          "score": 8.45
         }
       ],
       "entryConditions": [
-        "上证指数不跌破今日低点 3590.80 点，且10:00后上涨家数回到2500只以上，才考虑小仓试错。",
+        "上证指数不跌破今日低点 3646.57 点，且10:00后上涨家数回到2500只以上，才考虑小仓试错。",
         "只在涨幅居前且成交额靠前的主线中选1—2只，高开超过5%的股票不追。",
         "板块内至少2只个股保持红盘，龙头站稳分时均价后再确认。"
       ],
       "invalidConditions": [
-        "上证指数跌破今日低点 3590.80 点并继续放量。",
+        "上证指数跌破今日低点 3646.57 点并继续放量。",
         "上涨家数少于1800只，下跌家数继续扩大到3500只以上。",
         "候选龙头上半场跌破昨收，且板块由红转绿。"
       ],
       "avoidSectors": [
-        "电信运营商",
-        "水产饲料",
-        "乳品",
-        "饮料乳品"
+        "动力煤",
+        "冶钢辅料",
+        "煤炭开采",
+        "油气开采Ⅱ"
       ],
       "framework": [
         "市场环境：指数趋势、成交额、市场广度与大小盘风格",
@@ -16962,17 +15377,86 @@
         "历史校验：用下一交易日结果验证方向与主线，并动态调整后续权重"
       ],
       "disclaimer": "仅按公开行情生成条件式复盘，不构成投资建议；盘中数据会变化。",
-      "positionAnchor": 3686.17,
+      "positionAnchor": 3689.91,
       "learningApplied": {
-        "samples": 4,
-        "planAccuracy": 0,
+        "samples": 5,
+        "planAccuracy": 0.2,
         "mainlineHitRate": 1,
         "mainlineSamples": 5,
         "sectorAdjustments": {},
-        "adjustmentLabel": "样本积累中"
+        "adjustmentLabel": "提高主线权重"
       }
     },
     "recommendationHistory": [
+      {
+        "recommendationDate": "2026-11-04",
+        "validationDate": "2026-11-05",
+        "recommendedRegime": "震荡确认",
+        "positionGuide": "20%—50%",
+        "planCorrect": true,
+        "actualIndexAverage": 1.0416666666666667,
+        "actualUpRatio": 0.8672081601813374,
+        "mainlineHitRate": null,
+        "mainlineResults": [
+          {
+            "name": "半导体设备",
+            "matchedSector": null,
+            "actualChangePct": null,
+            "evaluated": false,
+            "hit": false
+          },
+          {
+            "name": "半导体材料",
+            "matchedSector": null,
+            "actualChangePct": null,
+            "evaluated": false,
+            "hit": false
+          },
+          {
+            "name": "半导体",
+            "matchedSector": null,
+            "actualChangePct": null,
+            "evaluated": false,
+            "hit": false
+          },
+          {
+            "name": "集成电路制造",
+            "matchedSector": null,
+            "actualChangePct": null,
+            "evaluated": false,
+            "hit": false
+          },
+          {
+            "name": "黄金",
+            "matchedSector": null,
+            "actualChangePct": null,
+            "evaluated": false,
+            "hit": false
+          }
+        ],
+        "avoidedResults": [
+          {
+            "name": "电信运营商",
+            "actualChangePct": null
+          },
+          {
+            "name": "水产饲料",
+            "actualChangePct": null
+          },
+          {
+            "name": "乳品",
+            "actualChangePct": null
+          },
+          {
+            "name": "饮料乳品",
+            "actualChangePct": null
+          }
+        ],
+        "score": 75,
+        "lessons": [
+          "次日板块匹配数据不足，本条建议仅验证市场方向，不据此大幅修改模型。"
+        ]
+      },
       {
         "recommendationDate": "2026-11-03",
         "validationDate": "2026-11-04",
@@ -17151,12 +15635,12 @@
       }
     ],
     "learningSummary": {
-      "samples": 4,
-      "planAccuracy": 0,
+      "samples": 5,
+      "planAccuracy": 0.2,
       "mainlineHitRate": 1,
       "mainlineSamples": 5,
       "sectorAdjustments": {},
-      "adjustmentLabel": "样本积累中"
+      "adjustmentLabel": "提高主线权重"
     }
   },
   "sources": {
