@@ -1,15 +1,87 @@
 {
-  "updatedAt": "2026-11-06T10:54:26.163Z",
+  "updatedAt": "2026-11-06T14:29:41.094Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 5,
-    "planAccuracy": 0.2,
+    "samples": 6,
+    "planAccuracy": 0.16666666666666666,
     "mainlineHitRate": 1,
-    "mainlineSamples": 5,
-    "sectorAdjustments": {},
+    "mainlineSamples": 7,
+    "sectorAdjustments": {
+      "视频媒体": 0.6
+    },
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-05",
+      "validationDate": "2026-11-06",
+      "recommendedRegime": "震荡确认",
+      "positionGuide": "30%—60%",
+      "planCorrect": false,
+      "actualIndexAverage": -2.308333333333333,
+      "actualUpRatio": 0.1369216241737488,
+      "mainlineHitRate": 1,
+      "mainlineResults": [
+        {
+          "name": "光伏辅材",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "光伏加工设备",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "视频媒体",
+          "matchedSector": "视频媒体",
+          "actualChangePct": 6.25,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "光伏电池组件",
+          "matchedSector": "光伏电池组件",
+          "actualChangePct": 1.46,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "光伏设备",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "动力煤",
+          "actualChangePct": null
+        },
+        {
+          "name": "冶钢辅料",
+          "actualChangePct": null
+        },
+        {
+          "name": "煤炭开采",
+          "actualChangePct": null
+        },
+        {
+          "name": "油气开采Ⅱ",
+          "actualChangePct": null
+        }
+      ],
+      "score": 50,
+      "lessons": [
+        "市场方向与“震荡确认”不一致，次日先降低仓位，不以盘前判断替代开盘确认。",
+        "视频媒体、光伏电池组件获得次日承接，保留其板块强度与成交额要求。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-04",
       "validationDate": "2026-11-05",
