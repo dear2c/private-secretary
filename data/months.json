@@ -3,24 +3,192 @@
     "month": "2026-10",
     "label": "2026年10月",
     "file": "data/monthly/2026-10.xlsx",
-    "count": 13
+    "count": 13,
+    "cityFiles": {
+      "shijiazhuang": {
+        "label": "石家庄",
+        "file": "data/monthly/2026-10-shijiazhuang.xlsx",
+        "count": 7
+      },
+      "baoding": {
+        "label": "保定",
+        "file": "data/monthly/2026-10-baoding.xlsx",
+        "count": 0
+      },
+      "handan": {
+        "label": "邯郸",
+        "file": "data/monthly/2026-10-handan.xlsx",
+        "count": 1
+      },
+      "cangzhou": {
+        "label": "沧州",
+        "file": "data/monthly/2026-10-cangzhou.xlsx",
+        "count": 0
+      },
+      "langfang": {
+        "label": "廊坊",
+        "file": "data/monthly/2026-10-langfang.xlsx",
+        "count": 2
+      },
+      "hengshui": {
+        "label": "衡水",
+        "file": "data/monthly/2026-10-hengshui.xlsx",
+        "count": 0
+      },
+      "tangshan": {
+        "label": "唐山",
+        "file": "data/monthly/2026-10-tangshan.xlsx",
+        "count": 0
+      },
+      "xiongan": {
+        "label": "雄安",
+        "file": "data/monthly/2026-10-xiongan.xlsx",
+        "count": 3
+      }
+    }
   },
   {
     "month": "2026-09",
     "label": "2026年9月",
     "file": "data/monthly/2026-09.xlsx",
-    "count": 38
+    "count": 38,
+    "cityFiles": {
+      "shijiazhuang": {
+        "label": "石家庄",
+        "file": "data/monthly/2026-09-shijiazhuang.xlsx",
+        "count": 24
+      },
+      "baoding": {
+        "label": "保定",
+        "file": "data/monthly/2026-09-baoding.xlsx",
+        "count": 2
+      },
+      "handan": {
+        "label": "邯郸",
+        "file": "data/monthly/2026-09-handan.xlsx",
+        "count": 4
+      },
+      "cangzhou": {
+        "label": "沧州",
+        "file": "data/monthly/2026-09-cangzhou.xlsx",
+        "count": 4
+      },
+      "langfang": {
+        "label": "廊坊",
+        "file": "data/monthly/2026-09-langfang.xlsx",
+        "count": 1
+      },
+      "hengshui": {
+        "label": "衡水",
+        "file": "data/monthly/2026-09-hengshui.xlsx",
+        "count": 1
+      },
+      "tangshan": {
+        "label": "唐山",
+        "file": "data/monthly/2026-09-tangshan.xlsx",
+        "count": 2
+      },
+      "xiongan": {
+        "label": "雄安",
+        "file": "data/monthly/2026-09-xiongan.xlsx",
+        "count": 0
+      }
+    }
   },
   {
     "month": "2026-08",
     "label": "2026年8月",
     "file": "data/monthly/2026-08.xlsx",
-    "count": 46
+    "count": 46,
+    "cityFiles": {
+      "shijiazhuang": {
+        "label": "石家庄",
+        "file": "data/monthly/2026-08-shijiazhuang.xlsx",
+        "count": 20
+      },
+      "baoding": {
+        "label": "保定",
+        "file": "data/monthly/2026-08-baoding.xlsx",
+        "count": 5
+      },
+      "handan": {
+        "label": "邯郸",
+        "file": "data/monthly/2026-08-handan.xlsx",
+        "count": 5
+      },
+      "cangzhou": {
+        "label": "沧州",
+        "file": "data/monthly/2026-08-cangzhou.xlsx",
+        "count": 4
+      },
+      "langfang": {
+        "label": "廊坊",
+        "file": "data/monthly/2026-08-langfang.xlsx",
+        "count": 2
+      },
+      "hengshui": {
+        "label": "衡水",
+        "file": "data/monthly/2026-08-hengshui.xlsx",
+        "count": 1
+      },
+      "tangshan": {
+        "label": "唐山",
+        "file": "data/monthly/2026-08-tangshan.xlsx",
+        "count": 7
+      },
+      "xiongan": {
+        "label": "雄安",
+        "file": "data/monthly/2026-08-xiongan.xlsx",
+        "count": 2
+      }
+    }
   },
   {
     "month": "2026-07",
     "label": "2026年7月",
     "file": "data/monthly/2026-07.xlsx",
-    "count": 51
+    "count": 51,
+    "cityFiles": {
+      "shijiazhuang": {
+        "label": "石家庄",
+        "file": "data/monthly/2026-07-shijiazhuang.xlsx",
+        "count": 18
+      },
+      "baoding": {
+        "label": "保定",
+        "file": "data/monthly/2026-07-baoding.xlsx",
+        "count": 3
+      },
+      "handan": {
+        "label": "邯郸",
+        "file": "data/monthly/2026-07-handan.xlsx",
+        "count": 10
+      },
+      "cangzhou": {
+        "label": "沧州",
+        "file": "data/monthly/2026-07-cangzhou.xlsx",
+        "count": 8
+      },
+      "langfang": {
+        "label": "廊坊",
+        "file": "data/monthly/2026-07-langfang.xlsx",
+        "count": 2
+      },
+      "hengshui": {
+        "label": "衡水",
+        "file": "data/monthly/2026-07-hengshui.xlsx",
+        "count": 1
+      },
+      "tangshan": {
+        "label": "唐山",
+        "file": "data/monthly/2026-07-tangshan.xlsx",
+        "count": 5
+      },
+      "xiongan": {
+        "label": "雄安",
+        "file": "data/monthly/2026-07-xiongan.xlsx",
+        "count": 4
+      }
+    }
   }
 ]
