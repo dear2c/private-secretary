@@ -1,17 +1,87 @@
 {
-  "updatedAt": "2026-11-06T14:29:41.094Z",
+  "updatedAt": "2026-11-09T14:29:19.737Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 6,
-    "planAccuracy": 0.16666666666666666,
+    "samples": 7,
+    "planAccuracy": 0.2857142857142857,
     "mainlineHitRate": 1,
-    "mainlineSamples": 7,
+    "mainlineSamples": 10,
     "sectorAdjustments": {
       "视频媒体": 0.6
     },
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-06",
+      "validationDate": "2026-11-09",
+      "recommendedRegime": "防守优先",
+      "positionGuide": "10%—35%",
+      "planCorrect": true,
+      "actualIndexAverage": 0.006666666666666658,
+      "actualUpRatio": 0.3922568460812087,
+      "mainlineHitRate": 1,
+      "mainlineResults": [
+        {
+          "name": "视频媒体",
+          "matchedSector": "视频媒体",
+          "actualChangePct": 2.78,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "种子",
+          "matchedSector": null,
+          "actualChangePct": 9.04,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "卫浴电器",
+          "matchedSector": "卫浴电器",
+          "actualChangePct": 5.1,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "其他养殖",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "电信运营商",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "印制电路板",
+          "actualChangePct": 3.07
+        },
+        {
+          "name": "元件",
+          "actualChangePct": null
+        },
+        {
+          "name": "通信线缆及配套",
+          "actualChangePct": null
+        },
+        {
+          "name": "医疗研发外包",
+          "actualChangePct": null
+        }
+      ],
+      "score": 100,
+      "lessons": [
+        "视频媒体、种子、卫浴电器获得次日承接，保留其板块强度与成交额要求。",
+        "回避方向“印制电路板”次日上涨，后续不机械回避，需同时核对量价和板块扩散。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-05",
       "validationDate": "2026-11-06",
