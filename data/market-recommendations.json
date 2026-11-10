@@ -1,17 +1,89 @@
 {
-  "updatedAt": "2026-11-09T14:29:19.737Z",
+  "updatedAt": "2026-11-10T14:27:20.505Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 7,
-    "planAccuracy": 0.2857142857142857,
-    "mainlineHitRate": 1,
-    "mainlineSamples": 10,
+    "samples": 8,
+    "planAccuracy": 0.25,
+    "mainlineHitRate": 0.9285714285714286,
+    "mainlineSamples": 14,
     "sectorAdjustments": {
+      "卫浴电器": 0.6,
       "视频媒体": 0.6
     },
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-09",
+      "validationDate": "2026-11-10",
+      "recommendedRegime": "防守优先",
+      "positionGuide": "10%—35%",
+      "planCorrect": false,
+      "actualIndexAverage": 0.7216666666666667,
+      "actualUpRatio": 0.7620396600566572,
+      "mainlineHitRate": 0.75,
+      "mainlineResults": [
+        {
+          "name": "焦炭",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "卫浴电器",
+          "matchedSector": null,
+          "actualChangePct": 10.01,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "汽车综合服务",
+          "matchedSector": "汽车综合服务",
+          "actualChangePct": 5.04,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "煤炭",
+          "matchedSector": "煤炭开采",
+          "actualChangePct": -1.56,
+          "evaluated": true,
+          "hit": false
+        },
+        {
+          "name": "燃气",
+          "matchedSector": null,
+          "actualChangePct": 10,
+          "evaluated": true,
+          "hit": true
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "教育运营及其他",
+          "actualChangePct": null
+        },
+        {
+          "name": "宠物食品",
+          "actualChangePct": null
+        },
+        {
+          "name": "钾肥",
+          "actualChangePct": null
+        },
+        {
+          "name": "逆变器",
+          "actualChangePct": null
+        }
+      ],
+      "score": 38,
+      "lessons": [
+        "市场方向与“防守优先”不一致，次日先降低仓位，不以盘前判断替代开盘确认。",
+        "煤炭未延续，降低同方向主线的排序权重。",
+        "卫浴电器、汽车综合服务、燃气获得次日承接，保留其板块强度与成交额要求。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-06",
       "validationDate": "2026-11-09",
