@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-10T14:27:20.505Z",
+  "updatedAt": "2026-11-11T14:29:21.151Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 8,
-    "planAccuracy": 0.25,
-    "mainlineHitRate": 0.9285714285714286,
-    "mainlineSamples": 14,
+    "samples": 9,
+    "planAccuracy": 0.2222222222222222,
+    "mainlineHitRate": 0.9333333333333333,
+    "mainlineSamples": 15,
     "sectorAdjustments": {
       "卫浴电器": 0.6,
       "视频媒体": 0.6
@@ -13,6 +13,76 @@
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-10",
+      "validationDate": "2026-11-11",
+      "recommendedRegime": "震荡确认",
+      "positionGuide": "30%—60%",
+      "planCorrect": false,
+      "actualIndexAverage": 1.5783333333333331,
+      "actualUpRatio": 0.6448262839879154,
+      "mainlineHitRate": 1,
+      "mainlineResults": [
+        {
+          "name": "其他数字媒体",
+          "matchedSector": "其他数字媒体",
+          "actualChangePct": 7.27,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "文字媒体",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "影视动漫制作",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "影视院线",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "其他黑色家电",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "钾肥",
+          "actualChangePct": null
+        },
+        {
+          "name": "民爆制品",
+          "actualChangePct": null
+        },
+        {
+          "name": "动力煤",
+          "actualChangePct": null
+        },
+        {
+          "name": "医美耗材",
+          "actualChangePct": null
+        }
+      ],
+      "score": 50,
+      "lessons": [
+        "市场方向与“震荡确认”不一致，次日先降低仓位，不以盘前判断替代开盘确认。",
+        "其他数字媒体获得次日承接，保留其板块强度与成交额要求。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-09",
       "validationDate": "2026-11-10",
