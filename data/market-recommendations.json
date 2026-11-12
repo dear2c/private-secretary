@@ -1,18 +1,72 @@
 {
-  "updatedAt": "2026-11-11T14:29:21.151Z",
+  "updatedAt": "2026-11-12T14:29:24.348Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 9,
-    "planAccuracy": 0.2222222222222222,
-    "mainlineHitRate": 0.9333333333333333,
-    "mainlineSamples": 15,
+    "samples": 10,
+    "planAccuracy": 0.2,
+    "mainlineHitRate": 0.875,
+    "mainlineSamples": 16,
     "sectorAdjustments": {
+      "其他数字媒体": 0,
       "卫浴电器": 0.6,
       "视频媒体": 0.6
     },
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-11",
+      "validationDate": "2026-11-12",
+      "recommendedRegime": "积极试错",
+      "positionGuide": "50%—70%",
+      "planCorrect": false,
+      "actualIndexAverage": -1.135,
+      "actualUpRatio": 0.15977337110481588,
+      "mainlineHitRate": 0,
+      "mainlineResults": [
+        {
+          "name": "通信网络设备及器件",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "其他数字媒体",
+          "matchedSector": "其他数字媒体",
+          "actualChangePct": -8.78,
+          "evaluated": true,
+          "hit": false
+        },
+        {
+          "name": "通信线缆及配套",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "通信设备",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "印制电路板",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        }
+      ],
+      "avoidedResults": [],
+      "score": 0,
+      "lessons": [
+        "市场方向与“积极试错”不一致，次日先降低仓位，不以盘前判断替代开盘确认。",
+        "其他数字媒体未延续，降低同方向主线的排序权重。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-10",
       "validationDate": "2026-11-11",
