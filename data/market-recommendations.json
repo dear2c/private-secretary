@@ -1,19 +1,89 @@
 {
-  "updatedAt": "2026-11-13T10:50:56.164Z",
+  "updatedAt": "2026-11-13T14:28:40.136Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 10,
-    "planAccuracy": 0.2,
-    "mainlineHitRate": 0.875,
-    "mainlineSamples": 16,
+    "samples": 11,
+    "planAccuracy": 0.2727272727272727,
+    "mainlineHitRate": 0.9,
+    "mainlineSamples": 20,
     "sectorAdjustments": {
-      "其他数字媒体": 0,
       "卫浴电器": 0.6,
+      "其他数字媒体": 0,
       "视频媒体": 0.6
     },
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-12",
+      "validationDate": "2026-11-13",
+      "recommendedRegime": "防守优先",
+      "positionGuide": "10%—35%",
+      "planCorrect": true,
+      "actualIndexAverage": -1.9499999999999995,
+      "actualUpRatio": 0.14264122425845457,
+      "mainlineHitRate": 1,
+      "mainlineResults": [
+        {
+          "name": "水产养殖",
+          "matchedSector": null,
+          "actualChangePct": 10.08,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "卫浴电器",
+          "matchedSector": null,
+          "actualChangePct": 5.54,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "地面兵装",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "消费零售",
+          "matchedSector": null,
+          "actualChangePct": 9.305,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "渔业",
+          "matchedSector": null,
+          "actualChangePct": 10.08,
+          "evaluated": true,
+          "hit": true
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "视频媒体",
+          "actualChangePct": null
+        },
+        {
+          "name": "其他数字媒体",
+          "actualChangePct": 2.13
+        },
+        {
+          "name": "文字媒体",
+          "actualChangePct": null
+        },
+        {
+          "name": "黄金",
+          "actualChangePct": null
+        }
+      ],
+      "score": 100,
+      "lessons": [
+        "水产养殖、卫浴电器、消费零售、渔业获得次日承接，保留其板块强度与成交额要求。",
+        "回避方向“其他数字媒体”次日上涨，后续不机械回避，需同时核对量价和板块扩散。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-11",
       "validationDate": "2026-11-12",
