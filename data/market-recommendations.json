@@ -1,12 +1,14 @@
 {
-  "updatedAt": "2026-11-16T15:58:00.739Z",
+  "updatedAt": "2026-11-17T14:32:02.384Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 12,
-    "planAccuracy": 0.3333333333333333,
-    "mainlineHitRate": 0.9130434782608695,
-    "mainlineSamples": 23,
+    "samples": 13,
+    "planAccuracy": 0.38461538461538464,
+    "mainlineHitRate": 0.8461538461538461,
+    "mainlineSamples": 26,
     "sectorAdjustments": {
+      "教育运营及其他": 0,
+      "院线": 0,
       "卫浴电器": 0.6,
       "其他数字媒体": 0,
       "视频媒体": 0.6
@@ -14,6 +16,76 @@
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-16",
+      "validationDate": "2026-11-17",
+      "recommendedRegime": "防守优先",
+      "positionGuide": "10%—35%",
+      "planCorrect": true,
+      "actualIndexAverage": -0.47,
+      "actualUpRatio": 0.23347185493010955,
+      "mainlineHitRate": 0.3333333333333333,
+      "mainlineResults": [
+        {
+          "name": "教育运营及其他",
+          "matchedSector": "教育运营及其他",
+          "actualChangePct": -6.28,
+          "evaluated": true,
+          "hit": false
+        },
+        {
+          "name": "化纤纺织",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "汽车经销商",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "厨房小家电",
+          "matchedSector": "厨房小家电",
+          "actualChangePct": 3.2,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "院线",
+          "matchedSector": "影视院线",
+          "actualChangePct": -9.02,
+          "evaluated": true,
+          "hit": false
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "其他数字媒体",
+          "actualChangePct": null
+        },
+        {
+          "name": "印制电路板",
+          "actualChangePct": null
+        },
+        {
+          "name": "激光设备",
+          "actualChangePct": null
+        },
+        {
+          "name": "航天装备Ⅱ",
+          "actualChangePct": null
+        }
+      ],
+      "score": 67,
+      "lessons": [
+        "教育运营及其他、院线未延续，降低同方向主线的排序权重。",
+        "厨房小家电获得次日承接，保留其板块强度与成交额要求。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-13",
       "validationDate": "2026-11-16",
