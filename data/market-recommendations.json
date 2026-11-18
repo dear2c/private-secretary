@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-17T14:32:02.384Z",
+  "updatedAt": "2026-11-18T14:28:04.710Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 13,
-    "planAccuracy": 0.38461538461538464,
+    "samples": 14,
+    "planAccuracy": 0.42857142857142855,
     "mainlineHitRate": 0.8461538461538461,
     "mainlineSamples": 26,
     "sectorAdjustments": {
@@ -16,6 +16,75 @@
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-17",
+      "validationDate": "2026-11-18",
+      "recommendedRegime": "防守优先",
+      "positionGuide": "10%—35%",
+      "planCorrect": true,
+      "actualIndexAverage": 0.47666666666666674,
+      "actualUpRatio": 0.24744994333207404,
+      "mainlineHitRate": null,
+      "mainlineResults": [
+        {
+          "name": "集成电路制造",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "厨房小家电",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "橡胶助剂",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "半导体材料",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "钼",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "其他数字媒体",
+          "actualChangePct": null
+        },
+        {
+          "name": "影视动漫制作",
+          "actualChangePct": null
+        },
+        {
+          "name": "影视院线",
+          "actualChangePct": null
+        },
+        {
+          "name": "文字媒体",
+          "actualChangePct": null
+        }
+      ],
+      "score": 75,
+      "lessons": [
+        "次日板块匹配数据不足，本条建议仅验证市场方向，不据此大幅修改模型。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-16",
       "validationDate": "2026-11-17",
