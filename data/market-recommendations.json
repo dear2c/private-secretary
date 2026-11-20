@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-20T10:53:07.501Z",
+  "updatedAt": "2026-11-20T14:28:57.117Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 15,
-    "planAccuracy": 0.4666666666666667,
-    "mainlineHitRate": 0.8461538461538461,
-    "mainlineSamples": 26,
+    "samples": 16,
+    "planAccuracy": 0.5,
+    "mainlineHitRate": 0.8214285714285714,
+    "mainlineSamples": 28,
     "sectorAdjustments": {
       "教育运营及其他": 0,
       "院线": 0,
@@ -16,6 +16,77 @@
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-19",
+      "validationDate": "2026-11-20",
+      "recommendedRegime": "防守优先",
+      "positionGuide": "10%—35%",
+      "planCorrect": true,
+      "actualIndexAverage": -2.7716666666666665,
+      "actualUpRatio": 0.05686756092952957,
+      "mainlineHitRate": 0.5,
+      "mainlineResults": [
+        {
+          "name": "集成电路制造",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "集成电路封测",
+          "matchedSector": "集成电路封测",
+          "actualChangePct": -7.96,
+          "evaluated": true,
+          "hit": false
+        },
+        {
+          "name": "化纤纺织",
+          "matchedSector": null,
+          "actualChangePct": 3.62,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "稀土",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "航空运输",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "院线",
+          "actualChangePct": null
+        },
+        {
+          "name": "厨房电器",
+          "actualChangePct": null
+        },
+        {
+          "name": "视频媒体",
+          "actualChangePct": 3.19
+        },
+        {
+          "name": "燃料电池",
+          "actualChangePct": null
+        }
+      ],
+      "score": 75,
+      "lessons": [
+        "集成电路封测未延续，降低同方向主线的排序权重。",
+        "化纤纺织获得次日承接，保留其板块强度与成交额要求。",
+        "回避方向“视频媒体”次日上涨，后续不机械回避，需同时核对量价和板块扩散。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-18",
       "validationDate": "2026-11-19",
