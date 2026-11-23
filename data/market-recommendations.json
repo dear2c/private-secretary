@@ -1,21 +1,92 @@
 {
-  "updatedAt": "2026-11-20T14:28:57.117Z",
+  "updatedAt": "2026-11-23T14:38:03.039Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 16,
-    "planAccuracy": 0.5,
-    "mainlineHitRate": 0.8214285714285714,
-    "mainlineSamples": 28,
+    "samples": 17,
+    "planAccuracy": 0.47058823529411764,
+    "mainlineHitRate": 0.7575757575757576,
+    "mainlineSamples": 33,
     "sectorAdjustments": {
+      "其他数字媒体": 0.19999999999999996,
+      "视频媒体": 0.6,
       "教育运营及其他": 0,
       "院线": 0,
-      "卫浴电器": 0.6,
-      "其他数字媒体": 0,
-      "视频媒体": 0.6
+      "卫浴电器": 0.6
     },
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-20",
+      "validationDate": "2026-11-23",
+      "recommendedRegime": "防守优先",
+      "positionGuide": "10%—35%",
+      "planCorrect": false,
+      "actualIndexAverage": 1.3150000000000002,
+      "actualUpRatio": 0.82117202268431,
+      "mainlineHitRate": 0.4,
+      "mainlineResults": [
+        {
+          "name": "其他数字媒体",
+          "matchedSector": "其他数字媒体",
+          "actualChangePct": 14.16,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "视频媒体",
+          "matchedSector": "视频媒体",
+          "actualChangePct": 15.21,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "银行防守",
+          "matchedSector": "国有大型银行Ⅲ",
+          "actualChangePct": -1.04,
+          "evaluated": true,
+          "hit": false
+        },
+        {
+          "name": "核力发电",
+          "matchedSector": "核力发电",
+          "actualChangePct": -1.38,
+          "evaluated": true,
+          "hit": false
+        },
+        {
+          "name": "电信运营商",
+          "matchedSector": "电信运营商",
+          "actualChangePct": -1.92,
+          "evaluated": true,
+          "hit": false
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "涂料",
+          "actualChangePct": null
+        },
+        {
+          "name": "其他黑色家电",
+          "actualChangePct": null
+        },
+        {
+          "name": "集成电路封测",
+          "actualChangePct": null
+        },
+        {
+          "name": "光学元件",
+          "actualChangePct": null
+        }
+      ],
+      "score": 20,
+      "lessons": [
+        "市场方向与“防守优先”不一致，次日先降低仓位，不以盘前判断替代开盘确认。",
+        "银行防守、核力发电、电信运营商未延续，降低同方向主线的排序权重。",
+        "其他数字媒体、视频媒体获得次日承接，保留其板块强度与成交额要求。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-19",
       "validationDate": "2026-11-20",
