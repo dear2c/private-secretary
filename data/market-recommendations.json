@@ -1,21 +1,90 @@
 {
-  "updatedAt": "2026-11-23T14:38:03.039Z",
+  "updatedAt": "2026-11-24T14:34:23.997Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 17,
-    "planAccuracy": 0.47058823529411764,
-    "mainlineHitRate": 0.7575757575757576,
-    "mainlineSamples": 33,
+    "samples": 18,
+    "planAccuracy": 0.5,
+    "mainlineHitRate": 0.7714285714285715,
+    "mainlineSamples": 35,
     "sectorAdjustments": {
-      "其他数字媒体": 0.19999999999999996,
+      "其他数字媒体": 0.3,
+      "院线": 0.19999999999999996,
       "视频媒体": 0.6,
       "教育运营及其他": 0,
-      "院线": 0,
       "卫浴电器": 0.6
     },
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-23",
+      "validationDate": "2026-11-24",
+      "recommendedRegime": "震荡确认",
+      "positionGuide": "30%—60%",
+      "planCorrect": true,
+      "actualIndexAverage": 0.27499999999999997,
+      "actualUpRatio": 0.35253021148036257,
+      "mainlineHitRate": 1,
+      "mainlineResults": [
+        {
+          "name": "视频媒体",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "其他数字媒体",
+          "matchedSector": "其他数字媒体",
+          "actualChangePct": 7.12,
+          "evaluated": true,
+          "hit": true
+        },
+        {
+          "name": "电机机器人",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "文字媒体",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "院线",
+          "matchedSector": "院线",
+          "actualChangePct": 3.14,
+          "evaluated": true,
+          "hit": true
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "油气开采Ⅱ",
+          "actualChangePct": null
+        },
+        {
+          "name": "油气开采Ⅲ",
+          "actualChangePct": null
+        },
+        {
+          "name": "电信运营商",
+          "actualChangePct": null
+        },
+        {
+          "name": "保险Ⅱ",
+          "actualChangePct": null
+        }
+      ],
+      "score": 100,
+      "lessons": [
+        "其他数字媒体、院线获得次日承接，保留其板块强度与成交额要求。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-20",
       "validationDate": "2026-11-23",
