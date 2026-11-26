@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-25T14:39:52.141Z",
-  "generatedAtLocal": "2026/11/25 22:39",
-  "dateLabel": "2026-11-25",
+  "generatedAt": "2026-11-26T14:36:50.436Z",
+  "generatedAtLocal": "2026/11/26 22:36",
+  "dateLabel": "2026-11-26",
   "notificationTime": "21:30",
   "engineeringReminderTime": "18:00",
   "engineeringReminderWeekday": 5,
@@ -14482,54 +14482,3019 @@
     }
   },
   "market": {
-    "asOfDate": "2026-11-25",
+    "asOfDate": "2026-11-26",
     "indices": [
       {
+        "code": "000001",
         "name": "上证指数",
-        "code": "",
-        "price": null,
-        "changePct": 0,
-        "change": null,
-        "turnover": 0
+        "price": 3476.88,
+        "change": 0.41,
+        "changePct": 0.01,
+        "volume": 454062959,
+        "turnover": 613332810000
       },
       {
+        "code": "399001",
         "name": "深证成指",
-        "code": "",
-        "price": null,
-        "changePct": 0,
-        "change": null,
-        "turnover": 0
+        "price": 10084.04,
+        "change": -2.32,
+        "changePct": -0.02,
+        "volume": 544733686,
+        "turnover": 704044360000
       },
       {
+        "code": "399006",
         "name": "创业板指",
-        "code": "",
-        "price": null,
-        "changePct": 0,
-        "change": null,
-        "turnover": 0
+        "price": 2189.82,
+        "change": 6.24,
+        "changePct": 0.29,
+        "volume": 157118489,
+        "turnover": 333541050000
       },
       {
+        "code": "000688",
         "name": "科创50",
-        "code": "",
-        "price": null,
-        "changePct": 0,
-        "change": null,
-        "turnover": 0
+        "price": 1169.99,
+        "change": -16.15,
+        "changePct": -1.36,
+        "volume": 8791835,
+        "turnover": 73376740000
+      },
+      {
+        "code": "000300",
+        "name": "沪深300",
+        "price": 3900.55,
+        "change": 2.31,
+        "changePct": 0.06,
+        "volume": 159947235,
+        "turnover": 371397580000
+      },
+      {
+        "code": "000905",
+        "name": "中证500",
+        "price": 5863.34,
+        "change": -27.07,
+        "changePct": -0.46,
+        "volume": 120173884,
+        "turnover": 211605890000
+      },
+      {
+        "code": "000852",
+        "name": "中证1000",
+        "price": 5531.84,
+        "change": -9.71,
+        "changePct": -0.18,
+        "volume": 187174217,
+        "turnover": 240453710000
+      },
+      {
+        "code": "000016",
+        "name": "上证50",
+        "price": 2753.71,
+        "change": 1.86,
+        "changePct": 0.07,
+        "volume": 41864947,
+        "turnover": 106950720000
+      },
+      {
+        "code": "899050",
+        "name": "北证50",
+        "price": 752.44,
+        "change": -3.43,
+        "changePct": -0.45,
+        "volume": 5355421,
+        "turnover": 8769216700
       }
     ],
     "breadth": {
-      "advancing": 0,
-      "declining": 0,
-      "flat": 0,
-      "available": false
+      "advancing": 1730,
+      "declining": 3395,
+      "flat": 173,
+      "available": true
     },
-    "turnover": 0,
-    "topSectors": [],
-    "laggingSectors": [],
-    "topStocks": [],
-    "history": [],
-    "history90": [],
-    "news": [],
+    "turnover": 1317377170000,
+    "topSectors": [
+      {
+        "code": "BK1616",
+        "name": "白银",
+        "changePct": 6.73,
+        "turnover": 3454587803
+      },
+      {
+        "code": "BK1514",
+        "name": "水产养殖",
+        "changePct": 5.71,
+        "turnover": 2474816553
+      },
+      {
+        "code": "BK1260",
+        "name": "渔业",
+        "changePct": 5.26,
+        "turnover": 2655535084
+      },
+      {
+        "code": "BK0732",
+        "name": "贵金属",
+        "changePct": 4.94,
+        "turnover": 13458512748
+      },
+      {
+        "code": "BK1340",
+        "name": "印制电路板",
+        "changePct": 4.75,
+        "turnover": 71751706364
+      },
+      {
+        "code": "BK1513",
+        "name": "海洋捕捞",
+        "changePct": 4.67,
+        "turnover": 180718531
+      },
+      {
+        "code": "BK1432",
+        "name": "氮肥",
+        "changePct": 4.6,
+        "turnover": 2287708293
+      },
+      {
+        "code": "BK1617",
+        "name": "黄金",
+        "changePct": 4.4,
+        "turnover": 10003924945
+      },
+      {
+        "code": "BK0459",
+        "name": "元件",
+        "changePct": 3.66,
+        "turnover": 80011387642
+      },
+      {
+        "code": "BK1549",
+        "name": "旅游零售Ⅲ",
+        "changePct": 3.34,
+        "turnover": 916198903
+      },
+      {
+        "code": "BK1269",
+        "name": "旅游零售Ⅱ",
+        "changePct": 3.34,
+        "turnover": 916198903
+      },
+      {
+        "code": "BK1420",
+        "name": "其他化学原料",
+        "changePct": 3.28,
+        "turnover": 2649001993
+      }
+    ],
+    "laggingSectors": [
+      {
+        "code": "BK1598",
+        "name": "疫苗",
+        "changePct": -5.08,
+        "turnover": 1989190472
+      },
+      {
+        "code": "BK1479",
+        "name": "航空运输",
+        "changePct": -3.7,
+        "turnover": 2512560031
+      },
+      {
+        "code": "BK1542",
+        "name": "文化用品",
+        "changePct": -3.59,
+        "turnover": 1207701492
+      },
+      {
+        "code": "BK1296",
+        "name": "视频媒体",
+        "changePct": -3.53,
+        "turnover": 2410510041
+      },
+      {
+        "code": "BK1497",
+        "name": "化妆品制造及其他",
+        "changePct": -3.28,
+        "turnover": 357846255
+      },
+      {
+        "code": "BK1546",
+        "name": "电商服务",
+        "changePct": -2.92,
+        "turnover": 1026968204
+      },
+      {
+        "code": "BK1499",
+        "name": "医美服务",
+        "changePct": -2.87,
+        "turnover": 99913046
+      },
+      {
+        "code": "BK0420",
+        "name": "航空机场",
+        "changePct": -2.86,
+        "turnover": 3153824141
+      },
+      {
+        "code": "BK1606",
+        "name": "线下药店",
+        "changePct": -2.81,
+        "turnover": 1694157928
+      },
+      {
+        "code": "BK1599",
+        "name": "其他医疗服务",
+        "changePct": -2.79,
+        "turnover": 787863778
+      },
+      {
+        "code": "BK1266",
+        "name": "文娱用品",
+        "changePct": -2.77,
+        "turnover": 2375792170
+      },
+      {
+        "code": "BK1584",
+        "name": "熟食",
+        "changePct": -2.76,
+        "turnover": 166877877
+      }
+    ],
+    "topStocks": [
+      {
+        "code": "301059",
+        "name": "金三江",
+        "price": 11.26,
+        "changePct": 20.04,
+        "turnover": 166598222.11,
+        "turnoverRate": 7.41,
+        "marketCap": 2602794040,
+        "mainNet": 28265396,
+        "industry": "化学制品"
+      },
+      {
+        "code": "301190",
+        "name": "善水科技",
+        "price": 28.56,
+        "changePct": 20,
+        "turnover": 319652694.62,
+        "turnoverRate": 6.53,
+        "marketCap": 6130018440,
+        "mainNet": 57971375,
+        "industry": "化学原料"
+      },
+      {
+        "code": "300324",
+        "name": "旋极信息",
+        "price": 5.04,
+        "changePct": 20,
+        "turnover": 2531308080.52,
+        "turnoverRate": 30.84,
+        "marketCap": 8707056599,
+        "mainNet": 590364637,
+        "industry": "计算机设备"
+      },
+      {
+        "code": "301282",
+        "name": "金禄电子",
+        "price": 34.98,
+        "changePct": 19.39,
+        "turnover": 1291244471.56,
+        "turnoverRate": 21.83,
+        "marketCap": 7378466948,
+        "mainNet": 163913095,
+        "industry": "元件"
+      },
+      {
+        "code": "301112",
+        "name": "信邦智能",
+        "price": 27.93,
+        "changePct": 19.05,
+        "turnover": 158063316.4,
+        "turnoverRate": 5.17,
+        "marketCap": 3079746138,
+        "mainNet": 12210609,
+        "industry": "自动化设备"
+      },
+      {
+        "code": "688820",
+        "name": "盛合晶微",
+        "price": 101.1,
+        "changePct": 18.94,
+        "turnover": 4148339058,
+        "turnoverRate": 22.9,
+        "marketCap": 188962189937,
+        "mainNet": 767478176,
+        "industry": "半导体"
+      },
+      {
+        "code": "301041",
+        "name": "金百泽",
+        "price": 27.63,
+        "changePct": 16.88,
+        "turnover": 560189920.02,
+        "turnoverRate": 26.2,
+        "marketCap": 2947568400,
+        "mainNet": 97322539,
+        "industry": "元件"
+      },
+      {
+        "code": "301107",
+        "name": "瑜欣电子",
+        "price": 18.5,
+        "changePct": 14.91,
+        "turnover": 94823392.56,
+        "turnoverRate": 6.62,
+        "marketCap": 2630492578,
+        "mainNet": 7997048,
+        "industry": "通用设备"
+      },
+      {
+        "code": "301119",
+        "name": "正强股份",
+        "price": 21.33,
+        "changePct": 14.31,
+        "turnover": 175378835.08,
+        "turnoverRate": 7.35,
+        "marketCap": 3105648000,
+        "mainNet": 18716729,
+        "industry": "汽车零部件"
+      },
+      {
+        "code": "301316",
+        "name": "慧博云通",
+        "price": 32.21,
+        "changePct": 13.42,
+        "turnover": 946426959.89,
+        "turnoverRate": 7.82,
+        "marketCap": 12999988210,
+        "mainNet": 65812426,
+        "industry": "IT服务Ⅱ"
+      },
+      {
+        "code": "300086",
+        "name": "康芝药业",
+        "price": 5.5,
+        "changePct": 13.4,
+        "turnover": 626759560.39,
+        "turnoverRate": 27.06,
+        "marketCap": 2503184261,
+        "mainNet": 45609572,
+        "industry": "化学制药"
+      },
+      {
+        "code": "688629",
+        "name": "华丰科技",
+        "price": 92.5,
+        "changePct": 11.37,
+        "turnover": 2896468011,
+        "turnoverRate": 6.95,
+        "marketCap": 43313584355,
+        "mainNet": 2396160,
+        "industry": "军工电子Ⅱ"
+      },
+      {
+        "code": "300829",
+        "name": "金丹科技",
+        "price": 32.4,
+        "changePct": 11.19,
+        "turnover": 1251473050.86,
+        "turnoverRate": 24.37,
+        "marketCap": 7363713467,
+        "mainNet": 80551689,
+        "industry": "化学制品"
+      },
+      {
+        "code": "300252",
+        "name": "金信诺",
+        "price": 8.59,
+        "changePct": 10.55,
+        "turnover": 379532034.92,
+        "turnoverRate": 8.11,
+        "marketCap": 5877397856,
+        "mainNet": 30647663,
+        "industry": "军工电子Ⅱ"
+      },
+      {
+        "code": "000889",
+        "name": "中嘉博创",
+        "price": 3.91,
+        "changePct": 10.14,
+        "turnover": 893848065.71,
+        "turnoverRate": 26.9,
+        "marketCap": 3660898264,
+        "mainNet": 178822943,
+        "industry": "通信服务"
+      },
+      {
+        "code": "002453",
+        "name": "华软科技",
+        "price": 4.46,
+        "changePct": 10.12,
+        "turnover": 225188318.84,
+        "turnoverRate": 8.27,
+        "marketCap": 3623157382,
+        "mainNet": 46742041,
+        "industry": "化学制品"
+      },
+      {
+        "code": "000912",
+        "name": "泸天化",
+        "price": 3.27,
+        "changePct": 10.1,
+        "turnover": 96148911.46,
+        "turnoverRate": 1.92,
+        "marketCap": 5127360000,
+        "mainNet": 42580978,
+        "industry": "农化制品"
+      },
+      {
+        "code": "600963",
+        "name": "岳阳林纸",
+        "price": 3.49,
+        "changePct": 10.09,
+        "turnover": 241446317,
+        "turnoverRate": 4.07,
+        "marketCap": 6133911810,
+        "mainNet": 42030687,
+        "industry": "造纸"
+      },
+      {
+        "code": "002470",
+        "name": "金正大",
+        "price": 1.75,
+        "changePct": 10.06,
+        "turnover": 319258848.63,
+        "turnoverRate": 5.7,
+        "marketCap": 5750548549,
+        "mainNet": 133675778,
+        "industry": "农化制品"
+      },
+      {
+        "code": "600814",
+        "name": "杭州解百",
+        "price": 9.19,
+        "changePct": 10.06,
+        "turnover": 1493135073,
+        "turnoverRate": 22.39,
+        "marketCap": 6755372316,
+        "mainNet": -194423627,
+        "industry": "一般零售"
+      },
+      {
+        "code": "600127",
+        "name": "金健米业",
+        "price": 9.41,
+        "changePct": 10.06,
+        "turnover": 1252217879,
+        "turnoverRate": 21.56,
+        "marketCap": 6039180081,
+        "mainNet": 487380779,
+        "industry": "农产品加工"
+      },
+      {
+        "code": "002789",
+        "name": "*ST建艺",
+        "price": 7.66,
+        "changePct": 10.06,
+        "turnover": 36305688.2,
+        "turnoverRate": 3.22,
+        "marketCap": 1222716117,
+        "mainNet": 403845,
+        "industry": "装修装饰Ⅱ"
+      },
+      {
+        "code": "600103",
+        "name": "青山纸业",
+        "price": 4.16,
+        "changePct": 10.05,
+        "turnover": 3047549170,
+        "turnoverRate": 34.55,
+        "marketCap": 9203288836,
+        "mainNet": -49495152,
+        "industry": "造纸"
+      },
+      {
+        "code": "002565",
+        "name": "顺灏股份",
+        "price": 8.43,
+        "changePct": 10.05,
+        "turnover": 211658163.9,
+        "turnoverRate": 2.37,
+        "marketCap": 8935706612,
+        "mainNet": 137171274,
+        "industry": "包装印刷"
+      },
+      {
+        "code": "603166",
+        "name": "福达股份",
+        "price": 10.62,
+        "changePct": 10.05,
+        "turnover": 295650659,
+        "turnoverRate": 4.51,
+        "marketCap": 6849588314,
+        "mainNet": 73785813,
+        "industry": "汽车零部件"
+      },
+      {
+        "code": "000798",
+        "name": "中水渔业",
+        "price": 8.65,
+        "changePct": 10.05,
+        "turnover": 116874762.45,
+        "turnoverRate": 3.8,
+        "marketCap": 3164677859,
+        "mainNet": 55844611,
+        "industry": "渔业"
+      },
+      {
+        "code": "002081",
+        "name": "金 螳 螂",
+        "price": 4.38,
+        "changePct": 10.05,
+        "turnover": 1025231013.57,
+        "turnoverRate": 9.03,
+        "marketCap": 11630317758,
+        "mainNet": 471743186,
+        "industry": "装修装饰Ⅱ"
+      },
+      {
+        "code": "600185",
+        "name": "珠免集团",
+        "price": 4.71,
+        "changePct": 10.05,
+        "turnover": 43331529,
+        "turnoverRate": 0.49,
+        "marketCap": 8878377294,
+        "mainNet": 32577186,
+        "industry": "旅游零售Ⅱ"
+      },
+      {
+        "code": "603118",
+        "name": "共进股份",
+        "price": 13.26,
+        "changePct": 10.04,
+        "turnover": 1505510974,
+        "turnoverRate": 14.84,
+        "marketCap": 10439285144,
+        "mainNet": 347439027,
+        "industry": "通信设备"
+      },
+      {
+        "code": "003040",
+        "name": "楚天龙",
+        "price": 11.07,
+        "changePct": 10.04,
+        "turnover": 149966419.44,
+        "turnoverRate": 3.07,
+        "marketCap": 5104775210,
+        "mainNet": 59674386,
+        "industry": "通信设备"
+      },
+      {
+        "code": "002199",
+        "name": "东晶电子",
+        "price": 11.29,
+        "changePct": 10.04,
+        "turnover": 256757351.77,
+        "turnoverRate": 10.04,
+        "marketCap": 2748464278,
+        "mainNet": 51538383,
+        "industry": "元件"
+      },
+      {
+        "code": "002226",
+        "name": "江南化工",
+        "price": 5.7,
+        "changePct": 10.04,
+        "turnover": 650880180.16,
+        "turnoverRate": 4.41,
+        "marketCap": 15098860274,
+        "mainNet": 164940731,
+        "industry": "化学制品"
+      },
+      {
+        "code": "600722",
+        "name": "金牛化工",
+        "price": 14.47,
+        "changePct": 10.04,
+        "turnover": 1502570988,
+        "turnoverRate": 15.78,
+        "marketCap": 9844225712,
+        "mainNet": 171357008,
+        "industry": "化学原料"
+      },
+      {
+        "code": "002843",
+        "name": "泰嘉股份",
+        "price": 14.15,
+        "changePct": 10.03,
+        "turnover": 520336449.93,
+        "turnoverRate": 15.26,
+        "marketCap": 3619606252,
+        "mainNet": 92016908,
+        "industry": "通用设备"
+      },
+      {
+        "code": "002148",
+        "name": "北纬科技",
+        "price": 11.3,
+        "changePct": 10.03,
+        "turnover": 2503413978.46,
+        "turnoverRate": 54.32,
+        "marketCap": 6313890029,
+        "mainNet": 148683702,
+        "industry": "通信服务"
+      },
+      {
+        "code": "603109",
+        "name": "神驰机电",
+        "price": 15.25,
+        "changePct": 10.03,
+        "turnover": 179930780,
+        "turnoverRate": 5.77,
+        "marketCap": 3184937490,
+        "mainNet": 64810410,
+        "industry": "通用设备"
+      },
+      {
+        "code": "002261",
+        "name": "拓维信息",
+        "price": 20.96,
+        "changePct": 10.03,
+        "turnover": 2449210432.08,
+        "turnoverRate": 10.5,
+        "marketCap": 26408094527,
+        "mainNet": 614011089,
+        "industry": "软件开发"
+      },
+      {
+        "code": "002639",
+        "name": "雪人集团",
+        "price": 12.62,
+        "changePct": 10.03,
+        "turnover": 961258497.38,
+        "turnoverRate": 11.87,
+        "marketCap": 9836621960,
+        "mainNet": 394121930,
+        "industry": "通用设备"
+      },
+      {
+        "code": "600499",
+        "name": "科达制造",
+        "price": 12.73,
+        "changePct": 10.03,
+        "turnover": 649226455,
+        "turnoverRate": 2.69,
+        "marketCap": 24414311857,
+        "mainNet": 106257735,
+        "industry": "专用设备"
+      },
+      {
+        "code": "002144",
+        "name": "宏达高科",
+        "price": 9.99,
+        "changePct": 10.02,
+        "turnover": 183423370.92,
+        "turnoverRate": 13.41,
+        "marketCap": 1765857655,
+        "mainNet": -25556155,
+        "industry": "纺织制造"
+      },
+      {
+        "code": "002815",
+        "name": "崇达技术",
+        "price": 15.26,
+        "changePct": 10.02,
+        "turnover": 2108700830.46,
+        "turnoverRate": 18.32,
+        "marketCap": 18882739626,
+        "mainNet": 627423676,
+        "industry": "元件"
+      },
+      {
+        "code": "002949",
+        "name": "华阳国际",
+        "price": 10.54,
+        "changePct": 10.02,
+        "turnover": 192702596.99,
+        "turnoverRate": 12.48,
+        "marketCap": 2066766318,
+        "mainNet": 46098914,
+        "industry": "工程咨询服务Ⅱ"
+      },
+      {
+        "code": "603708",
+        "name": "家家悦",
+        "price": 10.65,
+        "changePct": 10.02,
+        "turnover": 591812119,
+        "turnoverRate": 9.3,
+        "marketCap": 6593504822,
+        "mainNet": 4093418,
+        "industry": "一般零售"
+      },
+      {
+        "code": "000678",
+        "name": "襄阳轴承",
+        "price": 21.96,
+        "changePct": 10.02,
+        "turnover": 2467279201.74,
+        "turnoverRate": 26.4,
+        "marketCap": 10093075062,
+        "mainNet": 407560572,
+        "industry": "汽车零部件"
+      },
+      {
+        "code": "603396",
+        "name": "金辰股份",
+        "price": 25.48,
+        "changePct": 10.02,
+        "turnover": 51440629,
+        "turnoverRate": 1.46,
+        "marketCap": 3529680139,
+        "mainNet": 35291405,
+        "industry": "光伏设备"
+      },
+      {
+        "code": "000993",
+        "name": "闽东电力",
+        "price": 11.1,
+        "changePct": 10.01,
+        "turnover": 237732998.21,
+        "turnoverRate": 4.79,
+        "marketCap": 5083261151,
+        "mainNet": 73015860,
+        "industry": "电力"
+      },
+      {
+        "code": "603324",
+        "name": "盛剑科技",
+        "price": 35.5,
+        "changePct": 10.01,
+        "turnover": 1085146412,
+        "turnoverRate": 22.19,
+        "marketCap": 5359907860,
+        "mainNet": -19980227,
+        "industry": "环保设备Ⅱ"
+      },
+      {
+        "code": "603278",
+        "name": "大业股份",
+        "price": 11.98,
+        "changePct": 10.01,
+        "turnover": 528261577,
+        "turnoverRate": 13.49,
+        "marketCap": 4094277516,
+        "mainNet": 130636747,
+        "industry": "通用设备"
+      },
+      {
+        "code": "603687",
+        "name": "大胜达",
+        "price": 12.42,
+        "changePct": 10.01,
+        "turnover": 646698408,
+        "turnoverRate": 9.7,
+        "marketCap": 6831395751,
+        "mainNet": 89845111,
+        "industry": "包装印刷"
+      },
+      {
+        "code": "600629",
+        "name": "华建集团",
+        "price": 13.08,
+        "changePct": 10.01,
+        "turnover": 358730201,
+        "turnoverRate": 2.47,
+        "marketCap": 15039447804,
+        "mainNet": 96044379,
+        "industry": "工程咨询服务Ⅱ"
+      },
+      {
+        "code": "000603",
+        "name": "盛达资源",
+        "price": 23.86,
+        "changePct": 10,
+        "turnover": 1072986080.35,
+        "turnoverRate": 6.91,
+        "marketCap": 16462668596,
+        "mainNet": 281048108,
+        "industry": "贵金属"
+      },
+      {
+        "code": "603960",
+        "name": "克来机电",
+        "price": 20.46,
+        "changePct": 10,
+        "turnover": 1305427509,
+        "turnoverRate": 24.76,
+        "marketCap": 5364569034,
+        "mainNet": -57691173,
+        "industry": "汽车零部件"
+      },
+      {
+        "code": "603586",
+        "name": "金麒麟",
+        "price": 13.2,
+        "changePct": 10,
+        "turnover": 202567638,
+        "turnoverRate": 8.19,
+        "marketCap": 2587896696,
+        "mainNet": 32155132,
+        "industry": "汽车零部件"
+      },
+      {
+        "code": "603386",
+        "name": "骏亚科技",
+        "price": 14.52,
+        "changePct": 10,
+        "turnover": 182361105,
+        "turnoverRate": 3.89,
+        "marketCap": 4738203571,
+        "mainNet": 107664127,
+        "industry": "元件"
+      },
+      {
+        "code": "603051",
+        "name": "鹿山新材",
+        "price": 21.78,
+        "changePct": 10,
+        "turnover": 197696946,
+        "turnoverRate": 5.84,
+        "marketCap": 3553034475,
+        "mainNet": 57013319,
+        "industry": "化学制品"
+      },
+      {
+        "code": "600628",
+        "name": "新世界",
+        "price": 6.38,
+        "changePct": 10,
+        "turnover": 283241038,
+        "turnoverRate": 6.9,
+        "marketCap": 4127064950,
+        "mainNet": 83281884,
+        "industry": "一般零售"
+      },
+      {
+        "code": "600467",
+        "name": "好当家",
+        "price": 3.96,
+        "changePct": 10,
+        "turnover": 1548089184,
+        "turnoverRate": 27.85,
+        "marketCap": 5785537444,
+        "mainNet": -199663664,
+        "industry": "渔业"
+      },
+      {
+        "code": "002872",
+        "name": "天圣制药",
+        "price": 7.81,
+        "changePct": 10,
+        "turnover": 26888002.46,
+        "turnoverRate": 1.6,
+        "marketCap": 2483580000,
+        "mainNet": 11203062,
+        "industry": "化学制药"
+      },
+      {
+        "code": "002651",
+        "name": "利君股份",
+        "price": 8.69,
+        "changePct": 10,
+        "turnover": 97311376.03,
+        "turnoverRate": 1.98,
+        "marketCap": 8980767400,
+        "mainNet": 75181422,
+        "industry": "航空装备Ⅱ"
+      },
+      {
+        "code": "000530",
+        "name": "冰山冷热",
+        "price": 16.17,
+        "changePct": 10,
+        "turnover": 2730110089.69,
+        "turnoverRate": 29.2,
+        "marketCap": 13634746238,
+        "mainNet": 209580080,
+        "industry": "通用设备"
+      },
+      {
+        "code": "603373",
+        "name": "安邦护卫",
+        "price": 32.79,
+        "changePct": 10,
+        "turnover": 109806172,
+        "turnoverRate": 5.43,
+        "marketCap": 4936129052,
+        "mainNet": 9448645,
+        "industry": "专业服务"
+      },
+      {
+        "code": "605058",
+        "name": "澳弘电子",
+        "price": 42.48,
+        "changePct": 9.99,
+        "turnover": 528785362,
+        "turnoverRate": 9.04,
+        "marketCap": 6130850810,
+        "mainNet": 168392243,
+        "industry": "元件"
+      },
+      {
+        "code": "002246",
+        "name": "北化股份",
+        "price": 20.04,
+        "changePct": 9.99,
+        "turnover": 749523242.24,
+        "turnoverRate": 6.9,
+        "marketCap": 11002657272,
+        "mainNet": 96610814,
+        "industry": "化学制品"
+      },
+      {
+        "code": "603203",
+        "name": "快克智能",
+        "price": 30.95,
+        "changePct": 9.99,
+        "turnover": 219705919,
+        "turnoverRate": 2.23,
+        "marketCap": 10213281276,
+        "mainNet": 67679431,
+        "industry": "自动化设备"
+      },
+      {
+        "code": "002713",
+        "name": "东易日盛",
+        "price": 7.6,
+        "changePct": 9.99,
+        "turnover": 282541074.79,
+        "turnoverRate": 7.19,
+        "marketCap": 7230679398,
+        "mainNet": 20663656,
+        "industry": "装修装饰Ⅱ"
+      },
+      {
+        "code": "002298",
+        "name": "中电鑫龙",
+        "price": 7.05,
+        "changePct": 9.98,
+        "turnover": 359687021.48,
+        "turnoverRate": 7.86,
+        "marketCap": 5217781852,
+        "mainNet": 154073276,
+        "industry": "电网设备"
+      },
+      {
+        "code": "002197",
+        "name": "证通电子",
+        "price": 7.05,
+        "changePct": 9.98,
+        "turnover": 570391038.7,
+        "turnoverRate": 15.48,
+        "marketCap": 4331258642,
+        "mainNet": 103945114,
+        "industry": "计算机设备"
+      },
+      {
+        "code": "000158",
+        "name": "常山北明",
+        "price": 13.88,
+        "changePct": 9.98,
+        "turnover": 1308900621.73,
+        "turnoverRate": 6.06,
+        "marketCap": 22188800087,
+        "mainNet": 587645700,
+        "industry": "IT服务Ⅱ"
+      },
+      {
+        "code": "600229",
+        "name": "城市传媒",
+        "price": 5.95,
+        "changePct": 9.98,
+        "turnover": 334838897,
+        "turnoverRate": 8.65,
+        "marketCap": 3931211315,
+        "mainNet": 43680620,
+        "industry": "出版"
+      },
+      {
+        "code": "600520",
+        "name": "三佳科技",
+        "price": 20.06,
+        "changePct": 9.98,
+        "turnover": 252801240,
+        "turnoverRate": 8.31,
+        "marketCap": 3205359316,
+        "mainNet": 103700120,
+        "industry": "半导体"
+      },
+      {
+        "code": "002077",
+        "name": "大港股份",
+        "price": 12.79,
+        "changePct": 9.97,
+        "turnover": 726934460.71,
+        "turnoverRate": 9.99,
+        "marketCap": 7422657481,
+        "mainNet": 388597998,
+        "industry": "半导体"
+      },
+      {
+        "code": "603030",
+        "name": "全筑股份",
+        "price": 2.87,
+        "changePct": 9.96,
+        "turnover": 897357530,
+        "turnoverRate": 24.73,
+        "marketCap": 3779599202,
+        "mainNet": -77218541,
+        "industry": "装修装饰Ⅱ"
+      },
+      {
+        "code": "002141",
+        "name": "贤丰控股",
+        "price": 4.64,
+        "changePct": 9.95,
+        "turnover": 715496195.88,
+        "turnoverRate": 15.2,
+        "marketCap": 4792822103,
+        "mainNet": 322660242,
+        "industry": "元件"
+      },
+      {
+        "code": "603703",
+        "name": "盛洋科技",
+        "price": 8.4,
+        "changePct": 9.95,
+        "turnover": 76219080,
+        "turnoverRate": 2.19,
+        "marketCap": 3485849808,
+        "mainNet": 52952760,
+        "industry": "光学光电子"
+      },
+      {
+        "code": "600280",
+        "name": "中央商场",
+        "price": 3.1,
+        "changePct": 9.93,
+        "turnover": 491798597,
+        "turnoverRate": 14.18,
+        "marketCap": 3497837843,
+        "mainNet": 31165170,
+        "industry": "一般零售"
+      },
+      {
+        "code": "002913",
+        "name": "奥士康",
+        "price": 62.97,
+        "changePct": 9.91,
+        "turnover": 1104013166.09,
+        "turnoverRate": 5.87,
+        "marketCap": 19984190937,
+        "mainNet": 158449276,
+        "industry": "元件"
+      },
+      {
+        "code": "600691",
+        "name": "潞化科技",
+        "price": 2.44,
+        "changePct": 9.91,
+        "turnover": 329438976,
+        "turnoverRate": 6.03,
+        "marketCap": 5797395963,
+        "mainNet": 51579335,
+        "industry": "农化制品"
+      },
+      {
+        "code": "002086",
+        "name": "东方海洋",
+        "price": 4.77,
+        "changePct": 9.91,
+        "turnover": 3097302959.14,
+        "turnoverRate": 41.69,
+        "marketCap": 9344174805,
+        "mainNet": 565362848,
+        "industry": "农产品加工"
+      },
+      {
+        "code": "600227",
+        "name": "赤天化",
+        "price": 3.55,
+        "changePct": 9.91,
+        "turnover": 1181673886,
+        "turnoverRate": 27.05,
+        "marketCap": 5994983282,
+        "mainNet": 143927491,
+        "industry": "农化制品"
+      },
+      {
+        "code": "600180",
+        "name": "*ST瑞茂",
+        "price": 0.67,
+        "changePct": 9.84,
+        "turnover": 20582732,
+        "turnoverRate": 3.16,
+        "marketCap": 728040401,
+        "mainNet": 2636811,
+        "industry": "物流"
+      },
+      {
+        "code": "600567",
+        "name": "山鹰国际",
+        "price": 1.01,
+        "changePct": 9.78,
+        "turnover": 35587614,
+        "turnoverRate": 0.57,
+        "marketCap": 6267512687,
+        "mainNet": 23347179,
+        "industry": "造纸"
+      },
+      {
+        "code": "600340",
+        "name": "*ST华幸",
+        "price": 1.13,
+        "changePct": 9.71,
+        "turnover": 203512683,
+        "turnoverRate": 4.76,
+        "marketCap": 4399491220,
+        "mainNet": -2067621,
+        "industry": "房地产开发"
+      },
+      {
+        "code": "601086",
+        "name": "国芳集团",
+        "price": 11.79,
+        "changePct": 9.67,
+        "turnover": 1092698154,
+        "turnoverRate": 14.78,
+        "marketCap": 7852140000,
+        "mainNet": 43925596,
+        "industry": "一般零售"
+      },
+      {
+        "code": "300787",
+        "name": "海能实业",
+        "price": 10.22,
+        "changePct": 9.66,
+        "turnover": 102895099.95,
+        "turnoverRate": 5.34,
+        "marketCap": 3203285464,
+        "mainNet": 6944460,
+        "industry": "消费电子"
+      },
+      {
+        "code": "301210",
+        "name": "金杨精密",
+        "price": 24.31,
+        "changePct": 9.65,
+        "turnover": 372501366.03,
+        "turnoverRate": 24.63,
+        "marketCap": 3917817516,
+        "mainNet": 39277532,
+        "industry": "电池"
+      },
+      {
+        "code": "300719",
+        "name": "安达维尔",
+        "price": 9.42,
+        "changePct": 9.53,
+        "turnover": 214940144.87,
+        "turnoverRate": 12.29,
+        "marketCap": 2394819753,
+        "mainNet": 36003285,
+        "industry": "航空装备Ⅱ"
+      },
+      {
+        "code": "688667",
+        "name": "菱电电控",
+        "price": 97.28,
+        "changePct": 8.96,
+        "turnover": 87101759,
+        "turnoverRate": 1.71,
+        "marketCap": 5183056804,
+        "mainNet": 10709973,
+        "industry": "汽车零部件"
+      },
+      {
+        "code": "001226",
+        "name": "拓山重工",
+        "price": 41.1,
+        "changePct": 8.93,
+        "turnover": 118746128,
+        "turnoverRate": 8.24,
+        "marketCap": 3068801370,
+        "mainNet": 18918196,
+        "industry": "工程机械"
+      },
+      {
+        "code": "301578",
+        "name": "辰奕智能",
+        "price": 27.14,
+        "changePct": 8.82,
+        "turnover": 290032586.43,
+        "turnoverRate": 36.2,
+        "marketCap": 2869810876,
+        "mainNet": 9245004,
+        "industry": "黑色家电"
+      },
+      {
+        "code": "688069",
+        "name": "德林海",
+        "price": 25.63,
+        "changePct": 8.69,
+        "turnover": 159632411,
+        "turnoverRate": 4.1,
+        "marketCap": 4014504713,
+        "mainNet": -5407785,
+        "industry": "环境治理"
+      },
+      {
+        "code": "301251",
+        "name": "威尔高",
+        "price": 42.19,
+        "changePct": 8.68,
+        "turnover": 580795765.39,
+        "turnoverRate": 8,
+        "marketCap": 7955518788,
+        "mainNet": 4816147,
+        "industry": "元件"
+      },
+      {
+        "code": "002242",
+        "name": "九阳股份",
+        "price": 41.9,
+        "changePct": 8.66,
+        "turnover": 5175133433.13,
+        "turnoverRate": 16.68,
+        "marketCap": 31970412300,
+        "mainNet": -740284576,
+        "industry": "小家电"
+      },
+      {
+        "code": "300991",
+        "name": "创益通",
+        "price": 21.36,
+        "changePct": 8.59,
+        "turnover": 279486803.94,
+        "turnoverRate": 12.86,
+        "marketCap": 3075840000,
+        "mainNet": 13148563,
+        "industry": "其他电子Ⅱ"
+      },
+      {
+        "code": "688372",
+        "name": "伟测科技",
+        "price": 84.57,
+        "changePct": 8.48,
+        "turnover": 1715935357,
+        "turnoverRate": 12.11,
+        "marketCap": 14298995807,
+        "mainNet": -20670048,
+        "industry": "半导体"
+      },
+      {
+        "code": "000506",
+        "name": "招金黄金",
+        "price": 12.5,
+        "changePct": 8.41,
+        "turnover": 1082606956.16,
+        "turnoverRate": 9.41,
+        "marketCap": 11612722013,
+        "mainNet": 242015095,
+        "industry": "贵金属"
+      },
+      {
+        "code": "301132",
+        "name": "满坤科技",
+        "price": 51,
+        "changePct": 8.4,
+        "turnover": 1058023736.19,
+        "turnoverRate": 21.86,
+        "marketCap": 7552398699,
+        "mainNet": 35355231,
+        "industry": "元件"
+      },
+      {
+        "code": "301067",
+        "name": "显盈科技",
+        "price": 22.83,
+        "changePct": 8.2,
+        "turnover": 106811061.72,
+        "turnoverRate": 7.22,
+        "marketCap": 2219897880,
+        "mainNet": 154607,
+        "industry": "消费电子"
+      },
+      {
+        "code": "300505",
+        "name": "川金诺",
+        "price": 14.95,
+        "changePct": 8.1,
+        "turnover": 266520351.13,
+        "turnoverRate": 8.29,
+        "marketCap": 4109269469,
+        "mainNet": 20388636,
+        "industry": "农化制品"
+      },
+      {
+        "code": "600610",
+        "name": "中毅达",
+        "price": 6.5,
+        "changePct": 7.97,
+        "turnover": 356009904,
+        "turnoverRate": 7.72,
+        "marketCap": 6963284933,
+        "mainNet": 99574609,
+        "industry": "化学原料"
+      },
+      {
+        "code": "002579",
+        "name": "中京电子",
+        "price": 19.23,
+        "changePct": 7.91,
+        "turnover": 4343534432.42,
+        "turnoverRate": 40.1,
+        "marketCap": 12684685612,
+        "mainNet": 84886640,
+        "industry": "元件"
+      }
+    ],
+    "sectorLeaders": {
+      "BK1616": [
+        {
+          "code": "000603",
+          "name": "盛达资源",
+          "price": 23.86,
+          "changePct": 10,
+          "turnover": 1072986080.35,
+          "turnoverRate": 6.91,
+          "marketCap": 16462668596,
+          "mainNet": 281048108,
+          "industry": "贵金属"
+        },
+        {
+          "code": "002716",
+          "name": "湖南白银",
+          "price": 6.56,
+          "changePct": 5.47,
+          "turnover": 1012630040.6,
+          "turnoverRate": 6.7,
+          "marketCap": 18519461518,
+          "mainNet": 104969077,
+          "industry": "贵金属"
+        },
+        {
+          "code": "000426",
+          "name": "兴业银锡",
+          "price": 18.61,
+          "changePct": 4.73,
+          "turnover": 1368971682.34,
+          "turnoverRate": 4.13,
+          "marketCap": 33044581103,
+          "mainNet": 18826488,
+          "industry": "贵金属"
+        }
+      ],
+      "BK1514": [
+        {
+          "code": "600467",
+          "name": "好当家",
+          "price": 3.96,
+          "changePct": 10,
+          "turnover": 1548089184,
+          "turnoverRate": 27.85,
+          "marketCap": 5785537444,
+          "mainNet": -199663664,
+          "industry": "渔业"
+        },
+        {
+          "code": "300094",
+          "name": "国联水产",
+          "price": 3.02,
+          "changePct": 4.86,
+          "turnover": 437438635,
+          "turnoverRate": 13.27,
+          "marketCap": 3407065104,
+          "mainNet": 22236848,
+          "industry": "渔业"
+        },
+        {
+          "code": "600257",
+          "name": "大湖股份",
+          "price": 4.62,
+          "changePct": 4.29,
+          "turnover": 175101435,
+          "turnoverRate": 7.92,
+          "marketCap": 2223315809,
+          "mainNet": 14773632,
+          "industry": "渔业"
+        },
+        {
+          "code": "002069",
+          "name": "獐子岛",
+          "price": 3.67,
+          "changePct": 3.67,
+          "turnover": 314187299.41,
+          "turnoverRate": 12.59,
+          "marketCap": 2609781752,
+          "mainNet": 23689289,
+          "industry": "渔业"
+        }
+      ],
+      "BK1260": [
+        {
+          "code": "000798",
+          "name": "中水渔业",
+          "price": 8.65,
+          "changePct": 10.05,
+          "turnover": 116874762.45,
+          "turnoverRate": 3.8,
+          "marketCap": 3164677859,
+          "mainNet": 55844611,
+          "industry": "渔业"
+        },
+        {
+          "code": "600467",
+          "name": "好当家",
+          "price": 3.96,
+          "changePct": 10,
+          "turnover": 1548089184,
+          "turnoverRate": 27.85,
+          "marketCap": 5785537444,
+          "mainNet": -199663664,
+          "industry": "渔业"
+        },
+        {
+          "code": "300094",
+          "name": "国联水产",
+          "price": 3.02,
+          "changePct": 4.86,
+          "turnover": 437438635,
+          "turnoverRate": 13.27,
+          "marketCap": 3407065104,
+          "mainNet": 22236848,
+          "industry": "渔业"
+        },
+        {
+          "code": "600257",
+          "name": "大湖股份",
+          "price": 4.62,
+          "changePct": 4.29,
+          "turnover": 175101435,
+          "turnoverRate": 7.92,
+          "marketCap": 2223315809,
+          "mainNet": 14773632,
+          "industry": "渔业"
+        }
+      ],
+      "BK0732": [
+        {
+          "code": "000603",
+          "name": "盛达资源",
+          "price": 23.86,
+          "changePct": 10,
+          "turnover": 1072986080.35,
+          "turnoverRate": 6.91,
+          "marketCap": 16462668596,
+          "mainNet": 281048108,
+          "industry": "贵金属"
+        },
+        {
+          "code": "000506",
+          "name": "招金黄金",
+          "price": 12.5,
+          "changePct": 8.41,
+          "turnover": 1082606956.16,
+          "turnoverRate": 9.41,
+          "marketCap": 11612722013,
+          "mainNet": 242015095,
+          "industry": "贵金属"
+        },
+        {
+          "code": "300139",
+          "name": "晓程科技",
+          "price": 33.83,
+          "changePct": 7.29,
+          "turnover": 1502802782.89,
+          "turnoverRate": 19.04,
+          "marketCap": 9269420000,
+          "mainNet": 93676916,
+          "industry": "贵金属"
+        },
+        {
+          "code": "002716",
+          "name": "湖南白银",
+          "price": 6.56,
+          "changePct": 5.47,
+          "turnover": 1012630040.6,
+          "turnoverRate": 6.7,
+          "marketCap": 18519461518,
+          "mainNet": 104969077,
+          "industry": "贵金属"
+        }
+      ],
+      "BK1340": [
+        {
+          "code": "301282",
+          "name": "金禄电子",
+          "price": 34.98,
+          "changePct": 19.39,
+          "turnover": 1291244471.56,
+          "turnoverRate": 21.83,
+          "marketCap": 7378466948,
+          "mainNet": 163913095,
+          "industry": "元件"
+        },
+        {
+          "code": "301041",
+          "name": "金百泽",
+          "price": 27.63,
+          "changePct": 16.88,
+          "turnover": 560189920.02,
+          "turnoverRate": 26.2,
+          "marketCap": 2947568400,
+          "mainNet": 97322539,
+          "industry": "元件"
+        },
+        {
+          "code": "002815",
+          "name": "崇达技术",
+          "price": 15.26,
+          "changePct": 10.02,
+          "turnover": 2108700830.46,
+          "turnoverRate": 18.32,
+          "marketCap": 18882739626,
+          "mainNet": 627423676,
+          "industry": "元件"
+        },
+        {
+          "code": "603386",
+          "name": "骏亚科技",
+          "price": 14.52,
+          "changePct": 10,
+          "turnover": 182361105,
+          "turnoverRate": 3.89,
+          "marketCap": 4738203571,
+          "mainNet": 107664127,
+          "industry": "元件"
+        }
+      ],
+      "BK1513": [
+        {
+          "code": "000798",
+          "name": "中水渔业",
+          "price": 8.65,
+          "changePct": 10.05,
+          "turnover": 116874762.45,
+          "turnoverRate": 3.8,
+          "marketCap": 3164677859,
+          "mainNet": 55844611,
+          "industry": "渔业"
+        },
+        {
+          "code": "600097",
+          "name": "开创国际",
+          "price": 7.7,
+          "changePct": 2.67,
+          "turnover": 63618135,
+          "turnoverRate": 3.42,
+          "marketCap": 1855211504,
+          "mainNet": 2198902,
+          "industry": "渔业"
+        },
+        {
+          "code": "200992",
+          "name": "中  鲁Ｂ",
+          "price": 1.56,
+          "changePct": 1.3,
+          "turnover": 225634,
+          "turnoverRate": 0.11,
+          "marketCap": 415071259,
+          "mainNet": 0,
+          "industry": "渔业"
+        }
+      ],
+      "BK1432": [
+        {
+          "code": "000912",
+          "name": "泸天化",
+          "price": 3.27,
+          "changePct": 10.1,
+          "turnover": 96148911.46,
+          "turnoverRate": 1.92,
+          "marketCap": 5127360000,
+          "mainNet": 42580978,
+          "industry": "农化制品"
+        },
+        {
+          "code": "600691",
+          "name": "潞化科技",
+          "price": 2.44,
+          "changePct": 9.91,
+          "turnover": 329438976,
+          "turnoverRate": 6.03,
+          "marketCap": 5797395963,
+          "mainNet": 51579335,
+          "industry": "农化制品"
+        },
+        {
+          "code": "600227",
+          "name": "赤天化",
+          "price": 3.55,
+          "changePct": 9.91,
+          "turnover": 1181673886,
+          "turnoverRate": 27.05,
+          "marketCap": 5994983282,
+          "mainNet": 143927491,
+          "industry": "农化制品"
+        },
+        {
+          "code": "000731",
+          "name": "四川美丰",
+          "price": 5.56,
+          "changePct": 0.72,
+          "turnover": 43512929,
+          "turnoverRate": 1.42,
+          "marketCap": 3051472004,
+          "mainNet": -1219115,
+          "industry": "农化制品"
+        }
+      ],
+      "BK1617": [
+        {
+          "code": "000506",
+          "name": "招金黄金",
+          "price": 12.5,
+          "changePct": 8.41,
+          "turnover": 1082606956.16,
+          "turnoverRate": 9.41,
+          "marketCap": 11612722013,
+          "mainNet": 242015095,
+          "industry": "贵金属"
+        },
+        {
+          "code": "300139",
+          "name": "晓程科技",
+          "price": 33.83,
+          "changePct": 7.29,
+          "turnover": 1502802782.89,
+          "turnoverRate": 19.04,
+          "marketCap": 9269420000,
+          "mainNet": 93676916,
+          "industry": "贵金属"
+        },
+        {
+          "code": "600988",
+          "name": "赤峰黄金",
+          "price": 35.3,
+          "changePct": 4.87,
+          "turnover": 1856741738,
+          "turnoverRate": 3.16,
+          "marketCap": 78059380988,
+          "mainNet": 164000953,
+          "industry": "贵金属"
+        },
+        {
+          "code": "000975",
+          "name": "山金国际",
+          "price": 22.23,
+          "changePct": 4.56,
+          "turnover": 1043262046.07,
+          "turnoverRate": 1.86,
+          "marketCap": 61633284902,
+          "mainNet": 20108766,
+          "industry": "贵金属"
+        }
+      ]
+    },
+    "history": [
+      {
+        "date": "2026-10-16",
+        "open": 3723.8,
+        "close": 3716.28,
+        "high": 3750.77,
+        "low": 3681.28,
+        "volume": 472632158,
+        "amplitude": 0.97,
+        "amount": 732475190900,
+        "changePct": 0.23735798979360734
+      },
+      {
+        "date": "2026-10-19",
+        "open": 3694.12,
+        "close": 3730.92,
+        "high": 3743.8,
+        "low": 3692.29,
+        "volume": 417791248,
+        "amplitude": 0.86,
+        "amount": 687009728000,
+        "changePct": 0.3939423294262001
+      },
+      {
+        "date": "2026-10-20",
+        "open": 3718.44,
+        "close": 3735.37,
+        "high": 3740.07,
+        "low": 3702.44,
+        "volume": 408693062,
+        "amplitude": 0.84,
+        "amount": 699969753800,
+        "changePct": 0.11927353038927446
+      },
+      {
+        "date": "2026-10-21",
+        "open": 3740.57,
+        "close": 3713.03,
+        "high": 3743.08,
+        "low": 3703.12,
+        "volume": 378286389,
+        "amplitude": 0.78,
+        "amount": 642751560400,
+        "changePct": -0.598066590458235
+      },
+      {
+        "date": "2026-10-22",
+        "open": 3714.48,
+        "close": 3658.03,
+        "high": 3714.48,
+        "low": 3649.86,
+        "volume": 437691963,
+        "amplitude": 0.9,
+        "amount": 706095648800,
+        "changePct": -1.481270013977798
+      },
+      {
+        "date": "2026-10-23",
+        "open": 3623.57,
+        "close": 3690.48,
+        "high": 3691.4,
+        "low": 3574.27,
+        "volume": 552842912,
+        "amplitude": 1.14,
+        "amount": 898666874900,
+        "changePct": 0.8870894989926326
+      },
+      {
+        "date": "2026-10-26",
+        "open": 3671,
+        "close": 3697.52,
+        "high": 3699.01,
+        "low": 3664.82,
+        "volume": 432794318,
+        "amplitude": 0.89,
+        "amount": 746528025699.9999,
+        "changePct": 0.19076109340789849
+      },
+      {
+        "date": "2026-10-27",
+        "open": 3698.44,
+        "close": 3648.3,
+        "high": 3708.2,
+        "low": 3648.3,
+        "volume": 417789532,
+        "amplitude": 0.86,
+        "amount": 672414398199.9999,
+        "changePct": -1.331162508924899
+      },
+      {
+        "date": "2026-10-28",
+        "open": 3676.92,
+        "close": 3681.47,
+        "high": 3684.49,
+        "low": 3652.37,
+        "volume": 433622829,
+        "amplitude": 0.89,
+        "amount": 751019235600,
+        "changePct": 0.9091905819148538
+      },
+      {
+        "date": "2026-10-29",
+        "open": 3676.77,
+        "close": 3651.43,
+        "high": 3678.46,
+        "low": 3645.26,
+        "volume": 443564144,
+        "amplitude": 0.91,
+        "amount": 715620694900,
+        "changePct": -0.8159783999326375
+      },
+      {
+        "date": "2026-10-30",
+        "open": 3605.65,
+        "close": 3599.02,
+        "high": 3660.21,
+        "low": 3595.26,
+        "volume": 497973940,
+        "amplitude": 1.02,
+        "amount": 764227190900,
+        "changePct": -1.435328076945197
+      },
+      {
+        "date": "2026-11-02",
+        "open": 3614.31,
+        "close": 3638.03,
+        "high": 3648.13,
+        "low": 3594.77,
+        "volume": 565372836,
+        "amplitude": 1.16,
+        "amount": 847459066900,
+        "changePct": 1.0839061744586154
+      },
+      {
+        "date": "2026-11-03",
+        "open": 3624.58,
+        "close": 3608.1,
+        "high": 3624.58,
+        "low": 3580.38,
+        "volume": 536848407,
+        "amplitude": 1.1,
+        "amount": 810829284700,
+        "changePct": -0.8226979986421301
+      },
+      {
+        "date": "2026-11-04",
+        "open": 3605.39,
+        "close": 3686.17,
+        "high": 3686.17,
+        "low": 3590.8,
+        "volume": 599394361,
+        "amplitude": 1.23,
+        "amount": 953265155900,
+        "changePct": 2.163742690058479
+      },
+      {
+        "date": "2026-11-05",
+        "open": 3646.57,
+        "close": 3689.91,
+        "high": 3701.59,
+        "low": 3646.57,
+        "volume": 571291638,
+        "amplitude": 1.17,
+        "amount": 979711778199.9999,
+        "changePct": 0.10146032331661559
+      },
+      {
+        "date": "2026-11-06",
+        "open": 3612.15,
+        "close": 3649.18,
+        "high": 3660.49,
+        "low": 3610.2,
+        "volume": 477042561,
+        "amplitude": 0.98,
+        "amount": 772634566200,
+        "changePct": -1.1038209604028237
+      },
+      {
+        "date": "2026-11-09",
+        "open": 3659.02,
+        "close": 3660.79,
+        "high": 3679.09,
+        "low": 3653.05,
+        "volume": 427722257,
+        "amplitude": 0.88,
+        "amount": 682532599900,
+        "changePct": 0.3181536673992458
+      },
+      {
+        "date": "2026-11-10",
+        "open": 3682.04,
+        "close": 3663.72,
+        "high": 3683.73,
+        "low": 3660.72,
+        "volume": 404865177,
+        "amplitude": 0.83,
+        "amount": 673951893199.9999,
+        "changePct": 0.08003736898318792
+      },
+      {
+        "date": "2026-11-11",
+        "open": 3655.66,
+        "close": 3680.64,
+        "high": 3689.65,
+        "low": 3650.31,
+        "volume": 433120083,
+        "amplitude": 0.89,
+        "amount": 736154792000,
+        "changePct": 0.4618256853689662
+      },
+      {
+        "date": "2026-11-12",
+        "open": 3673.06,
+        "close": 3655.83,
+        "high": 3699.58,
+        "low": 3647.44,
+        "volume": 496533033,
+        "amplitude": 1.02,
+        "amount": 879537113600,
+        "changePct": -0.67406755346896
+      },
+      {
+        "date": "2026-11-13",
+        "open": 3658.72,
+        "close": 3634.35,
+        "high": 3669.44,
+        "low": 3623.84,
+        "volume": 472293657,
+        "amplitude": 0.97,
+        "amount": 770614170000,
+        "changePct": -0.5875546729470438
+      },
+      {
+        "date": "2026-11-16",
+        "open": 3611.54,
+        "close": 3602.57,
+        "high": 3623.12,
+        "low": 3586.57,
+        "volume": 461643487,
+        "amplitude": 0.95,
+        "amount": 706214352300,
+        "changePct": -0.8744342179481834
+      },
+      {
+        "date": "2026-11-17",
+        "open": 3585.67,
+        "close": 3584.58,
+        "high": 3604.98,
+        "low": 3565.59,
+        "volume": 444074698,
+        "amplitude": 0.91,
+        "amount": 690514639000,
+        "changePct": -0.4993657305756738
+      },
+      {
+        "date": "2026-11-18",
+        "open": 3596.55,
+        "close": 3587.83,
+        "high": 3596.55,
+        "low": 3560.45,
+        "volume": 423934832,
+        "amplitude": 0.87,
+        "amount": 650231688100,
+        "changePct": 0.09066613103905219
+      },
+      {
+        "date": "2026-11-19",
+        "open": 3583.12,
+        "close": 3577.62,
+        "high": 3584.28,
+        "low": 3547.94,
+        "volume": 412912755,
+        "amplitude": 0.85,
+        "amount": 636909057700,
+        "changePct": -0.2845731263744433
+      },
+      {
+        "date": "2026-11-20",
+        "open": 3527.3,
+        "close": 3533.79,
+        "high": 3538.27,
+        "low": 3500.83,
+        "volume": 499711727,
+        "amplitude": 1.03,
+        "amount": 702573853100,
+        "changePct": -1.225116138662019
+      },
+      {
+        "date": "2026-11-23",
+        "open": 3503.52,
+        "close": 3538.95,
+        "high": 3544.6,
+        "low": 3476.65,
+        "volume": 512192714,
+        "amplitude": 1.05,
+        "amount": 738500418800,
+        "changePct": 0.14601886359970617
+      },
+      {
+        "date": "2026-11-24",
+        "open": 3567.84,
+        "close": 3548.37,
+        "high": 3585.22,
+        "low": 3539.01,
+        "volume": 493526296,
+        "amplitude": 1.01,
+        "amount": 771861010300,
+        "changePct": 0.2661806468020167
+      },
+      {
+        "date": "2026-11-25",
+        "open": 3522.59,
+        "close": 3476.47,
+        "high": 3526.34,
+        "low": 3468.65,
+        "volume": 472561427,
+        "amplitude": 0.97,
+        "amount": 652709381600,
+        "changePct": -2.0262824902701815
+      },
+      {
+        "date": "2026-11-26",
+        "open": 3490.14,
+        "close": 3476.88,
+        "high": 3497.81,
+        "low": 3455.04,
+        "volume": 454062959,
+        "amplitude": 0.93,
+        "amount": 613332810000,
+        "changePct": 0.01
+      }
+    ],
+    "history90": [
+      {
+        "date": "2026-07-16",
+        "open": 3912.38,
+        "close": 3882.41,
+        "high": 3940.45,
+        "low": 3867.6,
+        "volume": 535281873,
+        "amplitude": 1.11,
+        "amount": 1124208166200,
+        "changePct": -0.7660298846226654
+      },
+      {
+        "date": "2026-07-17",
+        "open": 3865.32,
+        "close": 3764.15,
+        "high": 3869.21,
+        "low": 3745.17,
+        "volume": 650450984,
+        "amplitude": 1.34,
+        "amount": 1246445452800,
+        "changePct": -3.0460461414430706
+      },
+      {
+        "date": "2026-07-20",
+        "open": 3791.66,
+        "close": 3796.28,
+        "high": 3831.66,
+        "low": 3741.11,
+        "volume": 709234069,
+        "amplitude": 1.47,
+        "amount": 1294651895800,
+        "changePct": 0.8535791612980459
+      },
+      {
+        "date": "2026-07-21",
+        "open": 3812.16,
+        "close": 3864.37,
+        "high": 3864.6,
+        "low": 3743.36,
+        "volume": 735021925,
+        "amplitude": 1.52,
+        "amount": 1396517619600,
+        "changePct": 1.7935979432496918
+      },
+      {
+        "date": "2026-07-22",
+        "open": 3839.67,
+        "close": 3867.03,
+        "high": 3884.44,
+        "low": 3839.67,
+        "volume": 614255215,
+        "amplitude": 1.27,
+        "amount": 1258148128200,
+        "changePct": 0.06883398846384559
+      },
+      {
+        "date": "2026-07-23",
+        "open": 3868.09,
+        "close": 3876.78,
+        "high": 3878.83,
+        "low": 3851.71,
+        "volume": 562122601,
+        "amplitude": 1.16,
+        "amount": 1025875517700,
+        "changePct": 0.2521314807487851
+      },
+      {
+        "date": "2026-07-24",
+        "open": 3853.63,
+        "close": 3814.2,
+        "high": 3861.04,
+        "low": 3808.64,
+        "volume": 508203905,
+        "amplitude": 1.05,
+        "amount": 915366398300,
+        "changePct": -1.614226239301697
+      },
+      {
+        "date": "2026-07-27",
+        "open": 3808.9,
+        "close": 3858.25,
+        "high": 3858.31,
+        "low": 3793.45,
+        "volume": 504879454,
+        "amplitude": 1.04,
+        "amount": 1031312143100,
+        "changePct": 1.1548948665513148
+      },
+      {
+        "date": "2026-07-28",
+        "open": 3823.13,
+        "close": 3813.31,
+        "high": 3844.01,
+        "low": 3797.37,
+        "volume": 494829126,
+        "amplitude": 1.02,
+        "amount": 949683080100,
+        "changePct": -1.164776777036225
+      },
+      {
+        "date": "2026-07-29",
+        "open": 3823.29,
+        "close": 3828.47,
+        "high": 3845.77,
+        "low": 3782.48,
+        "volume": 571226391,
+        "amplitude": 1.18,
+        "amount": 1087407759100,
+        "changePct": 0.3975548801435025
+      },
+      {
+        "date": "2026-07-30",
+        "open": 3812.11,
+        "close": 3804.69,
+        "high": 3839.34,
+        "low": 3767.5,
+        "volume": 592298923,
+        "amplitude": 1.22,
+        "amount": 1106477266500,
+        "changePct": -0.6211358584499727
+      },
+      {
+        "date": "2026-07-31",
+        "open": 3833.54,
+        "close": 3832.26,
+        "high": 3847.09,
+        "low": 3822.37,
+        "volume": 597529427,
+        "amplitude": 1.23,
+        "amount": 1187681546400,
+        "changePct": 0.7246319673876123
+      },
+      {
+        "date": "2026-08-03",
+        "open": 3812.61,
+        "close": 3809.66,
+        "high": 3827.64,
+        "low": 3797.64,
+        "volume": 524516960,
+        "amplitude": 1.08,
+        "amount": 952256890100,
+        "changePct": -0.5897303418870403
+      },
+      {
+        "date": "2026-08-04",
+        "open": 3816.37,
+        "close": 3822.28,
+        "high": 3831.94,
+        "low": 3799.52,
+        "volume": 540324922,
+        "amplitude": 1.12,
+        "amount": 1008382536900,
+        "changePct": 0.3312631573421321
+      },
+      {
+        "date": "2026-08-05",
+        "open": 3815.12,
+        "close": 3878.43,
+        "high": 3884.4,
+        "low": 3815.12,
+        "volume": 592155124,
+        "amplitude": 1.22,
+        "amount": 1208723017800,
+        "changePct": 1.4690184915809423
+      },
+      {
+        "date": "2026-08-06",
+        "open": 3864.27,
+        "close": 3900.35,
+        "high": 3902.05,
+        "low": 3864.27,
+        "volume": 588555280,
+        "amplitude": 1.22,
+        "amount": 1166818677200,
+        "changePct": 0.5651771464226574
+      },
+      {
+        "date": "2026-08-07",
+        "open": 3896.49,
+        "close": 3940.04,
+        "high": 3940.93,
+        "low": 3885.62,
+        "volume": 564988582,
+        "amplitude": 1.17,
+        "amount": 1209543573300,
+        "changePct": 1.017600984527034
+      },
+      {
+        "date": "2026-08-10",
+        "open": 3943.82,
+        "close": 3966.59,
+        "high": 3967.59,
+        "low": 3938.63,
+        "volume": 542118110,
+        "amplitude": 1.12,
+        "amount": 1166893282400,
+        "changePct": 0.6738510268931241
+      },
+      {
+        "date": "2026-08-11",
+        "open": 3950.71,
+        "close": 3934.09,
+        "high": 3966.39,
+        "low": 3930.64,
+        "volume": 529490944,
+        "amplitude": 1.09,
+        "amount": 1066737091800.0001,
+        "changePct": -0.8193435671445704
+      },
+      {
+        "date": "2026-08-12",
+        "open": 3933.55,
+        "close": 3946.68,
+        "high": 3950.62,
+        "low": 3927.55,
+        "volume": 503257011,
+        "amplitude": 1.04,
+        "amount": 986122393800,
+        "changePct": 0.32002318198107726
+      },
+      {
+        "date": "2026-08-13",
+        "open": 3957.16,
+        "close": 3926.96,
+        "high": 3968.48,
+        "low": 3924.64,
+        "volume": 572793677,
+        "amplitude": 1.18,
+        "amount": 1164203068500,
+        "changePct": -0.4996604741200117
+      },
+      {
+        "date": "2026-08-14",
+        "open": 3930.02,
+        "close": 3927.18,
+        "high": 3932.64,
+        "low": 3903.7,
+        "volume": 499525613,
+        "amplitude": 1.03,
+        "amount": 990371924200,
+        "changePct": 0.005602297960760616
+      },
+      {
+        "date": "2026-08-17",
+        "open": 3930.1,
+        "close": 3982.65,
+        "high": 3983.51,
+        "low": 3924.47,
+        "volume": 489834027,
+        "amplitude": 1.01,
+        "amount": 1112818620600,
+        "changePct": 1.412463905397776
+      },
+      {
+        "date": "2026-08-18",
+        "open": 3979.49,
+        "close": 3990.3,
+        "high": 3994.18,
+        "low": 3955.6,
+        "volume": 511234287,
+        "amplitude": 1.05,
+        "amount": 1135187666400,
+        "changePct": 0.19208316070957743
+      },
+      {
+        "date": "2026-08-19",
+        "open": 3952.12,
+        "close": 3894.42,
+        "high": 3961.14,
+        "low": 3879.58,
+        "volume": 572191213,
+        "amplitude": 1.18,
+        "amount": 1218107974100,
+        "changePct": -2.402826855123674
+      },
+      {
+        "date": "2026-08-20",
+        "open": 3907.21,
+        "close": 3903.72,
+        "high": 3925.06,
+        "low": 3888.1,
+        "volume": 506633954,
+        "amplitude": 1.05,
+        "amount": 1018568353199.9999,
+        "changePct": 0.2388032107476734
+      },
+      {
+        "date": "2026-08-21",
+        "open": 3891.18,
+        "close": 3905.2,
+        "high": 3912.13,
+        "low": 3883.79,
+        "volume": 446895868,
+        "amplitude": 0.92,
+        "amount": 883423480100,
+        "changePct": 0.03791255520375625
+      },
+      {
+        "date": "2026-08-24",
+        "open": 3902.7,
+        "close": 3882.01,
+        "high": 3910.24,
+        "low": 3855.35,
+        "volume": 486931412,
+        "amplitude": 1,
+        "amount": 952039262500,
+        "changePct": -0.5938236197889912
+      },
+      {
+        "date": "2026-08-25",
+        "open": 3863.37,
+        "close": 3889.44,
+        "high": 3896.21,
+        "low": 3850.86,
+        "volume": 464117264,
+        "amplitude": 0.96,
+        "amount": 858874228900,
+        "changePct": 0.19139569449846405
+      },
+      {
+        "date": "2026-08-26",
+        "open": 3881.74,
+        "close": 3912.52,
+        "high": 3926.44,
+        "low": 3881.74,
+        "volume": 489553021,
+        "amplitude": 1.01,
+        "amount": 857223488000,
+        "changePct": 0.5934016207988835
+      },
+      {
+        "date": "2026-08-27",
+        "open": 3911.89,
+        "close": 3956.57,
+        "high": 3958.03,
+        "low": 3909.31,
+        "volume": 516777549,
+        "amplitude": 1.07,
+        "amount": 1010226574000,
+        "changePct": 1.125872838988684
+      },
+      {
+        "date": "2026-08-28",
+        "open": 3950.24,
+        "close": 3952.18,
+        "high": 3970.31,
+        "low": 3947.8,
+        "volume": 510581645,
+        "amplitude": 1.05,
+        "amount": 970365152099.9999,
+        "changePct": -0.11095469055268925
+      },
+      {
+        "date": "2026-08-31",
+        "open": 3926.53,
+        "close": 3986.3,
+        "high": 3986.3,
+        "low": 3926.5,
+        "volume": 576656606,
+        "amplitude": 1.19,
+        "amount": 1014292552099.9999,
+        "changePct": 0.8633210025859261
+      },
+      {
+        "date": "2026-09-01",
+        "open": 3979.88,
+        "close": 3979.89,
+        "high": 3995.18,
+        "low": 3976.47,
+        "volume": 573538949,
+        "amplitude": 1.18,
+        "amount": 944307561400,
+        "changePct": -0.1608007425432212
+      },
+      {
+        "date": "2026-09-02",
+        "open": 3963.07,
+        "close": 3941.39,
+        "high": 3965.81,
+        "low": 3932.25,
+        "volume": 516472775,
+        "amplitude": 1.07,
+        "amount": 835367755900,
+        "changePct": -0.9673634195919933
+      },
+      {
+        "date": "2026-09-03",
+        "open": 3952.79,
+        "close": 3942.09,
+        "high": 3968.11,
+        "low": 3930.45,
+        "volume": 496990189,
+        "amplitude": 1.03,
+        "amount": 819882350400.0001,
+        "changePct": 0.01776023179640429
+      },
+      {
+        "date": "2026-09-04",
+        "open": 3955.55,
+        "close": 3930.12,
+        "high": 3980.2,
+        "low": 3915.22,
+        "volume": 537286161,
+        "amplitude": 1.11,
+        "amount": 938255187200,
+        "changePct": -0.3036460354786441
+      },
+      {
+        "date": "2026-09-07",
+        "open": 3942.51,
+        "close": 3932.7,
+        "high": 3948.42,
+        "low": 3916.49,
+        "volume": 477375261,
+        "amplitude": 0.98,
+        "amount": 897904014900,
+        "changePct": 0.06564685047785179
+      },
+      {
+        "date": "2026-09-08",
+        "open": 3935.55,
+        "close": 3940.55,
+        "high": 3951.32,
+        "low": 3925.72,
+        "volume": 529992688,
+        "amplitude": 1.09,
+        "amount": 915566238900,
+        "changePct": 0.1996084115238883
+      },
+      {
+        "date": "2026-09-09",
+        "open": 3943.92,
+        "close": 3951.51,
+        "high": 3958.12,
+        "low": 3933.47,
+        "volume": 517504311,
+        "amplitude": 1.07,
+        "amount": 873734897099.9999,
+        "changePct": 0.27813376305338977
+      },
+      {
+        "date": "2026-09-10",
+        "open": 3939.09,
+        "close": 3934.4,
+        "high": 3949.25,
+        "low": 3927.35,
+        "volume": 484675114,
+        "amplitude": 1,
+        "amount": 779672692300,
+        "changePct": -0.4329990307502696
+      },
+      {
+        "date": "2026-09-11",
+        "open": 3910.92,
+        "close": 3888.11,
+        "high": 3912.32,
+        "low": 3852.03,
+        "volume": 579123145,
+        "amplitude": 1.19,
+        "amount": 958186337000,
+        "changePct": -1.1765453436356266
+      },
+      {
+        "date": "2026-09-14",
+        "open": 3867.02,
+        "close": 3885.33,
+        "high": 3895.51,
+        "low": 3867.02,
+        "volume": 458888916,
+        "amplitude": 0.95,
+        "amount": 779281246500,
+        "changePct": -0.07150003472125022
+      },
+      {
+        "date": "2026-09-15",
+        "open": 3879.73,
+        "close": 3864.28,
+        "high": 3891.62,
+        "low": 3858.15,
+        "volume": 440907766,
+        "amplitude": 0.91,
+        "amount": 763982900000,
+        "changePct": -0.5417815217754973
+      },
+      {
+        "date": "2026-09-16",
+        "open": 3861.75,
+        "close": 3891.6,
+        "high": 3894.66,
+        "low": 3842.72,
+        "volume": 459125108,
+        "amplitude": 0.95,
+        "amount": 871141346900,
+        "changePct": 0.7069881064519112
+      },
+      {
+        "date": "2026-09-17",
+        "open": 3877,
+        "close": 3875.6,
+        "high": 3898.84,
+        "low": 3866.89,
+        "volume": 452886464,
+        "amplitude": 0.93,
+        "amount": 868773066900,
+        "changePct": -0.4111419467571209
+      },
+      {
+        "date": "2026-09-18",
+        "open": 3891.96,
+        "close": 3911.87,
+        "high": 3919.67,
+        "low": 3888.5,
+        "volume": 485712507,
+        "amplitude": 1,
+        "amount": 994169450200,
+        "changePct": 0.9358550934049026
+      },
+      {
+        "date": "2026-09-21",
+        "open": 3920.27,
+        "close": 3949.91,
+        "high": 3950.94,
+        "low": 3918.13,
+        "volume": 502354877,
+        "amplitude": 1.04,
+        "amount": 946819124300.0001,
+        "changePct": 0.9724249527719442
+      },
+      {
+        "date": "2026-09-22",
+        "open": 3963.81,
+        "close": 3952.13,
+        "high": 3967.68,
+        "low": 3945.42,
+        "volume": 506148369,
+        "amplitude": 1.04,
+        "amount": 1007995610900,
+        "changePct": 0.05620381223876425
+      },
+      {
+        "date": "2026-09-23",
+        "open": 3951.37,
+        "close": 3936.52,
+        "high": 3951.52,
+        "low": 3934.46,
+        "volume": 466913933,
+        "amplitude": 0.96,
+        "amount": 834132863000,
+        "changePct": -0.3949768858817926
+      },
+      {
+        "date": "2026-09-24",
+        "open": 3925.32,
+        "close": 3888.37,
+        "high": 3930.5,
+        "low": 3888.37,
+        "volume": 438530412,
+        "amplitude": 0.9,
+        "amount": 783613001400,
+        "changePct": -1.2231615741822743
+      },
+      {
+        "date": "2026-09-28",
+        "open": 3878.41,
+        "close": 3823.62,
+        "high": 3878.41,
+        "low": 3806.67,
+        "volume": 452350675,
+        "amplitude": 0.93,
+        "amount": 804543704700,
+        "changePct": -1.6652221882176854
+      },
+      {
+        "date": "2026-09-29",
+        "open": 3816.15,
+        "close": 3830.45,
+        "high": 3843.84,
+        "low": 3810.81,
+        "volume": 399473391,
+        "amplitude": 0.82,
+        "amount": 661704292800,
+        "changePct": 0.17862653715587928
+      },
+      {
+        "date": "2026-09-30",
+        "open": 3839.25,
+        "close": 3842.19,
+        "high": 3851.22,
+        "low": 3833.09,
+        "volume": 414560247,
+        "amplitude": 0.85,
+        "amount": 679398992400,
+        "changePct": 0.30649140440419664
+      },
+      {
+        "date": "2026-10-08",
+        "open": 3838.98,
+        "close": 3811.9,
+        "high": 3864.12,
+        "low": 3795.37,
+        "volume": 482201685,
+        "amplitude": 0.99,
+        "amount": 811183096400,
+        "changePct": -0.7883524760618266
+      },
+      {
+        "date": "2026-10-09",
+        "open": 3804.09,
+        "close": 3813.79,
+        "high": 3824.71,
+        "low": 3754.14,
+        "volume": 535149921,
+        "amplitude": 1.1,
+        "amount": 888561198300,
+        "changePct": 0.049581573493528985
+      },
+      {
+        "date": "2026-10-12",
+        "open": 3806.98,
+        "close": 3797.24,
+        "high": 3828.22,
+        "low": 3791,
+        "volume": 461448981,
+        "amplitude": 0.95,
+        "amount": 714909910699.9999,
+        "changePct": -0.43395152853199503
+      },
+      {
+        "date": "2026-10-13",
+        "open": 3760.8,
+        "close": 3800.86,
+        "high": 3822.11,
+        "low": 3741.53,
+        "volume": 483305909,
+        "amplitude": 0.99,
+        "amount": 779302288000,
+        "changePct": 0.09533239932162374
+      },
+      {
+        "date": "2026-10-14",
+        "open": 3790.63,
+        "close": 3767.23,
+        "high": 3811.81,
+        "low": 3761.96,
+        "volume": 445962554,
+        "amplitude": 0.92,
+        "amount": 662491839800,
+        "changePct": -0.884799755844734
+      },
+      {
+        "date": "2026-10-15",
+        "open": 3710.7,
+        "close": 3707.48,
+        "high": 3724.56,
+        "low": 3674.82,
+        "volume": 510163189,
+        "amplitude": 1.05,
+        "amount": 774391973500,
+        "changePct": -1.5860459807338523
+      },
+      {
+        "date": "2026-10-16",
+        "open": 3723.8,
+        "close": 3716.28,
+        "high": 3750.77,
+        "low": 3681.28,
+        "volume": 472632158,
+        "amplitude": 0.97,
+        "amount": 732475190900,
+        "changePct": 0.23735798979360734
+      },
+      {
+        "date": "2026-10-19",
+        "open": 3694.12,
+        "close": 3730.92,
+        "high": 3743.8,
+        "low": 3692.29,
+        "volume": 417791248,
+        "amplitude": 0.86,
+        "amount": 687009728000,
+        "changePct": 0.3939423294262001
+      },
+      {
+        "date": "2026-10-20",
+        "open": 3718.44,
+        "close": 3735.37,
+        "high": 3740.07,
+        "low": 3702.44,
+        "volume": 408693062,
+        "amplitude": 0.84,
+        "amount": 699969753800,
+        "changePct": 0.11927353038927446
+      },
+      {
+        "date": "2026-10-21",
+        "open": 3740.57,
+        "close": 3713.03,
+        "high": 3743.08,
+        "low": 3703.12,
+        "volume": 378286389,
+        "amplitude": 0.78,
+        "amount": 642751560400,
+        "changePct": -0.598066590458235
+      },
+      {
+        "date": "2026-10-22",
+        "open": 3714.48,
+        "close": 3658.03,
+        "high": 3714.48,
+        "low": 3649.86,
+        "volume": 437691963,
+        "amplitude": 0.9,
+        "amount": 706095648800,
+        "changePct": -1.481270013977798
+      },
+      {
+        "date": "2026-10-23",
+        "open": 3623.57,
+        "close": 3690.48,
+        "high": 3691.4,
+        "low": 3574.27,
+        "volume": 552842912,
+        "amplitude": 1.14,
+        "amount": 898666874900,
+        "changePct": 0.8870894989926326
+      },
+      {
+        "date": "2026-10-26",
+        "open": 3671,
+        "close": 3697.52,
+        "high": 3699.01,
+        "low": 3664.82,
+        "volume": 432794318,
+        "amplitude": 0.89,
+        "amount": 746528025699.9999,
+        "changePct": 0.19076109340789849
+      },
+      {
+        "date": "2026-10-27",
+        "open": 3698.44,
+        "close": 3648.3,
+        "high": 3708.2,
+        "low": 3648.3,
+        "volume": 417789532,
+        "amplitude": 0.86,
+        "amount": 672414398199.9999,
+        "changePct": -1.331162508924899
+      },
+      {
+        "date": "2026-10-28",
+        "open": 3676.92,
+        "close": 3681.47,
+        "high": 3684.49,
+        "low": 3652.37,
+        "volume": 433622829,
+        "amplitude": 0.89,
+        "amount": 751019235600,
+        "changePct": 0.9091905819148538
+      },
+      {
+        "date": "2026-10-29",
+        "open": 3676.77,
+        "close": 3651.43,
+        "high": 3678.46,
+        "low": 3645.26,
+        "volume": 443564144,
+        "amplitude": 0.91,
+        "amount": 715620694900,
+        "changePct": -0.8159783999326375
+      },
+      {
+        "date": "2026-10-30",
+        "open": 3605.65,
+        "close": 3599.02,
+        "high": 3660.21,
+        "low": 3595.26,
+        "volume": 497973940,
+        "amplitude": 1.02,
+        "amount": 764227190900,
+        "changePct": -1.435328076945197
+      },
+      {
+        "date": "2026-11-02",
+        "open": 3614.31,
+        "close": 3638.03,
+        "high": 3648.13,
+        "low": 3594.77,
+        "volume": 565372836,
+        "amplitude": 1.16,
+        "amount": 847459066900,
+        "changePct": 1.0839061744586154
+      },
+      {
+        "date": "2026-11-03",
+        "open": 3624.58,
+        "close": 3608.1,
+        "high": 3624.58,
+        "low": 3580.38,
+        "volume": 536848407,
+        "amplitude": 1.1,
+        "amount": 810829284700,
+        "changePct": -0.8226979986421301
+      },
+      {
+        "date": "2026-11-04",
+        "open": 3605.39,
+        "close": 3686.17,
+        "high": 3686.17,
+        "low": 3590.8,
+        "volume": 599394361,
+        "amplitude": 1.23,
+        "amount": 953265155900,
+        "changePct": 2.163742690058479
+      },
+      {
+        "date": "2026-11-05",
+        "open": 3646.57,
+        "close": 3689.91,
+        "high": 3701.59,
+        "low": 3646.57,
+        "volume": 571291638,
+        "amplitude": 1.17,
+        "amount": 979711778199.9999,
+        "changePct": 0.10146032331661559
+      },
+      {
+        "date": "2026-11-06",
+        "open": 3612.15,
+        "close": 3649.18,
+        "high": 3660.49,
+        "low": 3610.2,
+        "volume": 477042561,
+        "amplitude": 0.98,
+        "amount": 772634566200,
+        "changePct": -1.1038209604028237
+      },
+      {
+        "date": "2026-11-09",
+        "open": 3659.02,
+        "close": 3660.79,
+        "high": 3679.09,
+        "low": 3653.05,
+        "volume": 427722257,
+        "amplitude": 0.88,
+        "amount": 682532599900,
+        "changePct": 0.3181536673992458
+      },
+      {
+        "date": "2026-11-10",
+        "open": 3682.04,
+        "close": 3663.72,
+        "high": 3683.73,
+        "low": 3660.72,
+        "volume": 404865177,
+        "amplitude": 0.83,
+        "amount": 673951893199.9999,
+        "changePct": 0.08003736898318792
+      },
+      {
+        "date": "2026-11-11",
+        "open": 3655.66,
+        "close": 3680.64,
+        "high": 3689.65,
+        "low": 3650.31,
+        "volume": 433120083,
+        "amplitude": 0.89,
+        "amount": 736154792000,
+        "changePct": 0.4618256853689662
+      },
+      {
+        "date": "2026-11-12",
+        "open": 3673.06,
+        "close": 3655.83,
+        "high": 3699.58,
+        "low": 3647.44,
+        "volume": 496533033,
+        "amplitude": 1.02,
+        "amount": 879537113600,
+        "changePct": -0.67406755346896
+      },
+      {
+        "date": "2026-11-13",
+        "open": 3658.72,
+        "close": 3634.35,
+        "high": 3669.44,
+        "low": 3623.84,
+        "volume": 472293657,
+        "amplitude": 0.97,
+        "amount": 770614170000,
+        "changePct": -0.5875546729470438
+      },
+      {
+        "date": "2026-11-16",
+        "open": 3611.54,
+        "close": 3602.57,
+        "high": 3623.12,
+        "low": 3586.57,
+        "volume": 461643487,
+        "amplitude": 0.95,
+        "amount": 706214352300,
+        "changePct": -0.8744342179481834
+      },
+      {
+        "date": "2026-11-17",
+        "open": 3585.67,
+        "close": 3584.58,
+        "high": 3604.98,
+        "low": 3565.59,
+        "volume": 444074698,
+        "amplitude": 0.91,
+        "amount": 690514639000,
+        "changePct": -0.4993657305756738
+      },
+      {
+        "date": "2026-11-18",
+        "open": 3596.55,
+        "close": 3587.83,
+        "high": 3596.55,
+        "low": 3560.45,
+        "volume": 423934832,
+        "amplitude": 0.87,
+        "amount": 650231688100,
+        "changePct": 0.09066613103905219
+      },
+      {
+        "date": "2026-11-19",
+        "open": 3583.12,
+        "close": 3577.62,
+        "high": 3584.28,
+        "low": 3547.94,
+        "volume": 412912755,
+        "amplitude": 0.85,
+        "amount": 636909057700,
+        "changePct": -0.2845731263744433
+      },
+      {
+        "date": "2026-11-20",
+        "open": 3527.3,
+        "close": 3533.79,
+        "high": 3538.27,
+        "low": 3500.83,
+        "volume": 499711727,
+        "amplitude": 1.03,
+        "amount": 702573853100,
+        "changePct": -1.225116138662019
+      },
+      {
+        "date": "2026-11-23",
+        "open": 3503.52,
+        "close": 3538.95,
+        "high": 3544.6,
+        "low": 3476.65,
+        "volume": 512192714,
+        "amplitude": 1.05,
+        "amount": 738500418800,
+        "changePct": 0.14601886359970617
+      },
+      {
+        "date": "2026-11-24",
+        "open": 3567.84,
+        "close": 3548.37,
+        "high": 3585.22,
+        "low": 3539.01,
+        "volume": 493526296,
+        "amplitude": 1.01,
+        "amount": 771861010300,
+        "changePct": 0.2661806468020167
+      },
+      {
+        "date": "2026-11-25",
+        "open": 3522.59,
+        "close": 3476.47,
+        "high": 3526.34,
+        "low": 3468.65,
+        "volume": 472561427,
+        "amplitude": 0.97,
+        "amount": 652709381600,
+        "changePct": -2.0262824902701815
+      },
+      {
+        "date": "2026-11-26",
+        "open": 3490.14,
+        "close": 3476.88,
+        "high": 3497.81,
+        "low": 3455.04,
+        "volume": 454062959,
+        "amplitude": 0.93,
+        "amount": 613332810000,
+        "changePct": 0.01
+      }
+    ],
     "sentiment": {
       "available": false,
       "yesterdayAvailable": false,
@@ -14544,41 +17509,368 @@
       "yesterdayUpRatio": null,
       "topBoards": []
     },
-    "mainFlow": null,
+    "mainFlow": {
+      "date": "2026-11-26",
+      "mainNet": -1029032192,
+      "smallNet": 3575181312,
+      "mediumNet": -2546147328,
+      "largeNet": -3384475648,
+      "superLargeNet": 2355443456
+    },
+    "news": [
+      {
+        "id": "202611263940858522",
+        "title": "巴西股市上涨3.4% 创10月5日以来最大单日涨幅",
+        "digest": "巴西股市上涨3.4%，创10月5日以来最大单日涨幅，因财政部长乐观情绪提振。",
+        "time": "2026-11-26 21:23:55",
+        "url": "http://finance.eastmoney.com/a/202611263940858522.html",
+        "category": "公司动态"
+      },
+      {
+        "id": "202611263940810359",
+        "title": "农业银行已与近200家上市公司达成合作意向 签订股票回购增持贷款合同超1500亿元",
+        "digest": "【农业银行已与近200家上市公司达成合作意向 签订股票回购增持贷款合同超1500亿元】据农业银行消息，近期，中国人民银行会同金融监管总局、中国证监会等部门召开股票回购增持再贷款座谈会，部署优化股票回购再贷款机制，明确将阶段政策转为长期制度性…",
+        "time": "2026-11-26 20:25:00",
+        "url": "http://bank.eastmoney.com/a/202611263940810359.html",
+        "category": "公司动态"
+      },
+      {
+        "id": "202611263940803456",
+        "title": "裕太微：向特定对象发行A股股票申请获上交所审核通过",
+        "digest": "【裕太微：向特定对象发行A股股票申请获上交所审核通过】裕太微(688515.SH)公告称，公司于2026年11月26日收到上交所出具的审核意见，公司向特定对象发行股票申请符合发行条件、上市条件和信息披露要求。该事项尚需获得证监会同意注册的决…",
+        "time": "2026-11-26 20:14:57",
+        "url": "http://finance.eastmoney.com/a/202611263940803456.html",
+        "category": "市场资金"
+      },
+      {
+        "id": "202611263940773490",
+        "title": "宁德时代称26日回购14.8万股A股股份 耗资约2999万元",
+        "digest": "宁德时代称26日回购14.8万股A股股份，耗资约2999万元。",
+        "time": "2026-11-26 19:44:58",
+        "url": "http://finance.eastmoney.com/a/202611263940773490.html",
+        "category": "市场资金"
+      },
+      {
+        "id": "202611263940753956",
+        "title": "李强会见亚洲开发银行行长神田真人",
+        "digest": "【李强会见亚洲开发银行行长神田真人】11月26日下午，国务院总理李强在北京人民大会堂会见亚洲开发银行行长神田真人。",
+        "time": "2026-11-26 19:26:21",
+        "url": "http://finance.eastmoney.com/a/202611263940753956.html",
+        "category": "公司动态"
+      },
+      {
+        "id": "202611263940741344",
+        "title": "天齐锂业：拟4亿至8亿元回购A股股份用于股权激励或员工持股计划",
+        "digest": "【天齐锂业：拟4亿至8亿元回购A股股份用于股权激励或员工持股计划】11月26日，天齐锂业(002466.SZ)公告称，公司拟使用自有资金或自筹资金以集中竞价方式回购A股股份，回购资金总额不低于4亿元且不超过8亿元，回购价格不超过53.08元…",
+        "time": "2026-11-26 19:05:16",
+        "url": "http://finance.eastmoney.com/a/202611263940741344.html",
+        "category": "市场资金"
+      },
+      {
+        "id": "202611263940737949",
+        "title": "中鼎股份：拟1亿元至2亿元回购公司股份",
+        "digest": "【中鼎股份：拟1亿元至2亿元回购公司股份】中鼎股份(000887.SZ)公告称，公司拟使用自有或自筹资金以集中竞价方式回购公司已发行A股股票，回购资金总额不低于1亿元且不超过2亿元，回购价格不超过25元/股。",
+        "time": "2026-11-26 18:56:19",
+        "url": "http://finance.eastmoney.com/a/202611263940737949.html",
+        "category": "公司动态"
+      },
+      {
+        "id": "202611263940737390",
+        "title": "镇洋发展：因换股吸收合并事项 公司股票12月4日起连续停牌直至终止上市",
+        "digest": "【镇洋发展：因换股吸收合并事项 公司股票12月4日起连续停牌直至终止上市】镇洋发展(603213.SH)公告称，因浙江沪杭甬换股吸收合并镇洋发展暨关联交易事项，公司A股股票及可转债将于2026年12月4日开市时起连续停牌。其中，A股股票停牌…",
+        "time": "2026-11-26 18:54:17",
+        "url": "http://bond.eastmoney.com/a/202611263940737390.html",
+        "category": "公司动态"
+      }
+    ],
     "technical": {
-      "ma5": null,
-      "ma20": null,
-      "ma60": null,
-      "high20": null,
-      "low20": null,
-      "averageTurnover20": null,
-      "averageTurnover5": null,
-      "aboveMa20": null,
-      "aboveMa60": null
+      "ma5": 3514.892,
+      "ma20": 3604.640000000001,
+      "ma60": 3761.6968333333334,
+      "high20": 3701.59,
+      "low20": 3455.04,
+      "averageTurnover20": 751688241120,
+      "averageTurnover5": 695795494760,
+      "aboveMa20": false,
+      "aboveMa60": false
     },
     "style": {
-      "largeCap": null,
-      "smallCap": null,
-      "megaCap": null,
-      "growth": null,
-      "spread": null,
-      "label": "风格暂时不可用"
+      "largeCap": 0.06,
+      "smallCap": -0.18,
+      "megaCap": 0.07,
+      "growth": 0.29,
+      "spread": 0.24,
+      "label": "风格均衡"
     },
-    "volumeRatio": null,
-    "watchPoints": [],
-    "recap": "行情接口暂时不可用，稍后刷新即可。",
-    "sourceName": "腾讯证券 + 东方财富公开行情",
-    "sourceUrl": "https://quote.eastmoney.com/",
-    "unavailable": true,
+    "volumeRatio": 1.7525579062366803,
+    "watchPoints": [
+      "上证指数20日均线位于3604.64点，当前收盘在均线下方",
+      "近20个交易日低点3455.04点，可作为短期区间风险参考",
+      "沪深成交额为20日均值的1.75倍，明显放量",
+      "上涨家数占比33.8%，观察次日能否回到50%以上",
+      "沪深300相对中证1000强弱为+0.24个百分点"
+    ],
     "dataQuality": {
-      "breadth": false,
+      "breadth": true,
       "limitPools": false,
-      "sectors": false,
-      "mainFlow": false,
-      "news": false
+      "yesterdayLimitUp": false,
+      "sectors": true,
+      "mainFlow": true,
+      "news": true
     },
-    "error": "Cannot read properties of null (reading 'toFixed')",
+    "recap": "整体偏弱。上证指数涨0.01%，深证成指跌0.02%，创业板指涨0.29%，科创50跌1.36%；全市场1730只上涨、3395只下跌、173只平盘。涨跌停生态数据暂不可用，主力资金净流出10.3亿元。风格均衡，沪深300与中证1000日涨幅差+0.24个百分点。领涨行业为白银+6.73%、水产养殖+5.71%、渔业+5.26%，表现靠后的行业包括疫苗、航空运输；上证指数收于20日均线下方。",
+    "sourceName": "腾讯证券 + 东方财富公开行情",
+    "sourceUrl": "https://gu.qq.com/",
+    "extensionErrors": [
+      "limitUp: AttributeError: 'NoneType' object has no attribute 'get'",
+      "limitDown: AttributeError: 'NoneType' object has no attribute 'get'",
+      "broken: AttributeError: 'NoneType' object has no attribute 'get'",
+      "yesterday: AttributeError: 'NoneType' object has no attribute 'get'"
+    ],
+    "unavailable": false,
+    "tradingPlan": {
+      "asOfDate": "2026-11-26",
+      "regime": "防守优先",
+      "positionGuide": "10%—35%",
+      "upRatio": 0.3265383163457909,
+      "indexAverage": -0.19999999999999998,
+      "riskLevel": "较高",
+      "summary": "市场处于弱势放量阶段，先控制回撤，只做最强主线中的前排机会。 近期主线延续性较好，保留原有确认条件并适度提高主线权重。",
+      "mainlines": [
+        {
+          "name": "白银",
+          "changePct": 6.73,
+          "mode": "观察",
+          "leaders": [
+            {
+              "code": "000603",
+              "name": "盛达资源",
+              "changePct": 10,
+              "turnover": 1072986080.35,
+              "role": "龙头候选",
+              "entry": "不追高开超过5%；10:00后仍站稳分时均价、板块至少2只红盘，才考虑小仓试错。",
+              "invalidation": "跌破昨收 21.69 元、分时均价或板块转绿，放弃。"
+            },
+            {
+              "code": "002716",
+              "name": "湖南白银",
+              "changePct": 5.47,
+              "turnover": 1012630040.6,
+              "role": "前排",
+              "entry": "先等龙头维持强势，再看前排承接；不主动猜板、不接高开秒板。",
+              "invalidation": "龙头炸板或本股跌破分时均价，取消关注。"
+            },
+            {
+              "code": "000426",
+              "name": "兴业银锡",
+              "changePct": 4.73,
+              "turnover": 1368971682.34,
+              "role": "跟风",
+              "entry": "只做板块扩散后的低位补涨，不追连续加速，优先观察成交是否持续放大。",
+              "invalidation": "龙头转弱、板块红盘少于2只或本股跌破昨收，取消。"
+            }
+          ],
+          "score": 7.48
+        },
+        {
+          "name": "水产养殖",
+          "changePct": 5.71,
+          "mode": "观察",
+          "leaders": [
+            {
+              "code": "600467",
+              "name": "好当家",
+              "changePct": 10,
+              "turnover": 1548089184,
+              "role": "龙头候选",
+              "entry": "不追高开超过5%；10:00后仍站稳分时均价、板块至少2只红盘，才考虑小仓试错。",
+              "invalidation": "跌破昨收 3.60 元、分时均价或板块转绿，放弃。"
+            },
+            {
+              "code": "300094",
+              "name": "国联水产",
+              "changePct": 4.86,
+              "turnover": 437438635,
+              "role": "前排",
+              "entry": "先等龙头维持强势，再看前排承接；不主动猜板、不接高开秒板。",
+              "invalidation": "龙头炸板或本股跌破分时均价，取消关注。"
+            },
+            {
+              "code": "600257",
+              "name": "大湖股份",
+              "changePct": 4.29,
+              "turnover": 175101435,
+              "role": "跟风",
+              "entry": "只做板块扩散后的低位补涨，不追连续加速，优先观察成交是否持续放大。",
+              "invalidation": "龙头转弱、板块红盘少于2只或本股跌破昨收，取消。"
+            }
+          ],
+          "score": 6.46
+        },
+        {
+          "name": "渔业",
+          "changePct": 5.26,
+          "mode": "观察",
+          "leaders": [
+            {
+              "code": "000798",
+              "name": "中水渔业",
+              "changePct": 10.05,
+              "turnover": 116874762.45,
+              "role": "龙头候选",
+              "entry": "不追高开超过5%；10:00后仍站稳分时均价、板块至少2只红盘，才考虑小仓试错。",
+              "invalidation": "跌破昨收 7.86 元、分时均价或板块转绿，放弃。"
+            },
+            {
+              "code": "600467",
+              "name": "好当家",
+              "changePct": 10,
+              "turnover": 1548089184,
+              "role": "前排",
+              "entry": "先等龙头维持强势，再看前排承接；不主动猜板、不接高开秒板。",
+              "invalidation": "龙头炸板或本股跌破分时均价，取消关注。"
+            },
+            {
+              "code": "300094",
+              "name": "国联水产",
+              "changePct": 4.86,
+              "turnover": 437438635,
+              "role": "跟风",
+              "entry": "只做板块扩散后的低位补涨，不追连续加速，优先观察成交是否持续放大。",
+              "invalidation": "龙头转弱、板块红盘少于2只或本股跌破昨收，取消。"
+            }
+          ],
+          "score": 6.01
+        },
+        {
+          "name": "贵金属",
+          "changePct": 4.94,
+          "mode": "观察",
+          "leaders": [
+            {
+              "code": "000603",
+              "name": "盛达资源",
+              "changePct": 10,
+              "turnover": 1072986080.35,
+              "role": "龙头候选",
+              "entry": "不追高开超过5%；10:00后仍站稳分时均价、板块至少2只红盘，才考虑小仓试错。",
+              "invalidation": "跌破昨收 21.69 元、分时均价或板块转绿，放弃。"
+            },
+            {
+              "code": "000506",
+              "name": "招金黄金",
+              "changePct": 8.41,
+              "turnover": 1082606956.16,
+              "role": "前排",
+              "entry": "先等龙头维持强势，再看前排承接；不主动猜板、不接高开秒板。",
+              "invalidation": "龙头炸板或本股跌破分时均价，取消关注。"
+            },
+            {
+              "code": "300139",
+              "name": "晓程科技",
+              "changePct": 7.29,
+              "turnover": 1502802782.89,
+              "role": "跟风",
+              "entry": "只做板块扩散后的低位补涨，不追连续加速，优先观察成交是否持续放大。",
+              "invalidation": "龙头转弱、板块红盘少于2只或本股跌破昨收，取消。"
+            }
+          ],
+          "score": 5.69
+        },
+        {
+          "name": "印制电路板",
+          "changePct": 4.75,
+          "mode": "观察",
+          "leaders": [
+            {
+              "code": "301282",
+              "name": "金禄电子",
+              "changePct": 19.39,
+              "turnover": 1291244471.56,
+              "role": "龙头候选",
+              "entry": "不追高开超过5%；10:00后仍站稳分时均价、板块至少2只红盘，才考虑小仓试错。",
+              "invalidation": "跌破昨收 29.30 元、分时均价或板块转绿，放弃。"
+            },
+            {
+              "code": "301041",
+              "name": "金百泽",
+              "changePct": 16.88,
+              "turnover": 560189920.02,
+              "role": "前排",
+              "entry": "先等龙头维持强势，再看前排承接；不主动猜板、不接高开秒板。",
+              "invalidation": "龙头炸板或本股跌破分时均价，取消关注。"
+            },
+            {
+              "code": "002815",
+              "name": "崇达技术",
+              "changePct": 10.02,
+              "turnover": 2108700830.46,
+              "role": "跟风",
+              "entry": "只做板块扩散后的低位补涨，不追连续加速，优先观察成交是否持续放大。",
+              "invalidation": "龙头转弱、板块红盘少于2只或本股跌破昨收，取消。"
+            }
+          ],
+          "score": 5.5
+        }
+      ],
+      "entryConditions": [
+        "上证指数不跌破今日低点 3455.04 点，且10:00后上涨家数回到2500只以上，才考虑小仓试错。",
+        "只在涨幅居前且成交额靠前的主线中选1—2只，高开超过5%的股票不追。",
+        "板块内至少2只个股保持红盘，龙头站稳分时均价后再确认。"
+      ],
+      "invalidConditions": [
+        "上证指数跌破今日低点 3455.04 点并继续放量。",
+        "上涨家数少于1800只，下跌家数继续扩大到3500只以上。",
+        "候选龙头上半场跌破昨收，且板块由红转绿。"
+      ],
+      "avoidSectors": [
+        "疫苗",
+        "航空运输",
+        "文化用品",
+        "视频媒体"
+      ],
+      "framework": [
+        "市场环境：指数趋势、成交额、市场广度与大小盘风格",
+        "情绪周期：涨停跌停、炸板率、连板高度与昨日涨停溢价",
+        "资金主线：板块涨幅、成交额与持续性",
+        "龙头梯队：龙头候选、前排、跟风股的相对强弱",
+        "次日执行：触发条件、失效条件、仓位纪律",
+        "历史校验：用下一交易日结果验证方向与主线，并动态调整后续权重"
+      ],
+      "disclaimer": "仅按公开行情生成条件式复盘，不构成投资建议；盘中数据会变化。",
+      "positionAnchor": 3476.88,
+      "learningApplied": {
+        "samples": 19,
+        "planAccuracy": 0.5263157894736842,
+        "mainlineHitRate": 0.7714285714285715,
+        "mainlineSamples": 35,
+        "sectorAdjustments": {
+          "其他数字媒体": 0.3,
+          "院线": 0.19999999999999996,
+          "视频媒体": 0.6,
+          "教育运营及其他": 0,
+          "卫浴电器": 0.6
+        },
+        "adjustmentLabel": "提高主线权重"
+      }
+    },
     "recommendationHistory": [
+      {
+        "recommendationDate": "2026-11-25",
+        "validationDate": "2026-11-26",
+        "recommendedRegime": "震荡确认",
+        "positionGuide": "30%—60%",
+        "planCorrect": true,
+        "actualIndexAverage": -0.19999999999999998,
+        "actualUpRatio": 0.3265383163457909,
+        "mainlineHitRate": null,
+        "mainlineResults": [],
+        "avoidedResults": [],
+        "score": 75,
+        "lessons": [
+          "次日板块匹配数据不足，本条建议仅验证市场方向，不据此大幅修改模型。"
+        ]
+      },
       {
         "recommendationDate": "2026-11-23",
         "validationDate": "2026-11-24",
@@ -15665,8 +18957,8 @@
       }
     ],
     "learningSummary": {
-      "samples": 18,
-      "planAccuracy": 0.5,
+      "samples": 19,
+      "planAccuracy": 0.5263157894736842,
       "mainlineHitRate": 0.7714285714285715,
       "mainlineSamples": 35,
       "sectorAdjustments": {
@@ -15677,51 +18969,6 @@
         "卫浴电器": 0.6
       },
       "adjustmentLabel": "提高主线权重"
-    },
-    "tradingPlan": {
-      "asOfDate": "2026-11-25",
-      "regime": "震荡确认",
-      "positionGuide": "30%—60%",
-      "upRatio": 0.5,
-      "indexAverage": 0,
-      "riskLevel": "中",
-      "summary": "多空分歧较大，等待指数与上涨家数共同确认后再增加仓位。 近期主线延续性较好，保留原有确认条件并适度提高主线权重。",
-      "mainlines": [],
-      "entryConditions": [
-        "上证指数不跌破前一交易日低点，且10:00后上涨家数回到2500只以上，才考虑小仓试错。",
-        "只在涨幅居前且成交额靠前的主线中选1—2只，高开超过5%的股票不追。",
-        "板块内至少2只个股保持红盘，龙头站稳分时均价后再确认。"
-      ],
-      "invalidConditions": [
-        "上证指数跌破前一交易日低点并继续放量。",
-        "上涨家数少于1800只，下跌家数继续扩大到3500只以上。",
-        "候选龙头上半场跌破昨收，且板块由红转绿。"
-      ],
-      "avoidSectors": [],
-      "framework": [
-        "市场环境：指数趋势、成交额、市场广度与大小盘风格",
-        "情绪周期：涨停跌停、炸板率、连板高度与昨日涨停溢价",
-        "资金主线：板块涨幅、成交额与持续性",
-        "龙头梯队：龙头候选、前排、跟风股的相对强弱",
-        "次日执行：触发条件、失效条件、仓位纪律",
-        "历史校验：用下一交易日结果验证方向与主线，并动态调整后续权重"
-      ],
-      "disclaimer": "仅按公开行情生成条件式复盘，不构成投资建议；盘中数据会变化。",
-      "positionAnchor": null,
-      "learningApplied": {
-        "samples": 18,
-        "planAccuracy": 0.5,
-        "mainlineHitRate": 0.7714285714285715,
-        "mainlineSamples": 35,
-        "sectorAdjustments": {
-          "其他数字媒体": 0.3,
-          "院线": 0.19999999999999996,
-          "视频媒体": 0.6,
-          "教育运营及其他": 0,
-          "卫浴电器": 0.6
-        },
-        "adjustmentLabel": "提高主线权重"
-      }
     }
   },
   "sources": {

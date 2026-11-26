@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-25T14:39:52.141Z",
+  "updatedAt": "2026-11-26T14:36:50.436Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 18,
-    "planAccuracy": 0.5,
+    "samples": 19,
+    "planAccuracy": 0.5263157894736842,
     "mainlineHitRate": 0.7714285714285715,
     "mainlineSamples": 35,
     "sectorAdjustments": {
@@ -16,6 +16,22 @@
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-25",
+      "validationDate": "2026-11-26",
+      "recommendedRegime": "震荡确认",
+      "positionGuide": "30%—60%",
+      "planCorrect": true,
+      "actualIndexAverage": -0.19999999999999998,
+      "actualUpRatio": 0.3265383163457909,
+      "mainlineHitRate": null,
+      "mainlineResults": [],
+      "avoidedResults": [],
+      "score": 75,
+      "lessons": [
+        "次日板块匹配数据不足，本条建议仅验证市场方向，不据此大幅修改模型。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-23",
       "validationDate": "2026-11-24",
