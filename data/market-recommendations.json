@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-27T10:48:55.888Z",
+  "updatedAt": "2026-11-27T14:30:37.591Z",
   "retentionDays": 260,
   "learningSummary": {
-    "samples": 19,
-    "planAccuracy": 0.5263157894736842,
+    "samples": 20,
+    "planAccuracy": 0.5,
     "mainlineHitRate": 0.7714285714285715,
     "mainlineSamples": 35,
     "sectorAdjustments": {
@@ -16,6 +16,76 @@
     "adjustmentLabel": "提高主线权重"
   },
   "history": [
+    {
+      "recommendationDate": "2026-11-26",
+      "validationDate": "2026-11-27",
+      "recommendedRegime": "防守优先",
+      "positionGuide": "10%—35%",
+      "planCorrect": false,
+      "actualIndexAverage": 8.328333333333333,
+      "actualUpRatio": 0.9628021148036254,
+      "mainlineHitRate": null,
+      "mainlineResults": [
+        {
+          "name": "白银",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "水产养殖",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "渔业",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "贵金属",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        },
+        {
+          "name": "印制电路板",
+          "matchedSector": null,
+          "actualChangePct": null,
+          "evaluated": false,
+          "hit": false
+        }
+      ],
+      "avoidedResults": [
+        {
+          "name": "疫苗",
+          "actualChangePct": null
+        },
+        {
+          "name": "航空运输",
+          "actualChangePct": null
+        },
+        {
+          "name": "文化用品",
+          "actualChangePct": null
+        },
+        {
+          "name": "视频媒体",
+          "actualChangePct": null
+        }
+      ],
+      "score": 25,
+      "lessons": [
+        "市场方向与“防守优先”不一致，次日先降低仓位，不以盘前判断替代开盘确认。",
+        "次日板块匹配数据不足，本条建议仅验证市场方向，不据此大幅修改模型。"
+      ]
+    },
     {
       "recommendationDate": "2026-11-25",
       "validationDate": "2026-11-26",
